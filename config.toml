@@ -1,0 +1,47 @@
+baseURL = "/"
+defaultContentLanguage = "ja"
+languageCode = "ja"
+title = "#a5ebec"
+theme = "terminal"
+paginate = 5
+
+[params]
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # ["orange", "blue", "red", "green", "pink"]
+  themeColor = "a5ebec"
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 3
+  # set theme to full screen width
+  fullWidthTheme = false
+  # center theme with default width
+  centerTheme = true
+  # set a custom favicon (default is a `themeColor` square)
+  favicon = "img/favicon/favicon.ico"
+
+  subtitle = "pothooks"
+  keywords = ""
+  menuMore = "Show more"
+  readMore = "Read more"
+  readOtherPosts = "Read other posts"
+
+[params.logo]
+  logoText = "#a5ebec"
+  logoHomeLink = "/"
+
+[menu]
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags"
+  weight = 2
+
+[[menu.main]]
+  name = "About"
+  url = "/about"
+  weight = 3
