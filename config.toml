@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://5ebec.netlify.com/"
 defaultContentLanguage = "ja"
 languageCode = "ja"
 title = "#a5ebec"

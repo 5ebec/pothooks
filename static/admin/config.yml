@@ -15,5 +15,8 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Featured Image", name: "cover", widget: "image"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["python", "julia", "paper"]}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
       - {label: "Body", name: "body", widget: "markdown"}
