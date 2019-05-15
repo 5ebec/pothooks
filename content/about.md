@@ -1,10 +1,9 @@
-+++
-title = "About"
-date = "2019-05-13"
-cover = "img/me.jpg"
-description = "profile"
-+++
-
+---
+title: "About"
+date: "2019-05-13"
+cover: "img/me.jpg"
+description: "profile"
+---
 
 京都大学電気電子工学科4回生.
 

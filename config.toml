@@ -29,6 +29,9 @@ paginate = 5
   logoText = "#a5ebec"
   logoHomeLink = "/"
 
+[taxonomies]
+  tag = "tags"
+
 [menu]
 [[menu.main]]
   name = "Home"
@@ -36,7 +39,6 @@ paginate = 5
   weight = 1
 
 [[menu.main]]
-  identifier = "tags"
   name = "Tags"
   url = "/tags"
   weight = 2

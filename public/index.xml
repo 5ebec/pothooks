@@ -2,21 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>#a5ebec</title>
-    <link>/</link>
+    <link>https://5ebec.netlify.com/</link>
     <description>Recent content on #a5ebec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 May 2019 01:36:04 +0900</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://5ebec.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Hoge Hge</title>
+      <link>https://5ebec.netlify.com/posts/hoge-hge/</link>
+      <pubDate>Thu, 16 May 2019 01:36:04 +0900</pubDate>
+      
+      <guid>https://5ebec.netlify.com/posts/hoge-hge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>https://5ebec.netlify.com/about/</link>
       <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://5ebec.netlify.com/about/</guid>
       <description>京都大学電気電子工学科4回生.
  GitHub
  Twitter

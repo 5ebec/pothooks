@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on #a5ebec</title>
+    <link>https://5ebec.netlify.com/tags/python/</link>
+    <description>Recent content in python on #a5ebec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 16 May 2019 01:36:04 +0900</lastBuildDate>
+    
+	<atom:link href="https://5ebec.netlify.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hoge Hge</title>
+      <link>https://5ebec.netlify.com/posts/hoge-hge/</link>
+      <pubDate>Thu, 16 May 2019 01:36:04 +0900</pubDate>
+      
+      <guid>https://5ebec.netlify.com/posts/hoge-hge/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

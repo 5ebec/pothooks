@@ -1,8 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-fullWidthTheme: false
-tags: ["", ""]
+categories: ["pothooks"]
+tags: ["julia", "python"]
 cover: ""
 description: ""
 draft: true
