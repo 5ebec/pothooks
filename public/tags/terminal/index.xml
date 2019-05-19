@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>#a5ebec</title>
-    <link>https://5ebec.netlify.com/</link>
-    <description>Recent content on #a5ebec</description>
+    <title>terminal on #a5ebec</title>
+    <link>https://5ebec.netlify.com/tags/terminal/</link>
+    <description>Recent content in terminal on #a5ebec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 20 May 2019 02:22:12 +0900</lastBuildDate>
     
-	<atom:link href="https://5ebec.netlify.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://5ebec.netlify.com/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -24,29 +24,6 @@ pros  GPU-acceleratedで非常に高速  cons  日本語入力に難あり(入�
 pros  WindowsのFluent Desginに合っていて良い タブ機能あり  cons  入力切り替えできない  4. Terminus https://github.com/Eugeny/terminus
 pros  タブ機能あり 日本語対応 リガチャ対応 デザイン良い  cons  起動が遅い 動作遅い、vimのカーソル移動がカクつく タブを移動すると文字が見えなくなる（再度入力すると見えるようにはなる）  5. Hyper https://github.com/zeit/hyper
 pros  デザインよい プラグインでカスタマイズできる  cons  おそい？(使用中)  </description>
-    </item>
-    
-    <item>
-      <title>Hoge Hge</title>
-      <link>https://5ebec.netlify.com/posts/hoge-hge/</link>
-      <pubDate>Thu, 16 May 2019 01:36:04 +0900</pubDate>
-      
-      <guid>https://5ebec.netlify.com/posts/hoge-hge/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://5ebec.netlify.com/about/</link>
-      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://5ebec.netlify.com/about/</guid>
-      <description>京都大学電気電子工学科4回生.
- GitHub
- Twitter
- Instagram
- Portfolio
-  </description>
     </item>
     
   </channel>

@@ -7,6 +7,9 @@ cover: ""
 description: "論文読み：単一画像からの屋内シーンのニューラルインバースレンダリング"
 draft: true
 ---
+# 一言で言うと
+
+
 # 論文リンク
 https://arxiv.org/pdf/1901.02453.pdf
 
@@ -22,10 +25,9 @@ Soumyadip Sengupta$^{1, 2}$, Jinwei Gu$^{1, 3}$, Kihwan Kim$^1$, Guilin Liu$^1$,
 
 # 概要
 
-
 # 新規性
 
-# 手法の概要
+# 手法
 
 # コメント
 
@@ -34,3 +36,4 @@ Soumyadip Sengupta$^{1, 2}$, Jinwei Gu$^{1, 3}$, Kihwan Kim$^1$, Guilin Liu$^1$,
 # 次に読む論文
 
 # アウトプット
+
