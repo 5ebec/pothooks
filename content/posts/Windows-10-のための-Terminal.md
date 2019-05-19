@@ -1,9 +1,11 @@
 ---
-title: "Windows 10 のための Terminal"
-date: 2019-05-20T02:22:12+09:00
-tags: ["windows", "terminal"]
-cover: ""
-description: "WindowsのTerminal探し。ほしいものは「日本語入力対応、タブ機能あり、高速、お洒落」。"
+title: Windows 10 のための Terminal
+date: 2019-05-19T17:22:12.000Z
+cover: ''
+tags:
+  - windows
+  - terminal
+description: WindowsのTerminal探し。「日本語入力対応、タブ機能あり、高速、お洒落」
 ---
 
 自分が使ってきたTerminalを順にまとめていく。
@@ -15,10 +17,10 @@ description: "WindowsのTerminal探し。ほしいものは「日本語入力対
 ## 2. Alacritty
 https://github.com/jwilm/alacritty
 
-##### pros
+#### pros
  - GPU-acceleratedで非常に高速
 
-##### cons
+#### cons
  - 日本語入力に難あり(入力窓が別のところに出てくるアレ)
  - タブ機能なし
  - 最低限のデザイン
@@ -58,4 +60,4 @@ https://github.com/zeit/hyper
  - プラグインでカスタマイズできる
 
 #### cons
- - おそい？(使用中)
+ - electron製なのでそれなりに遅い
