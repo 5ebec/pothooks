@@ -1,0 +1,89 @@
+---
+title: "Ubuntu で解像度の異なる複数のディスプレイを同時にいい感じに使いたい"
+date: 2019-05-20T16:56:58+09:00
+tags: ["ubuntu", "display"]
+cover: ""
+description: "研究室で与えられたディスプレイの解像度が異なっていて気持ち悪かったのでいい感じに修正したときのメモ。"
+draft: true
+---
+
+解像度とサイズの違う２つのディスプレイをどうにかしていい感じに使いたい
+
+## 環境
+OS: Ubuntu 18.04 LTS  
+display:  
+ - Dell 24inch FullHD 1920x1200 (16:10)  
+ - BenQ 27inch WQHD 2560x1440 (16:9)  
+
+## XRandR
+「エックス・アール・アンド・アール」と読むらしい。
+X Window Systemを再起動せずに解像度の変更・画面の回転・表示モニタの切り替え・マルチモニタの設定を行うライブラリとコマンド。
+```shell
+> xrandr
+```
+でディスプレイの情報を得られる。
+```shell
+Screen 0: minimum 8 x 8, current 4480 x 1440, maximum 32767 x 32767
+DVI-D-0 connected 1920x1200+0+0 (normal left inverted right x axis y axis) 518mm x 324mm
+   1920x1200     59.95*+
+   1920x1080     60.00  
+   1680x1050     59.95  
+   1600x1200     60.00  
+   1280x1024     60.02  
+   1280x960      60.00  
+   1024x768      60.00  
+   800x600       60.32  
+   640x480       59.94  
+HDMI-0 disconnected (normal left inverted right x axis y axis)
+DP-0 connected primary 2560x1440+1920+0 (normal left inverted right x axis y axis) 597mm x 336mm
+   2560x1440     59.95*+
+   1920x1080     60.00    59.94    50.00  
+   1680x1050     59.95  
+   1600x900      60.00  
+   1280x1024     75.02    60.02  
+   1280x800      59.81  
+   1280x720      60.00    59.94    50.00  
+   1024x768      75.03    60.00  
+   800x600       75.00    60.32  
+   720x576       50.00  
+   720x480       59.94  
+   640x480       75.00    59.94    59.93  
+DP-1 disconnected (normal left inverted right x axis y axis)
+DP-2 disconnected (normal left inverted right x axis y axis)
+DP-3 disconnected (normal left inverted right x axis y axis)
+DP-4 disconnected (normal left inverted right x axis y axis)
+DP-5 disconnected (normal left inverted right x axis y axis)
+```
+こんな。  
+見方としては、  
+
+ - `DVI-D-0`や`DP-0`は接続端子
+ - `connected`/`disconnected`はその端子の接続有無
+ - `primary`/` `はプライマリかどうか
+ - `1920x1200+0+0`や`2560x1400+1920+0`は解像度+x方向の位置+y方向の位置
+ - `518mm x 324mm`や`597mm x 336mm`は実際のディスプレイサイズ
+
+
+## 方針
+ - 実際のサイズ
+![実際のサイズ](/img/2019-05-20/actual.png)
+
+ - 解像度
+![解像度](/img/2019-05-20/resolution.png)
+
+単純にWQHDのディスプレイのスケールを小さくしたり、FullHDの方を大きくしたりするだけでは画面が滲んでしまう。
+
+算数。
+$$
+\frac{1200}{1440} \times \frac{336\,\rm{mm}}{324\,\rm{mm}} = 0.864...
+$$
+これでWQHDディスプレイの解像度を約0.864倍にすれば良いことが分かる。
+```shell
+> xrandr --fb 4781x1440 --output DVI-D-0 --scale 1.157x1.157 --panning 2221x1388+0+0 --output DP-0 --scale 1x1 --panning 2560x1440+2221+0
+> gsettings set org.gnome.desktop.interface text-scaling-factor 1.157
+```
+
+```shell
+> xrandr --output DVI-D-0 --scale 1x1 --panning 1920x1200+0+0 --output DP-0 --scale 0.864x0.864 --pos 1920x0
+> gsettings set org.gnome.desktop.interface text-scaling-factor 0.864
+```

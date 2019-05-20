@@ -1,8 +1,7 @@
 ---
 title: "Neural Inverse Rendering of an Indoor Scene From a Single Image"
 date: 2019-05-17T15:52:00+09:00
-categories: ["pothooks"]
-tags: ["julia", "paper"]
+tags: ["paper"]
 cover: ""
 description: "論文読み：単一画像からの屋内シーンのニューラルインバースレンダリング"
 draft: true
@@ -14,10 +13,11 @@ draft: true
 https://arxiv.org/pdf/1901.02453.pdf
 
 # 著者/所属機関
-Soumyadip Sengupta$^{1, 2}$, Jinwei Gu$^{1, 3}$, Kihwan Kim$^1$, Guilin Liu$^1$, David W. Jacobs$^2$, Jan Kautz$^1$
+Soumyadip Sengupta$^{1, 2, 3}$, Jinwei Gu$^{1, 4}$, Kihwan Kim$^1$, Guilin Liu$^1$, David W. Jacobs$^2$, Jan Kautz$^1$
 
 1. NVIDIA
 1. University of Maryland, Collage Park
+1. University of Washington
 1. SenseTime
 
 # 投稿日付

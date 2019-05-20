@@ -6,7 +6,7 @@
     <description>Recent content in Tags on #a5ebec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 20 May 2019 02:22:12 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 19 May 2019 17:22:12 +0000</lastBuildDate>
     
 	<atom:link href="https://5ebec.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>terminal</title>
       <link>https://5ebec.netlify.com/tags/terminal/</link>
-      <pubDate>Mon, 20 May 2019 02:22:12 +0900</pubDate>
+      <pubDate>Sun, 19 May 2019 17:22:12 +0000</pubDate>
       
       <guid>https://5ebec.netlify.com/tags/terminal/</guid>
       <description></description>
@@ -23,27 +23,9 @@
     <item>
       <title>windows</title>
       <link>https://5ebec.netlify.com/tags/windows/</link>
-      <pubDate>Mon, 20 May 2019 02:22:12 +0900</pubDate>
+      <pubDate>Sun, 19 May 2019 17:22:12 +0000</pubDate>
       
       <guid>https://5ebec.netlify.com/tags/windows/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>julia</title>
-      <link>https://5ebec.netlify.com/tags/julia/</link>
-      <pubDate>Thu, 16 May 2019 01:36:04 +0900</pubDate>
-      
-      <guid>https://5ebec.netlify.com/tags/julia/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://5ebec.netlify.com/tags/python/</link>
-      <pubDate>Thu, 16 May 2019 01:36:04 +0900</pubDate>
-      
-      <guid>https://5ebec.netlify.com/tags/python/</guid>
       <description></description>
     </item>
     
