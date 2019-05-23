@@ -6,6 +6,7 @@ tags:
   - windows
   - terminal
 description: WindowsのTerminal探し。「日本語入力対応、タブ機能あり、高速、お洒落」
+markup: "mmark"
 ---
 
 自分が使ってきたTerminalを順にまとめていく。

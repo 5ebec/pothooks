@@ -3,8 +3,8 @@ title: "Ubuntu で解像度の異なる複数のディスプレイを同時に�
 date: 2019-05-20T16:56:58+09:00
 tags: ["ubuntu", "display"]
 cover: ""
-description: "研究室で与えられたディスプレイの解像度が異なっていて気持ち悪かったのでいい感じに修正したときのメモ。"
-draft: true
+description: "研究室で与えられたディスプレイの解像度が異なっていて気持ち悪かったので修正した(?)ときのメモ。"
+markup: "mmark"
 ---
 
 解像度とサイズの違う２つのディスプレイをどうにかしていい感じに使いたい
@@ -56,7 +56,6 @@ DP-5 disconnected (normal left inverted right x axis y axis)
 ```
 こんな。  
 見方としては、  
-
  - `DVI-D-0`や`DP-0`は接続端子
  - `connected`/`disconnected`はその端子の接続有無
  - `primary`/` `はプライマリかどうか
@@ -71,19 +70,41 @@ DP-5 disconnected (normal left inverted right x axis y axis)
  - 解像度
 ![解像度](/img/2019-05-20/resolution.png)
 
-単純にWQHDのディスプレイのスケールを小さくしたり、FullHDの方を大きくしたりするだけでは画面が滲んでしまう。
+方法としては２つある。
+1. WQHDのディスプレイのスケールを小さくする。
+2. FullHDのディスプレイのスケールを大きくする。
 
-算数。
 $$
 \frac{1200}{1440} \times \frac{336\,\rm{mm}}{324\,\rm{mm}} = 0.864...
 $$
-これでWQHDディスプレイの解像度を約0.864倍にすれば良いことが分かる。
-```shell
-> xrandr --fb 4781x1440 --output DVI-D-0 --scale 1.157x1.157 --panning 2221x1388+0+0 --output DP-0 --scale 1x1 --panning 2560x1440+2221+0
-> gsettings set org.gnome.desktop.interface text-scaling-factor 1.157
-```
 
+$$
+\frac{1440}{1200} \times \frac{324\,\rm{mm}}{336\,\rm{mm}} = 1.157...
+$$
+
+WQHDディスプレイの解像度を約0.864倍、またはFullHDディスプレイの解像度を約1.157倍すれば良いことが分かる。
+
+## シェルコマンド
+ - WQHDのディスプレイのスケールを小さくし、全体の文字サイズを小さくする
 ```shell
-> xrandr --output DVI-D-0 --scale 1x1 --panning 1920x1200+0+0 --output DP-0 --scale 0.864x0.864 --pos 1920x0
-> gsettings set org.gnome.desktop.interface text-scaling-factor 0.864
+xrandr --output DVI-D-0 --scale 1x1 --panning 1920x1200+0+0 --output DP-0 --scale 0.864x0.864 --pos 1920x0
+gsettings set org.gnome.desktop.interface text-scaling-factor 0.864
 ```
+WQHDのディスプレイのスケールを小さくすると、そのディスプレイでは表示が拡大され、文字が非常に大きくなる。  
+それを修正するために、Universal Access機能を有効にしている。(二行目のコマンド)  
+
+ - FullHDのディスプレイのスケールを大きくし、全体の文字サイズを大きくする
+```shell
+xrandr --output DVI-D-0 --scale 1.157x1.157 --pos 0x0 --output DP-0 --scale 1x1 --panning 2560x1440+2221+0
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.157
+```
+FullHDのディスプレイのスケールを小さくすると、そのディスプレイでは表示が縮小され、文字が非常に小さくなる。
+それを修正するために、Universal Access機能を有効にしている。
+
+２つとも試してみて後者を採用することにした。  
+無理に解像度を変更しているのでどちらにせよ滲んでしまうのだが、WQHDのディスプレイをメインで使うつもりなのでFullHDの方を犠牲にした。
+(シャープに表示することもできるかもしれないが見つけられなかった)
+
+## 結論
+マウスポインタの移動やウィンドウの移動で気持ち悪い思いをしなくて良くなったが、滲みが気になってしまって仕方がない。  
+慣れなのかもしれないがこれになれるくらいならマウスポインタ移動時の気持ち悪さになれるほうが良い気がしてくる。  

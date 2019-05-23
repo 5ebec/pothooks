@@ -4,6 +4,7 @@ date: 2019-05-17T15:52:00+09:00
 tags: ["paper"]
 cover: ""
 description: "論文読み：単一画像からの屋内シーンのニューラルインバースレンダリング"
+markup: "mmark"
 draft: true
 ---
 # 一言で言うと
