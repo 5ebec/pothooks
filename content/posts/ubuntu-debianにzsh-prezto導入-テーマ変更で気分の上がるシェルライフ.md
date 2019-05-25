@@ -7,7 +7,7 @@ tags:
   - zsh
   - prezto
   - shell
-description: ググればすぐ出てくるけど何回も同じ作業するのでいい加減まとめたほうがいい気がした
+description: ググればすぐ出てくるけど何回も同じ作業するのでいい加減まとめたほうがいい気がした。
 ---
 <blockquote class="twitter-tweet" data-lang="ja" data-theme="dark"><p lang="ja" dir="ltr">bashは`sudo apt install zsh`をする場所だと思っている</p>&mdash; へいほぅ (@5ebec) <a href="https://twitter.com/5ebec/status/1115124604538744832?ref_src=twsrc%5Etfw">2019年4月8日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -53,7 +53,7 @@ sudo reboot
 これでターミナルを開いたときにzshが起動されるはず。
 
 ## テーマ変更
-このまま使用してもよいが、preztoでは沢山のテーマが利用できるので好きなものに変える。
+このまま使用してもよいが、preztoでは沢山のテーマが利用できるので好きなものに変える。  
 ちなみにデフォルトは`sorin`というテーマ。
 
 以下ですべてのテーマをプレビューできる。
@@ -65,7 +65,7 @@ sudo reboot
 みんな大好きpowerlineもある。
 ~~みんなpowerline使ってるけどあれ何がいいの？フォント限られるし無駄にカラフルだし横に長くて邪魔じゃね？~~
 
-テーマの設定は`.zpreztorc`ファイルの116行目に書かれている。
+テーマの設定は`.zpreztorc`ファイルの116行目に書かれている。  
 自分は`pure`が好きなので、`sorin`から`pure`に変更しました。
 
 ```vim
