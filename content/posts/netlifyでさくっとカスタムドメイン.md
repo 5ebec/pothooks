@@ -1,5 +1,5 @@
 ---
-title: Netlifyでさくっとカスタムドメイン
+title: Netlify でさくっとカスタムドメイン
 date: 2019-06-09T20:15:54.064Z
 tags:
   - netlify
