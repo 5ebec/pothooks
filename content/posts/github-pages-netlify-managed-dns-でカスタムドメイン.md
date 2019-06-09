@@ -1,5 +1,5 @@
 ---
-title: GitHub Pages + Netlify Managed DNS でカスタムドメイン
+title: GitHub Pages + Netlify DNS でカスタムドメイン
 date: 2019-06-09T21:37:05.508Z
 tags:
   - netlify
@@ -27,4 +27,4 @@ Value: *USERNAME*.github.io
 
 GitHub Pagesのレポジトリのページから Setting > Options > GitHub Pages > Custom domain にカスタムドメインを書いてSave
 
-終わり
+完成
