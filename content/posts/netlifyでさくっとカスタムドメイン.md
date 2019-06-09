@@ -4,7 +4,6 @@ date: 2019-06-09T20:15:54.064Z
 tags:
   - netlify
   - domain
-  - pothooks
 description: 院試勉強の疲れからか気がついたらドメイン買ってnetlifyに設定してしまったので殴り書く
 ---
 ## カスタムドメインの購入
