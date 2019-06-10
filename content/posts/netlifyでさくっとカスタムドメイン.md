@@ -1,6 +1,7 @@
 ---
-title: Netlifyでさくっとカスタムドメイン
+title: Netlify でカスタムドメイン
 date: 2019-06-09T20:15:54.064Z
+cover: /img/uploads/google_domains.png
 tags:
   - netlify
   - domain
