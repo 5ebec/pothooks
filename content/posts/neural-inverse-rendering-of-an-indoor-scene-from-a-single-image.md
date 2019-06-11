@@ -1,5 +1,5 @@
 ---
-title: Neural Inverse Rendering of an Indoor Scene from a Single Image
+title: '[論文読み] Neural Inverse Rendering of an Indoor Scene from a Single Image'
 date: 2019-06-11T19:32:18.204Z
 tags:
   - paper
