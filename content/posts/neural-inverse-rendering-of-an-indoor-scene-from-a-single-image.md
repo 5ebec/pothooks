@@ -14,29 +14,48 @@ description: |
 # What it is about
  （なんの論文なのか）
 
+単一画像からの屋内シーンのニューラルインバースレンダリング  
+自己教師あり学習
+
 
 # Why it is worthy researching
 （その論文の価値は何、例えば完全に新しい問題を解いているとか、以前の手法の限界を乗り越えているとか）
+
+屋内シーンの画像を
+- アルベド
+- 表面法線
+- 照明マップ
+
+に分解
+
+今までの手法はそれぞれ一つのみを解決するものだったが，この論文では同時に解くことができるというのが優れている．
+
+
+
+
 
 
 # Key idea
 （最も大事なアイディア）
 
 
+
 # How it is validated (experimental setup and results)
 （その論文が提案している内容が正しいとする論拠）
 
+表とか
 
 # Limitations
 （手法等が動く範囲や仮定．論文に書かれていることだけではなく，自分の研究にとっての制約も考えること）
+
 
 
 # What you thought
 （読んでて考えたこと、思いついたこと）
 
 
-# Papers to read before and after the work
 
+# Papers to read before and after the work
 この論文を引用している論文
  - CVPR2019: [Putting Humans in a Scene: Learning Affordance in 3D Indoor Environments](https://arxiv.org/abs/1903.05690)
 
