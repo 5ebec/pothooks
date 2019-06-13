@@ -57,20 +57,47 @@ SUNCG-PBRという名のデータセットを作成している
 
 ![figure2](/img/uploads/figure2.png)
 
-ラベル無しの実データから，self-supervised reconstruction loss という損失関数を使用して学習することが本稿のキーアイデア．  
+ラベル無しの実データから，self-supervised reconstruction loss という損失関数を使用して学習することが本稿のキーアイデア．\
 Residual Appearance Renderer (RAR)によって可能としている．
 
 ### Self-supervised Learning
-自己教師あり学習．  
+
+自己教師あり学習．\
 教師なし学習の一つ．pretext tasks (関係なさそうなタスク) を学習することにより，本当に学習したいタスクで使える特徴表現を学習する．
 
+### RAR (Residual Appearance Renderer)
 
+![figure4](/img/uploads/figure4.png)
 
+#### Residual Appearance
 
-### RAR
+Direct Renderer によってモデル化できない
 
-### Direct Renderer
+* inter-reflections (相互反射)
+* cast shadows (投影)
+* near-field lighting (近距離照明)
+* realistic shading (リアルな陰影)
+
+等の複雑な外観効果
+
+これは物理ベースのレイトレーシング(光線追跡法)によるレンダリング方程式でしかシュミレーションできない．\
+この方程式は微分不可能であり，学習ベースのフレームワークでは使用できない．
+
+#### DR (Direct Renderer)
+
 学習可能なパラメータを持たない閉形式(初等関数で表される式)
+
+### self-supervised reconstruction loss
+
+I:元画像，A:アルベド，L:環境マップ，N:法線　としている
+
+![eq1](/img/uploads/eq1.png)
+
+![eq2](/img/uploads/eq2.png)
+
+以下の式が self-supervised reconstruction loss
+
+![eq3](/img/uploads/eq3.png)
 
 # How it is validated (experimental setup and results)
 
@@ -103,5 +130,5 @@ Residual Appearance Renderer (RAR)によって可能としている．
 
 **この記事の参考文献**
 https://arxiv.org/abs/1901.02453v2\
-http://omilab.naist.jp/~mukaigawa/papers/CVIM-145-9.pdf  
+http://omilab.naist.jp/~mukaigawa/papers/CVIM-145-9.pdf\
 https://www.slideshare.net/MasakazuIwamura/revised-on-18-july-2018/77
