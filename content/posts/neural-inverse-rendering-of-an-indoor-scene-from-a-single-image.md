@@ -15,21 +15,19 @@ description: |
 
  （なんの論文なのか）
 
-単一画像からの屋内シーンのニューラルインバースレンダリング\
-自己教師あり学習
+単一画像からの屋内シーンのニューラルインバースレンダリング
 
-## そもそもインバースレンダリングとは
+### インバースレンダリングとは
 
 ![inverse_rendering](/img/uploads/inverserendering.png)
 
 画像からシーンの物理的属性
- - 物体形状
- - 反射特性
- - 光源分布
+
+* 物体形状
+* 反射特性
+* 光源分布
 
 を推定することを目的としている．
-
-閑話休題．
 
 # Why it is worthy researching
 
@@ -48,7 +46,7 @@ description: |
 今までの手法では，主に単一のオブジェクトに対して，またはシーン属性の１つのみを解決するものだった．
 本稿では，屋内シーンの単一画像(即ち，シーンは限定されているが単一オブジェクトではない)に対してそれらのシーン属性を同時に解くことができる事ができる．
 
-Residual Appearance Renderer(RAR)(直訳では残余外観レンダラー(？))
+Residual Appearance Renderer(RAR)(直訳では残差外観レンダラー(？))
 
 SUNCG-PBRという名のデータセットを作成している
 このデータセットは以前のデータセットを大幅に改善したもの
@@ -56,6 +54,23 @@ SUNCG-PBRという名のデータセットを作成している
 # Key idea
 
 （最も大事なアイディア）
+
+![figure2](/img/uploads/figure2.png)
+
+ラベル無しの実データから，self-supervised reconstruction loss という損失関数を使用して学習することが本稿のキーアイデア．  
+Residual Appearance Renderer (RAR)によって可能としている．
+
+### Self-supervised Learning
+自己教師あり学習．  
+教師なし学習の一つ．pretext tasks (関係なさそうなタスク) を学習することにより，本当に学習したいタスクで使える特徴表現を学習する．
+
+
+
+
+### RAR
+
+### Direct Renderer
+学習可能なパラメータを持たない閉形式(初等関数で表される式)
 
 # How it is validated (experimental setup and results)
 
@@ -87,5 +102,6 @@ SUNCG-PBRという名のデータセットを作成している
 - - -
 
 **この記事の参考文献**
-https://arxiv.org/abs/1901.02453v2  
-http://omilab.naist.jp/~mukaigawa/papers/CVIM-145-9.pdf
+https://arxiv.org/abs/1901.02453v2\
+http://omilab.naist.jp/~mukaigawa/papers/CVIM-145-9.pdf  
+https://www.slideshare.net/MasakazuIwamura/revised-on-18-july-2018/77
