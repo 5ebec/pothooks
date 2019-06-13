@@ -18,23 +18,37 @@ description: |
 単一画像からの屋内シーンのニューラルインバースレンダリング\
 自己教師あり学習
 
+## そもそもインバースレンダリングとは
+
+![inverse_rendering](/img/uploads/inverserendering.png)
+
+画像からシーンの物理的属性
+ - 物体形状
+ - 反射特性
+ - 光源分布
+
+を推定することを目的としている．
+
+閑話休題．
+
 # Why it is worthy researching
 
 （その論文の価値は何、例えば完全に新しい問題を解いているとか、以前の手法の限界を乗り越えているとか）
 
 ![figure1](/img/uploads/figure1.png)
 
-屋内シーンの画像を
+屋内シーンの単一画像を
 
-* アルベド
-* 表面法線
-* 照明マップ
+* アルベド(外部からの入射光に対する反射光の比)
+* 表面法線ベクトル(物体の幾何学的形状)
+* 照明の環境マップ(光源分布)
 
-に分解
+の3つの属性に分解している．
 
-今までの手法はそれぞれ一つのみを解決するものだったが，この論文では同時に解くことができるというのが優れている．
+今までの手法では，主に単一のオブジェクトに対して，またはシーン属性の１つのみを解決するものだった．
+本稿では，屋内シーンの単一画像(即ち，シーンは限定されているが単一オブジェクトではない)に対してそれらのシーン属性を同時に解くことができる事ができる．
 
-Residual Appearance Renderer (RAR) と呼ばれる
+Residual Appearance Renderer(RAR)(直訳では残余外観レンダラー(？))
 
 SUNCG-PBRという名のデータセットを作成している
 このデータセットは以前のデータセットを大幅に改善したもの
@@ -69,3 +83,9 @@ SUNCG-PBRという名のデータセットを作成している
 * CVPR2018: [SfSNet: Learning Shape, Reflectance and Illuminance of Faces 'in the Wild'](https://www.semanticscholar.org/paper/SfSNet%3A-Learning-Shape%2C-Reflectance-and-Illuminance-Sengupta-Kanazawa/074619ffc19894c13974321d4b31144acc212f91)
 * CVPR2017: [Physically-Based Rendering for Indoor Scene Understanding Using Convolutional Neural Networks](https://www.semanticscholar.org/paper/Physically-Based-Rendering-for-Indoor-Scene-Using-Zhang-Song/5b8d3a05d6f25158fff84bc4ef64fd12d92abc2f)
 * CVPR2017: [Semantic Scene Completion from a Single Depth Image](https://www.semanticscholar.org/paper/Semantic-Scene-Completion-from-a-Single-Depth-Image-Song-Yu/8a05db7a75c65ee61c3ca7a6e5401b946166290d)
+
+- - -
+
+**この記事の参考文献**
+https://arxiv.org/abs/1901.02453v2  
+http://omilab.naist.jp/~mukaigawa/papers/CVIM-145-9.pdf
