@@ -124,10 +124,28 @@ I:元画像，A:アルベド，L:環境マップ，N:法線　としている
 
 （その論文が提案している内容が正しいとする論拠）
 
+### 他の論文との比較
 
+![figure6](/img/uploads/figure6.png)
+
+より正確な法線と陰影  
+反射率の曖昧さを解消している
+これは deep CNN を使用しているため．
 
 ![table1](/img/uploads/table1.png)
 
+IIWというテストセットでの比較
+WHDR (Weighted Human Disagreement Rate) を評価，低いほど優れている．  
+一番低い値を出している事がわかる．
+
+#### IIW 
+Intrinsic Images in the Wild
+この中で出てくる評価方法が WHDR メトリック．
+
+#### Intrinsic image decomposition
+内在的画像分解(?)  
+画像をアルベドと陰影に分解することを目的としている．  
+インバースレンダリングの副問題．
 
 
 # Limitations
