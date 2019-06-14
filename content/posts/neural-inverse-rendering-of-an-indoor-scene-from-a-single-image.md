@@ -78,8 +78,11 @@ PBRSデータセット:
 
 ![figure2](/img/uploads/figure2.png)
 
-ラベル無しの実データから，self-supervised reconstruction loss という損失関数を使用して学習することが本稿のキーアイデア．\
+ラベル無しのデータから，self-supervised reconstruction loss という損失関数を使用して学習することが本稿のキーアイデア．\
 Residual Appearance Renderer (RAR)によって可能としている．
+
+### Weak supervision
+出力より少ないラベルで学習すること(?)
 
 ### Self-supervised Learning
 
@@ -128,29 +131,58 @@ I:元画像，A:アルベド，L:環境マップ，N:法線　としている
 
 ![figure6](/img/uploads/figure6.png)
 
-より正確な法線と陰影  
+より正確な法線と陰影\
 反射率の曖昧さを解消している
 これは deep CNN を使用しているため．
 
 ![table1](/img/uploads/table1.png)
 
 IIWというテストセットでの比較
-WHDR (Weighted Human Disagreement Rate) を評価，低いほど優れている．  
+WHDR (Weighted Human Disagreement Rate) を評価，低いほど優れている．\
 一番低い値を出している事がわかる．
 
-#### IIW 
+#### IIW
+
 Intrinsic Images in the Wild
 この中で出てくる評価方法が WHDR メトリック．
 
 #### Intrinsic image decomposition
-内在的画像分解(?)  
-画像をアルベドと陰影に分解することを目的としている．  
+
+内在的画像分解(?)\
+画像をアルベドと陰影に分解することを目的としている．\
 インバースレンダリングの副問題．
 
+### アルベド，法線ベクトル，環境マップ(合成データ，実データ)
+
+![table2](/img/uploads/table2.png)
+
+![table3](/img/uploads/table3.png)
+
+![table4](/img/uploads/table4.png)
+
+![table5](/img/uploads/table5.png)
+
+#### RMSE
+二乗平均平方根誤差  
+回帰分析の評価指標の一つ
+
+#### MAD
+平均絶対偏差  
+実績値とその平均値との差の絶対値の平均  
+ばらつきを表す
+
+### RARの役割
+
+![table6](/img/uploads/table6.png)
+
+### 弱教師あり学習の役割
+
+![table7](/img/uploads/table7.png)
 
 # Limitations
 
 （手法等が動く範囲や仮定．論文に書かれていることだけではなく，自分の研究にとっての制約も考えること）
+
 
 # What you thought
 
