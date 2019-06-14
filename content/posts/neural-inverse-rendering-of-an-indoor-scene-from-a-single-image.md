@@ -49,17 +49,28 @@ description: |
 ![figure3](/img/uploads/figure3.png)
 
 SUNCG-PBRという名のデータセットを作成している
-このデータセットは以前のデータセットを大幅に改善したものである
- - 鏡面反射を仮定したシーン
- - 拡散反射を仮定したシーン
- - ground truth depth (実測深度)
- - surface normals (表面法線ベクトル)
- - albedo (アルベド)
- - Phong model parameters (フォンモデルパラメータ, )
- - semantic segmentation (セマンティックセグメンテーション)
- - glossiness segmentation (光沢セグメンテーション)
+このデータセットは以前のデータセットを大幅に改善したもの
 
-235,893枚の(組の?)画像
+* 鏡面反射を仮定したシーン
+* 拡散反射を仮定したシーン
+* ground truth depth (実測深度)
+* surface normals (表面法線ベクトル)
+* albedo (アルベド)
+* Phong model parameters (フォンモデルパラメータ, 照明と陰影モデル)
+* semantic segmentation (セマンティックセグメンテーション，カテゴリ分類)
+* glossiness segmentation (光沢セグメンテーション)
+
+235,893枚の(組の?)，以前のデータセットと比べてより写実的でノイズの少ない画像   
+
+![figure5](/img/uploads/figure5.png)
+
+SUNCGデータセット: 
+  45,622個の屋内シーン
+  OpenGLを使用した固定点光源の下でレンダリングされている
+PBRSデータセット:
+  Mitsubaで物理ベースのレンダリングを使用することでSUNCGデータセットを拡張している
+  ノイズが多い(計算量が限られているため)
+  拡散マテリアルと単一の屋外環境マップのみでレンダリングされるため，写実さに欠ける．
 
 # Key idea
 
@@ -113,7 +124,11 @@ I:元画像，A:アルベド，L:環境マップ，N:法線　としている
 
 （その論文が提案している内容が正しいとする論拠）
 
-表とか
+
+
+![table1](/img/uploads/table1.png)
+
+
 
 # Limitations
 
