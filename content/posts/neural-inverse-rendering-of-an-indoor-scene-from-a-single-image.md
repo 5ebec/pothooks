@@ -12,6 +12,7 @@ description: |
 * [arXiv](https://arxiv.org/abs/1901.02453v2), [SemanticScholar](https://www.semanticscholar.org/paper/Neural-Inverse-Rendering-of-an-Indoor-Scene-from-a-Sengupta-Gu/f78e5da29363342ebf04d011c4f756ed021a1a11)
 
 # What it is about
+
  （なんの論文なのか）
 
 単一画像からの屋内シーンのニューラルインバースレンダリング
@@ -29,6 +30,7 @@ description: |
 を推定することを目的としている．
 
 # Why it is worthy researching
+
 （その論文の価値は何、例えば完全に新しい問題を解いているとか、以前の手法の限界を乗り越えているとか）
 
 ![figure1](/img/uploads/figure1.png)
@@ -44,11 +46,23 @@ description: |
 今までの手法では，主に単一のオブジェクトに対して，またはシーン属性の１つのみを解決するものだった．
 本稿では，屋内シーンの単一画像(即ち，シーンは限定されているが単一オブジェクトではない)に対してそれらのシーン属性を同時に解くことができる事ができる．
 
+![figure3](/img/uploads/figure3.png)
+
 SUNCG-PBRという名のデータセットを作成している
 このデータセットは以前のデータセットを大幅に改善したものである
+ - 鏡面反射を仮定したシーン
+ - 拡散反射を仮定したシーン
+ - ground truth depth (実測深度)
+ - surface normals (表面法線ベクトル)
+ - albedo (アルベド)
+ - Phong model parameters (フォンモデルパラメータ, )
+ - semantic segmentation (セマンティックセグメンテーション)
+ - glossiness segmentation (光沢セグメンテーション)
 
+235,893枚の(組の?)画像
 
 # Key idea
+
 （最も大事なアイディア）
 
 ![figure2](/img/uploads/figure2.png)
@@ -94,8 +108,6 @@ I:元画像，A:アルベド，L:環境マップ，N:法線　としている
 以下の式が self-supervised reconstruction loss
 
 ![eq3](/img/uploads/eq3.png)
-
-
 
 # How it is validated (experimental setup and results)
 
