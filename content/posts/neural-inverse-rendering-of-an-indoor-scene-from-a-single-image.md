@@ -12,201 +12,54 @@ description: |
 * [arXiv](https://arxiv.org/abs/1901.02453v2), [SemanticScholar](https://www.semanticscholar.org/paper/Neural-Inverse-Rendering-of-an-Indoor-Scene-from-a-Sengupta-Gu/f78e5da29363342ebf04d011c4f756ed021a1a11)
 
 # What it is about
-
  （なんの論文なのか）
 
-単一画像からの屋内シーンのニューラルインバースレンダリング
+単一画像からの屋内シーンのニューラルインバースレンダリング  
+自己教師あり学習
 
-### インバースレンダリングとは
-
-![inverse_rendering](/img/uploads/inverserendering.png)
-
-画像からシーンの物理的属性
-
-* 物体形状
-* 反射特性
-* 光源分布
-
-を推定することを目的としている．
 
 # Why it is worthy researching
-
 （その論文の価値は何、例えば完全に新しい問題を解いているとか、以前の手法の限界を乗り越えているとか）
 
-![figure1](/img/uploads/figure1.png)
+屋内シーンの画像を
+- アルベド
+- 表面法線
+- 照明マップ
 
-屋内シーンの単一画像を
+に分解
 
-* アルベド(外部からの入射光に対する反射光の比)
-* 表面法線ベクトル(物体の幾何学的形状)
-* 照明の環境マップ(光源分布)
+今までの手法はそれぞれ一つのみを解決するものだったが，この論文では同時に解くことができるというのが優れている．
 
-の3つの属性に分解している．
 
-今までの手法では，主に単一のオブジェクトに対して，またはシーン属性の１つのみを解決するものだった．
-本稿では，屋内シーンの単一画像(即ち，シーンは限定されているが単一オブジェクトではない)に対してそれらのシーン属性を同時に解くことができる事ができる．
 
-![figure3](/img/uploads/figure3.png)
 
-SUNCG-PBRという名のデータセットを作成している
-このデータセットは以前のデータセットを大幅に改善したもの
 
-* 鏡面反射を仮定したシーン
-* 拡散反射を仮定したシーン
-* ground truth depth (実測深度)
-* surface normals (表面法線ベクトル)
-* albedo (アルベド)
-* Phong model parameters (フォンモデルパラメータ, 照明と陰影モデル)
-* semantic segmentation (セマンティックセグメンテーション，カテゴリ分類)
-* glossiness segmentation (光沢セグメンテーション)
-
-235,893枚の(組の?)，以前のデータセットと比べてより写実的でノイズの少ない画像   
-
-![figure5](/img/uploads/figure5.png)
-
-SUNCGデータセット: 
-  45,622個の屋内シーン
-  OpenGLを使用した固定点光源の下でレンダリングされている
-PBRSデータセット:
-  Mitsubaで物理ベースのレンダリングを使用することでSUNCGデータセットを拡張している
-  ノイズが多い(計算量が限られているため)
-  拡散マテリアルと単一の屋外環境マップのみでレンダリングされるため，写実さに欠ける．
 
 # Key idea
-
 （最も大事なアイディア）
 
-![figure2](/img/uploads/figure2.png)
 
-ラベル無しのデータから，self-supervised reconstruction loss という損失関数を使用して学習することが本稿のキーアイデア．\
-Residual Appearance Renderer (RAR)によって可能としている．
-
-### Weak supervision
-出力より少ないラベルで学習すること(?)
-
-### Self-supervised Learning
-
-自己教師あり学習．\
-教師なし学習の一つ．pretext tasks (関係なさそうなタスク) を学習することにより，本当に学習したいタスクで使える特徴表現を学習する．
-
-### RAR (Residual Appearance Renderer)
-
-![figure4](/img/uploads/figure4.png)
-
-#### Residual Appearance
-
-Direct Renderer によってモデル化できない
-
-* inter-reflections (相互反射)
-* cast shadows (投影)
-* near-field lighting (近距離照明)
-* realistic shading (リアルな陰影)
-
-等の複雑な外観効果
-
-これは物理ベースのレイトレーシング(光線追跡法)によるレンダリング方程式でしかシュミレーションできない．\
-この方程式は微分不可能であり，学習ベースのフレームワークでは使用できない．
-
-#### DR (Direct Renderer)
-
-学習可能なパラメータを持たない閉形式(初等関数で表される式)
-
-### self-supervised reconstruction loss
-
-I:元画像，A:アルベド，L:環境マップ，N:法線　としている
-
-![eq1](/img/uploads/eq1.png)
-
-![eq2](/img/uploads/eq2.png)
-
-以下の式が self-supervised reconstruction loss
-
-![eq3](/img/uploads/eq3.png)
 
 # How it is validated (experimental setup and results)
-
 （その論文が提案している内容が正しいとする論拠）
 
-### 他の論文との比較
-
-![figure6](/img/uploads/figure6.png)
-
-より正確な法線と陰影\
-反射率の曖昧さを解消している
-これは deep CNN を使用しているため．
-
-![table1](/img/uploads/table1.png)
-
-IIWというテストセットでの比較
-WHDR (Weighted Human Disagreement Rate) を評価，低いほど優れている．\
-一番低い値を出している事がわかる．
-
-#### IIW
-
-Intrinsic Images in the Wild
-この中で出てくる評価方法が WHDR メトリック．
-
-#### Intrinsic image decomposition
-
-内在的画像分解(?)\
-画像をアルベドと陰影に分解することを目的としている．\
-インバースレンダリングの副問題．
-
-### アルベド，法線ベクトル，環境マップ(合成データ，実データ)
-
-![table2](/img/uploads/table2.png)
-
-![table3](/img/uploads/table3.png)
-
-![table4](/img/uploads/table4.png)
-
-![table5](/img/uploads/table5.png)
-
-#### RMSE
-二乗平均平方根誤差  
-回帰分析の評価指標の一つ
-
-#### MAD
-平均絶対偏差  
-実績値とその平均値との差の絶対値の平均  
-ばらつきを表す
-
-### RARの役割
-
-![table6](/img/uploads/table6.png)
-
-### 弱教師あり学習の役割
-
-![table7](/img/uploads/table7.png)
 
 # Limitations
-
 （手法等が動く範囲や仮定．論文に書かれていることだけではなく，自分の研究にとっての制約も考えること）
-
-単一オブジェクトに対するものではないが，シーンは(学習が比較的容易そうな)屋内シーンに限定されている．
 
 
 
 # What you thought
-
 （読んでて考えたこと、思いついたこと）
 
+
+
 # Papers to read before and after the work
-
 この論文を引用している論文
-
-* CVPR2019: [Putting Humans in a Scene: Learning Affordance in 3D Indoor Environments](https://arxiv.org/abs/1903.05690)
+ - CVPR2019: [Putting Humans in a Scene: Learning Affordance in 3D Indoor Environments](https://arxiv.org/abs/1903.05690)
 
 参考文献
-
-* ECCV2018: [CGIntrinsics: Better Intrinsic Image Decomposition Through Physically-Based Rendering](https://arxiv.org/abs/1808.08601)
-* CVPR2018: [SfSNet: Learning Shape, Reflectance and Illuminance of Faces 'in the Wild'](https://www.semanticscholar.org/paper/SfSNet%3A-Learning-Shape%2C-Reflectance-and-Illuminance-Sengupta-Kanazawa/074619ffc19894c13974321d4b31144acc212f91)
-* CVPR2017: [Physically-Based Rendering for Indoor Scene Understanding Using Convolutional Neural Networks](https://www.semanticscholar.org/paper/Physically-Based-Rendering-for-Indoor-Scene-Using-Zhang-Song/5b8d3a05d6f25158fff84bc4ef64fd12d92abc2f)
-* CVPR2017: [Semantic Scene Completion from a Single Depth Image](https://www.semanticscholar.org/paper/Semantic-Scene-Completion-from-a-Single-Depth-Image-Song-Yu/8a05db7a75c65ee61c3ca7a6e5401b946166290d)
-
-- - -
-
-**この記事の参考文献**
-https://arxiv.org/abs/1901.02453v2\
-http://omilab.naist.jp/~mukaigawa/papers/CVIM-145-9.pdf\
-https://www.slideshare.net/MasakazuIwamura/revised-on-18-july-2018/77
+ - ECCV2018: [CGIntrinsics: Better Intrinsic Image Decomposition Through Physically-Based Rendering](https://arxiv.org/abs/1808.08601)
+ - CVPR2018: [SfSNet: Learning Shape, Reflectance and Illuminance of Faces 'in the Wild'](https://www.semanticscholar.org/paper/SfSNet%3A-Learning-Shape%2C-Reflectance-and-Illuminance-Sengupta-Kanazawa/074619ffc19894c13974321d4b31144acc212f91)
+ - CVPR2017: [Physically-Based Rendering for Indoor Scene Understanding Using Convolutional Neural Networks](https://www.semanticscholar.org/paper/Physically-Based-Rendering-for-Indoor-Scene-Using-Zhang-Song/5b8d3a05d6f25158fff84bc4ef64fd12d92abc2f)
+ - CVPR2017: [Semantic Scene Completion from a Single Depth Image](https://www.semanticscholar.org/paper/Semantic-Scene-Completion-from-a-Single-Depth-Image-Song-Yu/8a05db7a75c65ee61c3ca7a6e5401b946166290d)
