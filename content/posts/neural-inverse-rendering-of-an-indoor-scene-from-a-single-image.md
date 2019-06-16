@@ -58,20 +58,22 @@ Self-supervised Learning の Residual Appearance Renderer (RAR)によって可�
 pretext tasks (関係なさそうなタスク) を学習することにより，本当に学習したいタスクで使える特徴表現を学習する．
 
 #### self-supervised reconstruction loss
-I:元画像，A:アルベド，L:環境マップ，N:法線  
+I:元画像，A:アルベド，L:環境マップ，N:法線
+
 $$
-\mathrm{IRM:} h_d(I;\Theta_d) \to \left{ \hat{A}, \hat{N}, \hat{L} }
+\rm{IRM:} h_d(I;\Theta_d) \to \left{ \hat{A}, \hat{N}, \hat{L} }
 $$
 
 $$
-\mathrm{Direct Renderer: f_d( \hat{A}, \hat{N}, \hat{L}) \to \hat{I_d}
+\rm{Direct Renderer: f_d( \hat{A}, \hat{N}, \hat{L}) \to \hat{I_d}
 $$
 
 $$
-\mathrm{RAR: f_r(I, \hat{A}, \hat{N}; \Theta_r) \to \hat{I_r}
+\rm{RAR: f_r(I, \hat{A}, \hat{N}; \Theta_r) \to \hat{I_r}
 $$
 
 以下の式が self-supervised reconstruction loss
+
 $$
 L_u = ||I - (\hat{I_d}+\hat{I_r})||_{1}
 $$
