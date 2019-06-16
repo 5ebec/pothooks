@@ -1,9 +1,10 @@
 ---
-title: Neural Inverse Rendering of an Indoor Scene From a Single Image
+title: '[論文読み] Neural Inverse Rendering of an Indoor Scene From a Single Image'
 date: 2019-05-17T06:52:00.000Z
 cover: ''
 tags:
   - paper
+  - inverserendering
 description: 論文読み：単一画像からの屋内シーンのニューラルインバースレンダリング
 ---
 * Neural Inverse Rendering of an Indoor Scene from a Single Image
@@ -79,19 +80,9 @@ $$
 これは deep CNN を使用しているため．
 
 IIWをテストセットとして比較  
-WHDR (Weighted Human Disagreement Rate) を評価して，優れていることが確認できる.
+WHDR (Weighted Human Disagreement Rate) を評価して，優れていることが確認できる.\
 
-### アルベド，法線ベクトル，環境マップ(合成データ，実データ)
-<img width="540" alt="table2" src="https://user-images.githubusercontent.com/38322494/59478369-03b4df00-8e94-11e9-9ffc-26504298554b.png">
-<img width="563" alt="table3" src="https://user-images.githubusercontent.com/38322494/59478370-06afcf80-8e94-11e9-8d1d-6e1720a548e0.png">
-<img width="526" alt="table4" src="https://user-images.githubusercontent.com/38322494/59478375-09aac000-8e94-11e9-9f62-eeffc50ddc22.png">
-<img width="448" alt="table5" src="https://user-images.githubusercontent.com/38322494/59478394-14655500-8e94-11e9-930f-ae024de8bb56.png">
-
-### RARの役割
-<img width="573" alt="table6" src="https://user-images.githubusercontent.com/38322494/59478403-1cbd9000-8e94-11e9-8156-4c82dbc5029b.png">
-
-### 弱教師あり学習の役割
-<img width="544" alt="table7" src="https://user-images.githubusercontent.com/38322494/59478410-20511700-8e94-11e9-97ca-36e8702825b5.png">
+アルベド，法線ベクトル，環境マップ(合成データ，実データ)全てで以前の研究より勝っている．
 
 # Limitations
 単一オブジェクトに対するものではないが，シーンは屋内シーンに限定されている．
