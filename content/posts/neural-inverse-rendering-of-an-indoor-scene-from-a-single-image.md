@@ -61,15 +61,15 @@ pretext tasks (関係なさそうなタスク) を学習することにより，
 I:元画像，A:アルベド，L:環境マップ，N:法線
 
 $$
-\rm{IRM:} h_d(I;\Theta_d) \to \left{ \hat{A}, \hat{N}, \hat{L} }
+IRM: h_d(I;\Theta_d) \to \left{ \hat{A}, \hat{N}, \hat{L} }
 $$
 
 $$
-\rm{Direct Renderer: f_d( \hat{A}, \hat{N}, \hat{L}) \to \hat{I_d}
+Direct Renderer: f_d( \hat{A}, \hat{N}, \hat{L}) \to \hat{I_d}
 $$
 
 $$
-\rm{RAR: f_r(I, \hat{A}, \hat{N}; \Theta_r) \to \hat{I_r}
+RAR: f_r(I, \hat{A}, \hat{N}; \Theta_r) \to \hat{I_r}
 $$
 
 以下の式が self-supervised reconstruction loss
