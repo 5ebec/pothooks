@@ -61,7 +61,7 @@ pretext tasks (関係なさそうなタスク) を学習することにより，
 I:元画像，A:アルベド，L:環境マップ，N:法線
 
 $$
-IRM: h_d(I;\Theta_d) \to { \hat{A}, \hat{N}, \hat{L} }
+IRM: h_d(I;\Theta_d) \to \left\{ \hat{A}, \hat{N}, \hat{L} \right\}
 $$
 
 $$
