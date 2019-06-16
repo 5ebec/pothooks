@@ -29,17 +29,17 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70710678"
-     inkscape:cx="513.87672"
+     inkscape:cx="353.30968"
      inkscape:cy="325.07608"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:pagecheckerboard="false"
-     inkscape:window-width="1412"
-     inkscape:window-height="1172"
+     inkscape:window-width="2221"
+     inkscape:window-height="1360"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="0" />
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -63,23 +63,31 @@
        height="72.330627"
        x="11.234347"
        y="107.71304"
-       style="fill:#000000;stroke:#ffffff;stroke-width:0.92580998;stroke-miterlimit:4;stroke-dasharray:none" />
+       style="fill:#000000;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="1"
+       inkscape:export-filename="/home/kawase/pothooks/static/img/2019-05-20/resolution.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <rect
        id="rect3715"
        width="154.30534"
        height="86.796753"
-       x="130.96877"
+       x="131.49792"
        y="100.47997"
-       style="fill:#000000;stroke:#ffffff;stroke-width:0.92580998;stroke-miterlimit:4;stroke-dasharray:none" />
+       style="fill:#000000;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="1"
+       inkscape:export-filename="/home/kawase/pothooks/static/img/2019-05-20/resolution.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <rect
        id="rect3713-3"
        width="115.72903"
        height="72.38649"
        x="11.234347"
        y="212.44087"
-       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.89569801;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
        ry="1"
-       inkscape:export-filename="/home/kawase/pothooks/static/img/actual_size.png"
+       inkscape:export-filename="/home/kawase/pothooks/static/img/2019-05-20/actual.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -88,9 +96,9 @@
        height="75.067467"
        x="131.90717"
        y="211.10039"
-       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.89569801;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
        ry="1"
-       inkscape:export-filename="/home/kawase/pothooks/static/img/actual_size.png"
+       inkscape:export-filename="/home/kawase/pothooks/static/img/2019-05-20/actual.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <text
@@ -98,7 +106,10 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.9661026px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.19915257;"
        x="59.464542"
        y="104.43705"
-       id="text4544"><tspan
+       id="text4544"
+       inkscape:export-filename="/home/kawase/pothooks/static/img/2019-05-20/resolution.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan4542"
          x="59.464542"
@@ -106,22 +117,28 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';stroke-width:0.19915257;fill:#ffffff;">1920</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.9661026px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.19915257;"
-       x="198.63051"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.9661026px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.19915257"
+       x="199.15967"
        y="97.283653"
-       id="text4544-4"><tspan
+       id="text4544-4"
+       inkscape:export-filename="/home/kawase/pothooks/static/img/2019-05-20/resolution.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan4542-1"
-         x="198.63051"
+         x="199.15967"
          y="97.283653"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';stroke-width:0.19915257;fill:#ffffff;">2560</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';fill:#ffffff;stroke-width:0.19915257">2560</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.9661026px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.19915257;"
        x="-153.51268"
        y="8.0379839"
        id="text4544-0"
-       transform="rotate(-90)"><tspan
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/kawase/pothooks/static/img/2019-05-20/resolution.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan4542-4"
          x="-153.51268"
@@ -129,16 +146,19 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';stroke-width:0.19915257;fill:#ffffff;">1200</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.9661026px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.19915257;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.9661026px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.19915257"
        x="134.24405"
-       y="-288.47049"
+       y="-288.99966"
        id="text4544-8"
-       transform="rotate(90)"><tspan
+       transform="rotate(90)"
+       inkscape:export-filename="/home/kawase/pothooks/static/img/2019-05-20/resolution.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan4542-7"
          x="134.24405"
-         y="-288.47049"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';stroke-width:0.19915257;fill:#ffffff;">1440</tspan></text>
+         y="-288.99966"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';fill:#ffffff;stroke-width:0.19915257">1440</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -167,7 +187,7 @@
        x="57.052372"
        y="209.2596"
        id="text4544-08"
-       inkscape:export-filename="/home/kawase/pothooks/static/img/actual_size.png"
+       inkscape:export-filename="/home/kawase/pothooks/static/img/2019-05-20/actual.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
@@ -181,7 +201,7 @@
        x="186.55008"
        y="207.83945"
        id="text4544-2"
-       inkscape:export-filename="/home/kawase/pothooks/static/img/actual_size.png"
+       inkscape:export-filename="/home/kawase/pothooks/static/img/2019-05-20/actual.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
@@ -196,7 +216,7 @@
        y="8.0530405"
        id="text4544-0-9"
        transform="rotate(-90)"
-       inkscape:export-filename="/home/kawase/pothooks/static/img/actual_size.png"
+       inkscape:export-filename="/home/kawase/pothooks/static/img/2019-05-20/actual.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
@@ -211,7 +231,7 @@
        y="-268.46704"
        id="text4544-8-9"
        transform="rotate(90)"
-       inkscape:export-filename="/home/kawase/pothooks/static/img/actual_size.png"
+       inkscape:export-filename="/home/kawase/pothooks/static/img/2019-05-20/actual.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
@@ -225,7 +245,7 @@
        x="13.422854"
        y="219.82553"
        id="text4660"
-       inkscape:export-filename="/home/kawase/pothooks/static/img/actual_size.png"
+       inkscape:export-filename="/home/kawase/pothooks/static/img/2019-05-20/actual.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
@@ -239,7 +259,7 @@
        x="134.01128"
        y="218.84398"
        id="text4664"
-       inkscape:export-filename="/home/kawase/pothooks/static/img/actual_size.png"
+       inkscape:export-filename="/home/kawase/pothooks/static/img/2019-05-20/actual.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
@@ -249,25 +269,31 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';fill:#ffffff;stroke-width:0.16224085">BenQ 27inch WQHD</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.48963451px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.16224085;"
-       x="12.955089"
-       y="115.45901"
-       id="text4660-7"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.48963451px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.16224085"
+       x="13.370705"
+       y="115.40453"
+       id="text4660-7"
+       inkscape:export-filename="/home/kawase/pothooks/static/img/2019-05-20/resolution.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan4658-8"
-         x="12.955089"
-         y="115.45901"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';stroke-width:0.16224085;fill:#ffffff;">Dell 24inch FullHD</tspan></text>
+         x="13.370705"
+         y="115.40453"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';fill:#ffffff;stroke-width:0.16224085">Dell 24inch FullHD</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.48963451px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.16224085;"
-       x="143.06837"
-       y="114.47746"
-       id="text4664-9"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.48963451px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.16224085"
+       x="133.54988"
+       y="108.17144"
+       id="text4664-9"
+       inkscape:export-filename="/home/kawase/pothooks/static/img/2019-05-20/resolution.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan4662-1"
-         x="143.06837"
-         y="114.47746"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';stroke-width:0.16224085;fill:#ffffff;">BenQ 27inch WQHD</tspan></text>
+         x="133.54988"
+         y="108.17144"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';fill:#ffffff;stroke-width:0.16224085">BenQ 27inch WQHD</tspan></text>
   </g>
 </svg>

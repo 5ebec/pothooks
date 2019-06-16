@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>paper on #a5ebec</title>
+    <link>https://5ebec.netlify.com/tags/paper/</link>
+    <description>Recent content in paper on #a5ebec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 17 May 2019 06:52:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://5ebec.netlify.com/tags/paper/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[論文読み] Neural Inverse Rendering of an Indoor Scene From a Single Image</title>
+      <link>https://5ebec.netlify.com/posts/neural-inverse-rendering-of-an-indoor-scene-from-a-single-image/</link>
+      <pubDate>Fri, 17 May 2019 06:52:00 +0000</pubDate>
+      
+      <guid>https://5ebec.netlify.com/posts/neural-inverse-rendering-of-an-indoor-scene-from-a-single-image/</guid>
+      <description>Neural Inverse Rendering of an Indoor Scene from a Single Image Soumyadip Sengupta, Jinwei Gu, Kihwan Kim, Guilin Liu, David W. Jacobs, Jan Kautz CVPR, 2019 arXiv, SemanticScholar  What it is about 単一画像からの屋内シーンのニューラルインバースレンダリング
+インバースレンダリングとは 画像からシーンの物理的属性
+- 物体形状(表面法線ベクトル) - 反射特性(アルベド) - 光源分布(照明マップ)
+を推定することを目的としている．
+Why it is worthy researching 屋内シーンの単一画像を，Inverse Rendering Network (IRN)を用いて
+- アルベド - 表面法線ベクトル - 照明の環境マップ
+の3つの属性に分解する．
+今までの手法では，主に単一のオブジェクトに対して，またはシーン属性の１つのみを解決するものだった．
+本稿では，屋内シーンの単一画像に対してそれらのシーン属性を同時に解くことができる事ができる．
+また，SUNCG-PBRという名のデータセットを作成している．
+このデータセットは以前のデータセットを大幅に改善したもの
+* 鏡面反射を仮定したシーン * 拡散反射を仮定したシーン * ground truth depth * surface normals * albedo * Phong model parameters * semantic segmentation * glossiness segmentation</description>
+    </item>
+    
+  </channel>
+</rss>

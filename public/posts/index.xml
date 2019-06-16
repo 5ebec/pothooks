@@ -6,10 +6,86 @@
     <description>Recent content in Posts on #a5ebec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 19 May 2019 17:22:12 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Jun 2019 21:37:05 +0000</lastBuildDate>
     
 	<atom:link href="https://5ebec.netlify.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GitHub Pages &#43; Netlify DNS でカスタムドメイン</title>
+      <link>https://5ebec.netlify.com/posts/github-pages-netlify-managed-dns-%E3%81%A7%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/</link>
+      <pubDate>Sun, 09 Jun 2019 21:37:05 +0000</pubDate>
+      
+      <guid>https://5ebec.netlify.com/posts/github-pages-netlify-managed-dns-%E3%81%A7%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/</guid>
+      <description>これの続き
+前回、カスタムネームサーバーを使用してDNSをNetlifyに移したのでGoogle DomainsのDNSからはカスタムリソースレコードの設定はできない
+NetlifyのDomainsタブを開く
+DNS settingsのAdd new recordで
+Record type: ALIAS
+Name: @
+Value: USERNAME.github.io
+として、Saveする
+GitHub Pagesのレポジトリのページから Setting &amp;gt; Options &amp;gt; GitHub Pages &amp;gt; Custom domain にカスタムドメインを書いてSave
+完成</description>
+    </item>
+    
+    <item>
+      <title>Netlify でさくっとカスタムドメイン</title>
+      <link>https://5ebec.netlify.com/posts/netlify%E3%81%A7%E3%81%95%E3%81%8F%E3%81%A3%E3%81%A8%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/</link>
+      <pubDate>Sun, 09 Jun 2019 20:15:54 +0000</pubDate>
+      
+      <guid>https://5ebec.netlify.com/posts/netlify%E3%81%A7%E3%81%95%E3%81%8F%E3%81%A3%E3%81%A8%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/</guid>
+      <description>カスタムドメインの購入 Google Domainsで流行りの.devドメインを購入
+日本語対応してるので簡単
+ Google Domains のサービスは、現在お住まいの国で営利目的または商用で使用する場合にのみご利用いただけます。
+ って書かれてたんだけど、皆んな個人利用で使ってるし、そもそも.devって開発者向けのドメインだから別にいいよね（？）
+ちなみに Kyashで買えた　嬉しい
+Netlifyにカスタムドメインを設定 このページで設定する
+Add custom domain からお好きなカスタムドメインを追加
+画像のようにblog等のサブドメインも可能
+Check DNS configration という警告が出るのでそれをクリックして出てきたメッセージに従う
+(ググってよく出てくるのはカスタムリソースレコードのCNAMEの設定だが、そんなことをしなくてもカスタムネームサーバーを使用すればNetlifyのManaged DNSが勝手に設定してくれる)
+Netlifyに提示されたネームサーバーをGoogle DomainsのDNS &amp;gt; ネームサーバー に追加する
+HTTPS化 自動的に設定される
+Verify DNS configurationを押したらすぐ有効化された
+さくっとできた</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu, Debianにzsh&#43;prezto導入&amp;テーマ変更で気分の上がるシェルライフ</title>
+      <link>https://5ebec.netlify.com/posts/ubuntu-debian%E3%81%ABzsh-prezto%E5%B0%8E%E5%85%A5-%E3%83%86%E3%83%BC%E3%83%9E%E5%A4%89%E6%9B%B4%E3%81%A7%E6%B0%97%E5%88%86%E3%81%AE%E4%B8%8A%E3%81%8C%E3%82%8B%E3%82%B7%E3%82%A7%E3%83%AB%E3%83%A9%E3%82%A4%E3%83%95/</link>
+      <pubDate>Sat, 25 May 2019 20:20:08 +0000</pubDate>
+      
+      <guid>https://5ebec.netlify.com/posts/ubuntu-debian%E3%81%ABzsh-prezto%E5%B0%8E%E5%85%A5-%E3%83%86%E3%83%BC%E3%83%9E%E5%A4%89%E6%9B%B4%E3%81%A7%E6%B0%97%E5%88%86%E3%81%AE%E4%B8%8A%E3%81%8C%E3%82%8B%E3%82%B7%E3%82%A7%E3%83%AB%E3%83%A9%E3%82%A4%E3%83%95/</guid>
+      <description>bashはsudo apt install zshをする場所だと思っている
+&amp;mdash; へいほぅ (@5ebec) 2019年4月8日 
+zshインストール UbuntuやDebianをインストールしたらまずターミナルを開いてこれを脳死で打つ。
+$ sudo apt update $ sudo apt upgrade $ sudo apt install zsh  prezto導入 以下でzshを起動
+$ zsh  設定画面が開く場合がありますが、preztoを導入する場合はこの設定は必要ないのでqで抜ける。 bashはここまで、以下はzsh内で
+git clone --recursive https://github.com/sorin-ionescu/prezto.git &amp;quot;${ZDOTDIR:-$HOME}/.zprezto&amp;quot; chsh -s /usr/bin/zsh  以下を実行
+$ setopt EXTENDED_GLOB for rcfile in &amp;quot;${ZDOTDIR:-$HOME}&amp;quot;/.zprezto/runcoms/^README.md(.N); do ln -s &amp;quot;$rcfile&amp;quot; &amp;quot;${ZDOTDIR:-$HOME}/.${rcfile:t}&amp;quot; done  再起動
+sudo reboot  これでターミナルを開いたときにzshが起動されるはず。
+テーマ変更 このまま使用してもよいが、preztoでは沢山のテーマが利用できるので好きなものに変える。
+ちなみにデフォルトはsorinというテーマ。
+以下ですべてのテーマをプレビューできる。
+~ ❯❯❯ prompt -p  みんな大好きpowerlineもある。 みんなpowerline使ってるけどあれ何がいいの？フォント限られるし無駄にカラフルだし横に長くて邪魔じゃね？</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu で解像度の異なる複数のディスプレイを同時にいい感じに使いたい</title>
+      <link>https://5ebec.netlify.com/posts/ubuntu-%E3%81%A7%E8%A7%A3%E5%83%8F%E5%BA%A6%E3%81%AE%E7%95%B0%E3%81%AA%E3%82%8B%E8%A4%87%E6%95%B0%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4%E3%82%92%E5%90%8C%E6%99%82%E3%81%AB%E3%81%84%E3%81%84%E6%84%9F%E3%81%98%E3%81%AB%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Mon, 20 May 2019 16:56:58 +0900</pubDate>
+      
+      <guid>https://5ebec.netlify.com/posts/ubuntu-%E3%81%A7%E8%A7%A3%E5%83%8F%E5%BA%A6%E3%81%AE%E7%95%B0%E3%81%AA%E3%82%8B%E8%A4%87%E6%95%B0%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4%E3%82%92%E5%90%8C%E6%99%82%E3%81%AB%E3%81%84%E3%81%84%E6%84%9F%E3%81%98%E3%81%AB%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95/</guid>
+      <description>解像度とサイズの違う２つのディスプレイをどうにかしていい感じに使いたい
+環境 OS: Ubuntu 18.04 LTS
+display:
+ Dell 24inch FullHD 1920x1200 (16:10)
+ BenQ 27inch WQHD 2560x1440 (16:9)
+  XRandR 「エックス・アール・アンド・アール」と読むらしい。 X Window Systemを再起動せずに解像度の変更・画面の回転・表示モニタの切り替え・マルチモニタの設定を行うライブラリとコマンド。
+&amp;gt; xrandr  でディスプレイの情報を得られる。
+Screen 0: minimum 8 x 8, current 4480 x 1440, maximum 32767 x 32767 DVI-D-0 connected 1920x1200+0+0 (normal left inverted right x axis y axis) 518mm x 324mm 1920x1200 59.95*+ 1920x1080 60.00 1680x1050 59.95 1600x1200 60.00 1280x1024 60.02 1280x960 60.00 1024x768 60.</description>
+    </item>
     
     <item>
       <title>Windows 10 のための Terminal</title>
@@ -24,6 +100,26 @@ pros  GPU-acceleratedで非常に高速  cons  日本語入力に難あり(入�
 pros  WindowsのFluent Desginに合っていて良い タブ機能あり  cons  入力切り替えできない  4. Terminus https://github.com/Eugeny/terminus
 pros  タブ機能あり 日本語対応 リガチャ対応 デザイン良い  cons  起動が遅い 動作遅い、vimのカーソル移動がカクつく タブを移動すると文字が見えなくなる（再度入力すると見えるようにはなる）  5. Hyper https://github.com/zeit/hyper
 pros  デザインよい プラグインでカスタマイズできる  cons  electron製なのでそれなりに遅い  </description>
+    </item>
+    
+    <item>
+      <title>[論文読み] Neural Inverse Rendering of an Indoor Scene From a Single Image</title>
+      <link>https://5ebec.netlify.com/posts/neural-inverse-rendering-of-an-indoor-scene-from-a-single-image/</link>
+      <pubDate>Fri, 17 May 2019 06:52:00 +0000</pubDate>
+      
+      <guid>https://5ebec.netlify.com/posts/neural-inverse-rendering-of-an-indoor-scene-from-a-single-image/</guid>
+      <description>Neural Inverse Rendering of an Indoor Scene from a Single Image Soumyadip Sengupta, Jinwei Gu, Kihwan Kim, Guilin Liu, David W. Jacobs, Jan Kautz CVPR, 2019 arXiv, SemanticScholar  What it is about 単一画像からの屋内シーンのニューラルインバースレンダリング
+インバースレンダリングとは 画像からシーンの物理的属性
+- 物体形状(表面法線ベクトル) - 反射特性(アルベド) - 光源分布(照明マップ)
+を推定することを目的としている．
+Why it is worthy researching 屋内シーンの単一画像を，Inverse Rendering Network (IRN)を用いて
+- アルベド - 表面法線ベクトル - 照明の環境マップ
+の3つの属性に分解する．
+今までの手法では，主に単一のオブジェクトに対して，またはシーン属性の１つのみを解決するものだった．
+本稿では，屋内シーンの単一画像に対してそれらのシーン属性を同時に解くことができる事ができる．
+また，SUNCG-PBRという名のデータセットを作成している．
+このデータセットは以前のデータセットを大幅に改善したもの
+* 鏡面反射を仮定したシーン * 拡散反射を仮定したシーン * ground truth depth * surface normals * albedo * Phong model parameters * semantic segmentation * glossiness segmentation</description>
     </item>
     
   </channel>

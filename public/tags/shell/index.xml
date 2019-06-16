@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shell on #a5ebec</title>
+    <link>https://5ebec.netlify.com/tags/shell/</link>
+    <description>Recent content in shell on #a5ebec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 25 May 2019 20:20:08 +0000</lastBuildDate>
+    
+	<atom:link href="https://5ebec.netlify.com/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ubuntu, Debianにzsh&#43;prezto導入&amp;テーマ変更で気分の上がるシェルライフ</title>
+      <link>https://5ebec.netlify.com/posts/ubuntu-debian%E3%81%ABzsh-prezto%E5%B0%8E%E5%85%A5-%E3%83%86%E3%83%BC%E3%83%9E%E5%A4%89%E6%9B%B4%E3%81%A7%E6%B0%97%E5%88%86%E3%81%AE%E4%B8%8A%E3%81%8C%E3%82%8B%E3%82%B7%E3%82%A7%E3%83%AB%E3%83%A9%E3%82%A4%E3%83%95/</link>
+      <pubDate>Sat, 25 May 2019 20:20:08 +0000</pubDate>
+      
+      <guid>https://5ebec.netlify.com/posts/ubuntu-debian%E3%81%ABzsh-prezto%E5%B0%8E%E5%85%A5-%E3%83%86%E3%83%BC%E3%83%9E%E5%A4%89%E6%9B%B4%E3%81%A7%E6%B0%97%E5%88%86%E3%81%AE%E4%B8%8A%E3%81%8C%E3%82%8B%E3%82%B7%E3%82%A7%E3%83%AB%E3%83%A9%E3%82%A4%E3%83%95/</guid>
+      <description>bashはsudo apt install zshをする場所だと思っている
+&amp;mdash; へいほぅ (@5ebec) 2019年4月8日 
+zshインストール UbuntuやDebianをインストールしたらまずターミナルを開いてこれを脳死で打つ。
+$ sudo apt update $ sudo apt upgrade $ sudo apt install zsh  prezto導入 以下でzshを起動
+$ zsh  設定画面が開く場合がありますが、preztoを導入する場合はこの設定は必要ないのでqで抜ける。 bashはここまで、以下はzsh内で
+git clone --recursive https://github.com/sorin-ionescu/prezto.git &amp;quot;${ZDOTDIR:-$HOME}/.zprezto&amp;quot; chsh -s /usr/bin/zsh  以下を実行
+$ setopt EXTENDED_GLOB for rcfile in &amp;quot;${ZDOTDIR:-$HOME}&amp;quot;/.zprezto/runcoms/^README.md(.N); do ln -s &amp;quot;$rcfile&amp;quot; &amp;quot;${ZDOTDIR:-$HOME}/.${rcfile:t}&amp;quot; done  再起動
+sudo reboot  これでターミナルを開いたときにzshが起動されるはず。
+テーマ変更 このまま使用してもよいが、preztoでは沢山のテーマが利用できるので好きなものに変える。
+ちなみにデフォルトはsorinというテーマ。
+以下ですべてのテーマをプレビューできる。
+~ ❯❯❯ prompt -p  みんな大好きpowerlineもある。 みんなpowerline使ってるけどあれ何がいいの？フォント限られるし無駄にカラフルだし横に長くて邪魔じゃね？</description>
+    </item>
+    
+    <item>
+      <title>Windows 10 のための Terminal</title>
+      <link>https://5ebec.netlify.com/posts/windows-10-%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-terminal/</link>
+      <pubDate>Sun, 19 May 2019 17:22:12 +0000</pubDate>
+      
+      <guid>https://5ebec.netlify.com/posts/windows-10-%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-terminal/</guid>
+      <description> 自分が使ってきたTerminalを順にまとめていく。
+1. Windows標準コンソール 論外。
+2. Alacritty https://github.com/jwilm/alacritty
+pros  GPU-acceleratedで非常に高速  cons  日本語入力に難あり(入力窓が別のところに出てくるアレ) タブ機能なし 最低限のデザイン  3. Fluent Terminal https://github.com/felixse/FluentTerminal
+pros  WindowsのFluent Desginに合っていて良い タブ機能あり  cons  入力切り替えできない  4. Terminus https://github.com/Eugeny/terminus
+pros  タブ機能あり 日本語対応 リガチャ対応 デザイン良い  cons  起動が遅い 動作遅い、vimのカーソル移動がカクつく タブを移動すると文字が見えなくなる（再度入力すると見えるようにはなる）  5. Hyper https://github.com/zeit/hyper
+pros  デザインよい プラグインでカスタマイズできる  cons  electron製なのでそれなりに遅い  </description>
+    </item>
+    
+  </channel>
+</rss>
