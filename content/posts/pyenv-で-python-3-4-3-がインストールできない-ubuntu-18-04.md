@@ -41,11 +41,11 @@ Ignoring ensurepip failure: pip 6.0.8 requires SSL/TLS
 [ERROR: The Python ssl extension was not compiled. Missing the OpenSSL lib?](https://github.com/pyenv/pyenv/wiki/common-build-problems#error-the-python-ssl-extension-was-not-compiled-missing-the-openssl-lib)
 
 > If you're having trouble to get it to compile older python versions(<3.5) even after installing the recommended packages on ubuntu, changing the openssl lib might help:
-> ```shell
+```shell
 sudo apt-get remove libssl-dev
 sudo apt-get update
 sudo apt-get install libssl1.0-dev
-> ```
+```
 
 これっぽい．
 
