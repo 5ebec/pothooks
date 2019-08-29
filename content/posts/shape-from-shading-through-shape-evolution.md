@@ -25,27 +25,26 @@ markup: mmark
 # Key idea
 
 #### Shape Representation
-初期形状は球，円柱，立方体，円錐の４つの形状で構成されており，  
-それらは以下の函数で表すことができる．
-![Screenshot from 2019-08-30 06-38-36](https://user-images.githubusercontent.com/38322494/63978227-da9a0700-caf0-11e9-91b4-7af7e8d0c61d.png)
-Computation graph で表現すると以下のようになる．
+初期形状は球，円柱，立方体，円錐の４つの形状で構成されており，それらは以下の函数で表すことができる．  
+![Screenshot from 2019-08-30 06-38-36](https://user-images.githubusercontent.com/38322494/63978227-da9a0700-caf0-11e9-91b4-7af7e8d0c61d.png)  
+Computation graph で表現すると以下のようになる．  
 ![Screenshot from 2019-08-30 00-57-03](https://user-images.githubusercontent.com/38322494/63973257-5db56000-cae5-11e9-839a-020fa8a9a7b4.png)
 
-形状変換(平行移動，回転，拡大縮小)
+形状変換(平行移動，回転，拡大縮小)  
 ![Screenshot from 2019-08-30 00-57-16](https://user-images.githubusercontent.com/38322494/63973265-60b05080-cae5-11e9-941b-1d9bf10b0e90.png)
 
-形状結合
+形状結合  
 ![Screenshot from 2019-08-30 00-57-23](https://user-images.githubusercontent.com/38322494/63973273-627a1400-cae5-11e9-9bad-53d556c466d9.png)
 
 #### 進化アルゴリズム
 形状変換と形状結合を繰り返すことでより複雑な形状へ進化させる．  
 Computation graph が大きくなりすぎないように（制約がなければ平均計算コストは指数関数的に増加する），計算回数が線形になるようにグラフの成長を制限する．また，形状結合前後で変化がほぼ無いケースを検出し排除する等，進化が遅くならないようにする．
 
-バリデーションを実画像で行うため，実画像が持つ形状とかけ離れた形状を持つトレーニングデータは捨てられる．
+バリデーションを実画像で行うため，実画像が持つ形状とかけ離れた形状を持つトレーニングデータは捨てられる．  
 ![Screenshot from 2019-08-30 07-30-14](https://user-images.githubusercontent.com/38322494/63980943-0ff62300-caf8-11e9-8830-8dd2a6c71bf9.png)
 
 
-shape-from-shading ネットワークは [Stacked Hourglass Network](https://arxiv.org/pdf/1603.06937.pdf) を使用している．
+shape-from-shading ネットワークは [Stacked Hourglass Network](https://arxiv.org/pdf/1603.06937.pdf) を使用している．  
 ![Screenshot from 2019-08-30 07-20-29](https://user-images.githubusercontent.com/38322494/63980458-af1a1b00-caf6-11e9-9f67-906a8270f5e7.png)
 
 # How it is validated (experimental setup and results)
