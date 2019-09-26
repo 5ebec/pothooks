@@ -76,5 +76,13 @@ markup: mmark
    - [x] 視差効果を減らす
    - カーソルのサイズ: 通常よりひとつ右
 
-# 
+# Homebrew
+[Homebrew](https://brew.sh/) をインストールする  
+```shell
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
+#### google-backup-and-sync (Mac 版 Google Drive) をインストール
+```shell
+brew cask install google-backup-and-sync
+```
