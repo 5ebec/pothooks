@@ -10,6 +10,72 @@ description: |-
   2019/09/26
 markup: mmark
 ---
+# バックアップ
+
+#### mackup の cfg
+`.mackup.cfg`  
+```
+[applications_to_sync]
+atom
+bash
+blender
+curl
+docker
+git
+goland
+heroku
+ipython
+iterm2
+julia
+jupyter
+mackup
+macosx
+magnet
+npm
+pip
+prezto
+pycharm
+skim
+spark
+spotify
+ssh
+terminal
+tmux
+vim
+wireshark
+xcode
+zsh
+nvim
+brewfile
+```
+
+`.mackup/nvim.cfg`
+```
+[application]
+name = nvim
+
+[configuration_files]
+.config/nvim
+.nvimrc
+.nvim
+```
+
+`.mackup/brewfile.cfg`
+```
+[application]
+name = Brewfile
+
+[configuration_files]
+.Brewfile
+Brewfile
+```
+#### シェル実行
+```shell
+brew bundle dump --global
+mackup backup
+```
+
+
 # 起動直後
 流れに沿ってデスクトップが表示されるところまで行く
 
@@ -82,7 +148,7 @@ markup: mmark
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-#### DropBox, mackup をインストール
+#### Dropbox, mackup をインストール
 ```shell
 brew install mackup
 brew cask install dropbox
