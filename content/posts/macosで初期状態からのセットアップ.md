@@ -82,7 +82,8 @@ markup: mmark
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-#### google-backup-and-sync (Mac 版 Google Drive) をインストール
+#### DropBox, mackup をインストール
 ```shell
-brew cask install google-backup-and-sync
+brew install mackup
+brew cask install dropbox
 ```
