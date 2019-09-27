@@ -69,12 +69,12 @@ name = Brewfile
 .Brewfile
 Brewfile
 ```
+
 #### シェル実行
 ```shell
-brew bundle dump --global
-mackup backup
+$ brew bundle dump --global
+$ mackup backup
 ```
-
 
 # 起動直後
 流れに沿ってデスクトップが表示されるところまで行く
@@ -145,11 +145,25 @@ mackup backup
 # Homebrew
 [Homebrew](https://brew.sh/) をインストールする  
 ```shell
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 #### Dropbox, mackup をインストール
 ```shell
-brew install mackup
-brew cask install dropbox
+$ brew install mackup
+$ brew cask install dropbox
 ```
+
+#### Dropbox
+起動してログイン
+
+#### mackup
+```shell
+$ mackup restore
+```
+
+#### Homebrew Package のインストール
+```shell
+$ brew bundle --global
+```
+
