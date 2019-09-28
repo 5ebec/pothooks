@@ -201,8 +201,7 @@ $ brew bundle --global
  - Complex modifications  
 Add rule > Import more rules from the Internet から
 For Japanese （日本語環境向けの設定） (rev 4)
-を Import
+を Import し、以下を Enable
    - コマンドキーを単体で押したときに、英数・かなキーを送信する。
    - Ctrl + [ を押したときに、esc キーと英数キーを送信する。
    - esc キーを押したときに、英数キーも送信する。  
-をEnable
