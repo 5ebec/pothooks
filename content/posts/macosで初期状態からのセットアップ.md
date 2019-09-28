@@ -7,6 +7,7 @@ tags:
 description: |-
   新しいMacを買ったときとか，macOSをファクトリーリセットしたい衝動に駆られたときに
 
+  2018/10/08
   2019/09/26
 markup: mmark
 ---
