@@ -7,13 +7,16 @@ tags:
 description: |-
   新しいMacを買ったときとか，macOSをファクトリーリセットしたい衝動に駆られたときに
 
+  2018/10/08
   2019/09/26
 markup: mmark
 ---
 # バックアップ
 
 #### mackup の cfg
+
 `.mackup.cfg`  
+
 ```
 [applications_to_sync]
 atom
@@ -50,6 +53,7 @@ brewfile
 ```
 
 `.mackup/nvim.cfg`
+
 ```
 [application]
 name = nvim
@@ -61,6 +65,7 @@ name = nvim
 ```
 
 `.mackup/brewfile.cfg`
+
 ```
 [application]
 name = Brewfile
@@ -71,99 +76,142 @@ Brewfile
 ```
 
 #### シェル実行
+
 ```shell
 $ brew bundle dump --global
 $ mackup backup
 ```
 
 # 起動直後
+
 流れに沿ってデスクトップが表示されるところまで行く
 
 # システム環境設定
+
 #### 一般
- - スクロールバーのクリック時: クリックされた場所にジャンプ  
- - [x] 書類をとじるときに変更内容を保持するかどうかを確認  
+
+* スクロールバーのクリック時: クリックされた場所にジャンプ  
+* 書類をとじるときに変更内容を保持するかどうかを確認  
 
 #### Dock
- - [x] ウィンドウをアプリケーションアイコンにしまう
+
+* ウィンドウをアプリケーションアイコンにしまう
 
 #### セキュリティとプライバシー
- - 一般
-   - [x] Apple Watch でこの Mac のロックを解除できるようにする
 
- - ファイアウォール
-   - ファイアウォールをオンにする
+* 一般
+  * Apple Watch でこの Mac のロックを解除できるようにする
+* ファイアウォール
+  * ファイアウォールをオンにする
 
 #### 内蔵 Retina ディスプレイ
- - ディスプレイ
-   - 解像度: 変更 > スペースを拡大
-   - [ ] 輝度を自動調整
+
+* ディスプレイ
+  * 解像度: 変更 > スペースを拡大
+  * 輝度を自動調整
 
 #### 省エネルギー
- - バッテリー
-   - ディスプレイをオフにするまでの時間: 5分
 
- - 電源アダプタ
-   - [x] 電源アダプタに接続中に Power Nap をオンにする
+* バッテリー
+  * ディスプレイをオフにするまでの時間: 5分
+* 電源アダプタ
+  * 電源アダプタに接続中に Power Nap をオンにする
 
 #### キーボード
- - キーボード
-   - キーのリピート: 最速
-   - リピート入力認識までの時間: 最短
-   - [ ] 環境光が暗い場合にキーボードの輝度を調整
-   - 修飾キー… > Caps Lock キー: Control
- - ショートカット
-   - Launchpad を表示: Control+Shift+L
-   - [x] デスクトップ [Num] へ切り替え
+
+* キーボード
+  * キーのリピート: 最速
+  * リピート入力認識までの時間: 最短
+  * 環境光が暗い場合にキーボードの輝度を調整
+  * 修飾キー… > Caps Lock キー: Control
+* ショートカット
+  * Launchpad を表示: Control+Shift+L
+  * デスクトップ \[Num] へ切り替え
 
 #### トラックパッド
- - クリック: 弱い
- - 起動の速さ: 中心から1つ右
+
+* クリック: 弱い
+* 起動の速さ: 中心から1つ右
 
 #### サウンド
- - [x] メニューバーに音量を表示
+
+* メニューバーに音量を表示
 
 #### 共有
- - コンピュータ名: (変更する)
+
+* コンピュータ名: (変更する)
+
+#### ユーザーとグループ
+
+ - 左下の鍵をクリック > 自分のアイコンを右クリック > 詳細オプション… 
+   - ログインシェル: `/bin/zsh`
 
 #### Siri
- - [ ] メニューバーに Siri を表示
+
+* メニューバーに Siri を表示
 
 #### 日付と時刻
- - [x] 秒を表示
- - [x] 日付を表示
+
+* 秒を表示
+* 日付を表示
 
 #### Time Machine
- - [x] バックアップを自動生成
- - [x] Time Machine をメニューバーに表示
+
+* バックアップを自動生成
+* Time Machine をメニューバーに表示
 
 #### アクセスビリティ
- - ディスプレイ
-   - [x] 視差効果を減らす
-   - カーソルのサイズ: 通常よりひとつ右
+
+* ディスプレイ
+  * 視差効果を減らす
+
+
 
 # Homebrew
+
 [Homebrew](https://brew.sh/) をインストールする  
+
 ```shell
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 #### Dropbox, mackup をインストール
+
 ```shell
 $ brew install mackup
 $ brew cask install dropbox
 ```
 
 #### Dropbox
+
 起動してログイン
 
 #### mackup
+
 ```shell
 $ mackup restore
 ```
 
 #### Homebrew Package のインストール
+
 ```shell
 $ brew bundle --global
 ```
+
+# Karabiner-elements
+ - Simple modifications
+    - From key: caps_lock, To key: right_control
+ - Complex modifications  
+Add rule > Import more rules from the Internet から
+For Japanese （日本語環境向けの設定） (rev 4)
+を Import し、以下を Enable
+   - コマンドキーを単体で押したときに、英数・かなキーを送信する。
+   - Ctrl + [ を押したときに、esc キーと英数キーを送信する。
+   - esc キーを押したときに、英数キーも送信する。  
+
+
+# 入力ソース
+Google 日本語入力に変更
+ - 環境設定
+   - 句読点: ，．
 
