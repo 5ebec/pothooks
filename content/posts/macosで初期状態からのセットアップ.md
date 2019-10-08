@@ -9,48 +9,18 @@ description: |-
 
   2018/10/08  
   2019/09/26
+  2019/10/08
 markup: mmark
 ---
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="ja" dir="ltr">掃除出来ない人間はコマンド叩いた時の多少のエラーとかは動けば放置してしまうから、いっそ定期的にリストアするぞくらいの気持ちのほうが良い</p>&mdash; へいほぅ (@5ebec) <a href="https://twitter.com/5ebec/status/1049345182955528197?ref_src=twsrc%5Etfw">October 8, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # バックアップ
 
+#### BetterTouchTool
+プリセット > ハイライトしたものをエクスポート
+出力されたファイルを Dropbox に保存
+
 #### mackup の cfg
-`.mackup.cfg`  
-```
-[applications_to_sync]
-atom
-bash
-blender
-curl
-docker
-git
-goland
-heroku
-ipython
-iterm2
-julia
-jupyter
-mackup
-macosx
-magnet
-npm
-pip
-prezto
-pycharm
-skim
-spark
-spotify
-ssh
-terminal
-tmux
-vim
-wireshark
-xcode
-zsh
-nvim
-brewfile
-```
 
 `.mackup/nvim.cfg`
 ```
