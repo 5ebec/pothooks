@@ -4,6 +4,7 @@ date: 2019-08-29T22:50:01.931Z
 cover: /img/uploads/screenshot-from-2019-08-30-00-56-44.png
 tags:
   - paper
+  - cv
 description: '論文読み : 形状進化による 3D データを用いた Shape-from-Shading'
 markup: mmark
 ---

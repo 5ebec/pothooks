@@ -4,6 +4,7 @@ date: 2019-05-17T06:52:00.000Z
 cover: ''
 tags:
   - paper
+  - cv
   - inverserendering
 description: 論文読み：単一画像からの屋内シーンのニューラルインバースレンダリング
 markup: "mmark"

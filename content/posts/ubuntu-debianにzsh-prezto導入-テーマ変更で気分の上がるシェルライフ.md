@@ -3,7 +3,7 @@ title: 'Ubuntu, Debianにzsh+prezto導入&テーマ変更で気分の上がる�
 date: 2019-05-25T20:20:08.659Z
 tags:
   - ubuntu
-  - Debian
+  - debian
   - zsh
   - prezto
   - shell
