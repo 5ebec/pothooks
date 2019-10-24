@@ -6,6 +6,4 @@ tags:
 description: テスト記事
 markup: mmark
 ---
-
-てすてす
 {{< slides juliagl >}}
