@@ -6,6 +6,6 @@ tags:
 description: テスト記事
 markup: mmark
 ---
-
 てすてす
-{{< slides juliagl >}}
+
+<iframe id="slides" width=600 height=500 src="https://slides.5ebec.dev/juliagl"></iframe>
