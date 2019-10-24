@@ -1,22 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ubuntu on #a5ebec</title>
-    <link>https://5ebec.netlify.com/tags/ubuntu/</link>
+    <link>https://blog.5ebec.dev/tags/ubuntu/</link>
     <description>Recent content in ubuntu on #a5ebec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 25 May 2019 20:20:08 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Jun 2019 23:25:12 +0000</lastBuildDate>
     
-	<atom:link href="https://5ebec.netlify.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.5ebec.dev/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>pyenv で Python 3.4.3 がインストールできない (Ubuntu 18.04)</title>
+      <link>https://blog.5ebec.dev/posts/pyenv-%E3%81%A7-python-3-4-3-%E3%81%8C%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84-ubuntu-18-04/</link>
+      <pubDate>Fri, 28 Jun 2019 23:25:12 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/posts/pyenv-%E3%81%A7-python-3-4-3-%E3%81%8C%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84-ubuntu-18-04/</guid>
+      <description>pyenvでPython 3.4.3をインストールしようとしたらこんなエラーが出た．
+Downloading Python-3.4.3.tar.xz... -&amp;gt; https://www.python.org/ftp/python/3.4.3/Python-3.4.3.tar.xz Installing Python-3.4.3... ERROR: The Python ssl extension was not compiled. Missing the OpenSSL lib? Please consult to the Wiki page to fix the problem. https://github.com/pyenv/pyenv/wiki/Common-build-problems BUILD FAILED (Ubuntu 18.04 using python-build 1.2.12-2-geb68ec94) Inspect or clean up the working tree at /tmp/python-build.20190629080825.2203 Results logged to /tmp/python-build.20190629080825.2203.log Last 10 log lines: (cd /home/5ebec/.anyenv/envs/pyenv/versions/3.4.3/share/man/man1; ln -s python3.4.1 python3.1) if test &amp;quot;xupgrade&amp;quot; != &amp;quot;xno&amp;quot; ; then \ case upgrade in \ upgrade) ensurepip=&amp;quot;--upgrade&amp;quot; ;; \ install|*) ensurepip=&amp;quot;&amp;quot; ;; \ esac; \ .</description>
+    </item>
+    
+    <item>
       <title>Ubuntu, Debianにzsh&#43;prezto導入&amp;テーマ変更で気分の上がるシェルライフ</title>
-      <link>https://5ebec.netlify.com/posts/ubuntu-debian%E3%81%ABzsh-prezto%E5%B0%8E%E5%85%A5-%E3%83%86%E3%83%BC%E3%83%9E%E5%A4%89%E6%9B%B4%E3%81%A7%E6%B0%97%E5%88%86%E3%81%AE%E4%B8%8A%E3%81%8C%E3%82%8B%E3%82%B7%E3%82%A7%E3%83%AB%E3%83%A9%E3%82%A4%E3%83%95/</link>
+      <link>https://blog.5ebec.dev/posts/ubuntu-debian%E3%81%ABzsh-prezto%E5%B0%8E%E5%85%A5-%E3%83%86%E3%83%BC%E3%83%9E%E5%A4%89%E6%9B%B4%E3%81%A7%E6%B0%97%E5%88%86%E3%81%AE%E4%B8%8A%E3%81%8C%E3%82%8B%E3%82%B7%E3%82%A7%E3%83%AB%E3%83%A9%E3%82%A4%E3%83%95/</link>
       <pubDate>Sat, 25 May 2019 20:20:08 +0000</pubDate>
       
-      <guid>https://5ebec.netlify.com/posts/ubuntu-debian%E3%81%ABzsh-prezto%E5%B0%8E%E5%85%A5-%E3%83%86%E3%83%BC%E3%83%9E%E5%A4%89%E6%9B%B4%E3%81%A7%E6%B0%97%E5%88%86%E3%81%AE%E4%B8%8A%E3%81%8C%E3%82%8B%E3%82%B7%E3%82%A7%E3%83%AB%E3%83%A9%E3%82%A4%E3%83%95/</guid>
+      <guid>https://blog.5ebec.dev/posts/ubuntu-debian%E3%81%ABzsh-prezto%E5%B0%8E%E5%85%A5-%E3%83%86%E3%83%BC%E3%83%9E%E5%A4%89%E6%9B%B4%E3%81%A7%E6%B0%97%E5%88%86%E3%81%AE%E4%B8%8A%E3%81%8C%E3%82%8B%E3%82%B7%E3%82%A7%E3%83%AB%E3%83%A9%E3%82%A4%E3%83%95/</guid>
       <description>bashはsudo apt install zshをする場所だと思っている
 &amp;mdash; へいほぅ (@5ebec) 2019年4月8日 
 zshインストール UbuntuやDebianをインストールしたらまずターミナルを開いてこれを脳死で打つ。
@@ -33,10 +43,10 @@ sudo reboot  これでターミナルを開いたときにzshが起動される�
     
     <item>
       <title>Ubuntu で解像度の異なる複数のディスプレイを同時にいい感じに使いたい</title>
-      <link>https://5ebec.netlify.com/posts/ubuntu-%E3%81%A7%E8%A7%A3%E5%83%8F%E5%BA%A6%E3%81%AE%E7%95%B0%E3%81%AA%E3%82%8B%E8%A4%87%E6%95%B0%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4%E3%82%92%E5%90%8C%E6%99%82%E3%81%AB%E3%81%84%E3%81%84%E6%84%9F%E3%81%98%E3%81%AB%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95/</link>
+      <link>https://blog.5ebec.dev/posts/ubuntu-%E3%81%A7%E8%A7%A3%E5%83%8F%E5%BA%A6%E3%81%AE%E7%95%B0%E3%81%AA%E3%82%8B%E8%A4%87%E6%95%B0%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4%E3%82%92%E5%90%8C%E6%99%82%E3%81%AB%E3%81%84%E3%81%84%E6%84%9F%E3%81%98%E3%81%AB%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95/</link>
       <pubDate>Mon, 20 May 2019 16:56:58 +0900</pubDate>
       
-      <guid>https://5ebec.netlify.com/posts/ubuntu-%E3%81%A7%E8%A7%A3%E5%83%8F%E5%BA%A6%E3%81%AE%E7%95%B0%E3%81%AA%E3%82%8B%E8%A4%87%E6%95%B0%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4%E3%82%92%E5%90%8C%E6%99%82%E3%81%AB%E3%81%84%E3%81%84%E6%84%9F%E3%81%98%E3%81%AB%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://blog.5ebec.dev/posts/ubuntu-%E3%81%A7%E8%A7%A3%E5%83%8F%E5%BA%A6%E3%81%AE%E7%95%B0%E3%81%AA%E3%82%8B%E8%A4%87%E6%95%B0%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4%E3%82%92%E5%90%8C%E6%99%82%E3%81%AB%E3%81%84%E3%81%84%E6%84%9F%E3%81%98%E3%81%AB%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95/</guid>
       <description>解像度とサイズの違う２つのディスプレイをどうにかしていい感じに使いたい
 環境 OS: Ubuntu 18.04 LTS
 display:

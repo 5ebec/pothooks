@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssh on #a5ebec</title>
+    <link>https://blog.5ebec.dev/tags/ssh/</link>
+    <description>Recent content in ssh on #a5ebec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 08 Oct 2019 18:05:23 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.5ebec.dev/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ssh keys</title>
+      <link>https://blog.5ebec.dev/posts/ssh-keys/</link>
+      <pubDate>Tue, 08 Oct 2019 18:05:23 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/posts/ssh-keys/</guid>
+      <description>クライアント側 ~/.ssh/ で
+ssh-keygen -t rsa -b 4096 -N [pass] -f [file_name] -C [comment(file_nameなど)]  サーバー側 authorized_keys に [file_name].pub をコピペ</description>
+    </item>
+    
+  </channel>
+</rss>

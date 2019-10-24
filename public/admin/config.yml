@@ -18,4 +18,5 @@ collections:
       - {label: "Featured Image", name: "cover", widget: "image", required: false}
       - {label: "Tags", name: "tags", widget: "list", default: ["julia", "paper"]}
       - {label: "Description", name: "description", widget: "text"}
+      - {label: "Markup", name: "markup", widget: "hidden", default: "mmark"}
       - {label: "Body", name: "body", widget: "markdown"}

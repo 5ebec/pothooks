@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>windows on #a5ebec</title>
-    <link>https://5ebec.netlify.com/tags/windows/</link>
+    <link>https://blog.5ebec.dev/tags/windows/</link>
     <description>Recent content in windows on #a5ebec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 19 May 2019 17:22:12 +0000</lastBuildDate>
     
-	<atom:link href="https://5ebec.netlify.com/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.5ebec.dev/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Windows 10 のための Terminal</title>
-      <link>https://5ebec.netlify.com/posts/windows-10-%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-terminal/</link>
+      <link>https://blog.5ebec.dev/posts/windows-10-%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-terminal/</link>
       <pubDate>Sun, 19 May 2019 17:22:12 +0000</pubDate>
       
-      <guid>https://5ebec.netlify.com/posts/windows-10-%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-terminal/</guid>
+      <guid>https://blog.5ebec.dev/posts/windows-10-%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-terminal/</guid>
       <description> 自分が使ってきたTerminalを順にまとめていく。
 1. Windows標準コンソール 論外。
 2. Alacritty https://github.com/jwilm/alacritty

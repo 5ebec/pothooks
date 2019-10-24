@@ -1,22 +1,159 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>#a5ebec</title>
-    <link>https://5ebec.netlify.com/</link>
+    <link>https://blog.5ebec.dev/</link>
     <description>Recent content on #a5ebec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 09 Jun 2019 21:37:05 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Oct 2019 08:04:31 +0000</lastBuildDate>
     
-	<atom:link href="https://5ebec.netlify.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.5ebec.dev/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>[論文読み] How Do Humans Sketch Objects? </title>
+      <link>https://blog.5ebec.dev/posts/%E8%AB%96%E6%96%87%E8%AA%AD%E3%81%BF-how-do-humans-sketch-objects/</link>
+      <pubDate>Thu, 24 Oct 2019 08:04:31 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/posts/%E8%AB%96%E6%96%87%E8%AA%AD%E3%81%BF-how-do-humans-sketch-objects/</guid>
+      <description>How Do Humans Sketch Objects? Mathias Eitz, James Hays, Marc Alexa SIGGRAPH, 2012 PDF Website video
+  What it is about 人間のスケッチのクラシフィケーション
+※ スケッチ = 熟練者が描いたものではない抽象的な絵(ピクトグラフ)
+Why it is worthy researching  人間が物体をどのようにスケッチし、そのようなスケッチを人間とコンピューターがどれだけうまく認識できるかについての正式な研究はこれまでなかった．人間のスケッチに対する最初の大規模な調査．
+ Amazon Mechanical Turk というクラウドソーシングサービスを利用してデータセットを生成している． 人間の認識精度も Amazon Mechanical Turk を用いて得ている． 学習モデルとしてkNN法，SVMを使用  Key idea データセット 
+ 250のカテゴリ:
+日常生活で見かける，形状だけで認識可能なオブジェクトを網羅している
+ 20,000個のスケッチ:
+スケッチされたストロークの空間的パラメータと時間的順序を保存する
+(ただし，この研究では時間的順序は使用されていない)
+1カテゴリ毎に80個，合計20,000個のスケッチ
+  How it is validated (experimental setup and results)  56％の精度で未知のスケッチを識別することができている</description>
+    </item>
+    
+    <item>
+      <title>ssh keys</title>
+      <link>https://blog.5ebec.dev/posts/ssh-keys/</link>
+      <pubDate>Tue, 08 Oct 2019 18:05:23 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/posts/ssh-keys/</guid>
+      <description>クライアント側 ~/.ssh/ で
+ssh-keygen -t rsa -b 4096 -N [pass] -f [file_name] -C [comment(file_nameなど)]  サーバー側 authorized_keys に [file_name].pub をコピペ</description>
+    </item>
+    
+    <item>
+      <title>macOSで初期状態からのセットアップ</title>
+      <link>https://blog.5ebec.dev/posts/macos%E3%81%A7%E5%88%9D%E6%9C%9F%E7%8A%B6%E6%85%8B%E3%81%8B%E3%82%89%E3%81%AE%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97/</link>
+      <pubDate>Thu, 26 Sep 2019 14:50:50 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/posts/macos%E3%81%A7%E5%88%9D%E6%9C%9F%E7%8A%B6%E6%85%8B%E3%81%8B%E3%82%89%E3%81%AE%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97/</guid>
+      <description>掃除出来ない人間はコマンド叩いた時の多少のエラーとかは動けば放置してしまうから、いっそ定期的にリストアするぞくらいの気持ちのほうが良い
+&amp;mdash; へいほぅ (@5ebec) October 8, 2018 
+バックアップ BetterTouchTool β版だが， 設定 &amp;gt; 同期 で
+ 同期を有効にする  mackup の cfg .mackup/nvim.cfg
+[application] name = nvim [configuration_files] .config/nvim .nvimrc .nvim  .mackup/brewfile.cfg
+[application] name = Brewfile [configuration_files] .Brewfile Brewfile  シェル実行 $ brew bundle dump --global $ mackup backup  起動直後 流れに沿ってデスクトップが表示されるところまで行く
+システム環境設定 一般  スクロールバーのクリック時: クリックされた場所にジャンプ
+ 書類をとじるときに変更内容を保持するかどうかを確認
+  Dock  ウィンドウをアプリケーションアイコンにしまう  セキュリティとプライバシー  一般  Apple Watch でこの Mac のロックを解除できるようにする  ファイアウォール  ファイアウォールをオンにする   内蔵 Retina ディスプレイ  ディスプレイ  解像度: 変更 &amp;gt; スペースを拡大 輝度を自動調整   省エネルギー  バッテリー  ディスプレイをオフにするまでの時間: 5分  電源アダプタ  電源アダプタに接続中に Power Nap をオンにする   キーボード  キーボード  キーのリピート: 最速 リピート入力認識までの時間: 最短 環境光が暗い場合にキーボードの輝度を調整 修飾キー… &amp;gt; Caps Lock キー: Control  ショートカット  Launchpad を表示: Control+Shift+L デスクトップ [Num] へ切り替え</description>
+    </item>
+    
+    <item>
+      <title>[論文読み] Shape from Shading through Shape Evolution</title>
+      <link>https://blog.5ebec.dev/posts/shape-from-shading-through-shape-evolution/</link>
+      <pubDate>Thu, 29 Aug 2019 22:50:01 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/posts/shape-from-shading-through-shape-evolution/</guid>
+      <description>Shape from Shading through Shape Evolution Dawei Yang, Jia Deng CVPR, 2018 arXiv, SemanticScholar  What it is about 実画像の Shape-from-Shading を DNN に学習させる際のデータとして，単純なプリミティブ (球，立方体，等) を用いて作成された 3D データを用いる手法を提案．
+Why it is worthy researching 既存手法では全て人手で作成されたデータを用いていた．
+提案手法ではシンプルなプリミティブを組み合わせて複雑な形状のデータセットを適宜作成して， DNN の学習を行うことでデータ不足を解決する． トレーニングに外部データセットを用いることなく，実画像に対する Shape-from-Shading において State-of-the-Art (SoTA) を達成．
+Key idea Shape Representation 初期形状は球，円柱，立方体，円錐の４つの形状で構成されており，それらは以下の函数で表すことができる．
+
+Computation graph で表現すると以下のようになる．
+
+形状変換(平行移動，回転，拡大縮小)
+
+形状結合
+
+進化アルゴリズム 形状変換と形状結合を繰り返すことでより複雑な形状へ進化させる．
+Computation graph が大きくなりすぎないように（制約がなければ平均計算コストは指数関数的に増加する），計算回数が線形になるようにグラフの成長を制限する．また，形状結合前後で変化がほぼ無いケースを検出し排除する等，進化が遅くならないようにする．
+バリデーションを実画像で行うため，実画像が持つ形状とかけ離れた形状を持つトレーニングデータは捨てられる．
+
+shape-from-shading ネットワークは Stacked Hourglass Network を使用している．</description>
+    </item>
+    
+    <item>
+      <title>セキュリティ・キャンプ2019参加記</title>
+      <link>https://blog.5ebec.dev/posts/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%972019%E5%8F%82%E5%8A%A0%E8%A8%98/</link>
+      <pubDate>Sat, 24 Aug 2019 04:45:00 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/posts/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%972019%E5%8F%82%E5%8A%A0%E8%A8%98/</guid>
+      <description>おはようございます，へいほぅ(@5ebec)です．
+セキュリティ・キャンプ全国大会2019に参加した話，本編です．
+学びをやっていく #seccamp pic.twitter.com/3GvmALVNCE
+&amp;mdash; へいほぅ (@5ebec) August 13, 2019 
+講義内容については他の修了生が無限に説明してくれていると信じているので，それ以外について書きたいと思います．
+セキュリティ・キャンプ全国大会とは セキュリティ・キャンプ全国大会2019　ホーム ↑これを見て
+何故参加したか 去年度修了生であり同じ研究室の先輩であるシバニャンさんに話を訊いて，面白そうだったので参加することにしました．
+セキュキャンのチラシを電気総合館に貼っておいたので興味ある人は是非
+僕は参加したことないんですが(参加したい) pic.twitter.com/Oxex1xJJbz
+&amp;mdash; へいほぅ (@5ebec) April 25, 2019 
+現在21歳で，最初で最後のチャンスだったので落ちたらどうしよう…と心配していましたが，無事通りました．
+セキュキャン2019、選考通過してました。
+対戦よろしくお願いします。
+&amp;mdash; へいほぅ (@5ebec) June 6, 2019 
+何故Cトラックを選んだか  初学に近いセキュリティについて広く学びたかったから 選択コースを選べば必修講義以外はどのトラックの講義でも選ぶことが出来るから 応募課題が自分にとって書きやすかったから  言語自作も興味があったのですが，院試勉強と被って事前課題が中途半端になるのを避けたかったので諦めました．また自分でやってみたいと思います．
+ちなみにCトラックの必修講義はこんな様子でした．
+腐っても電電徒なのでロボットアームで制御システムをやっている #seccamp pic.twitter.com/s4pI7RE6CN
+&amp;mdash; へいほぅ (@5ebec) August 14, 2019 
+実際に現場で使われている機器を使わせていただくなど写真に取れないものや口外できないものが多く，自分一人では出来ないであろう学びを行う事が出来ました．大変貴重な経験になりました．
+名刺バトル 去年作って余っていた分(50枚くらい)を持っていきましたが，案の定足りませんでした．
+無差別に交換したいなら100枚は必要です．(そもそもTwitterアカウントがあるならお互いにフォローすればいいだけなので，嵩張ってゴミになりかねない名刺を交換する意義は僕には分かりませんが．)
+名刺バトルで学んだこと:
+60×60正方形名刺はウケがいいが、名刺入れに入らないことがあるのでせめて55×55で作るべき。あとAR名刺はややウケる。 pic.twitter.com/1jb3OTe7hL
+&amp;mdash; へいほぅ (@5ebec) August 13, 2019</description>
+    </item>
+    
+    <item>
+      <title>セキュリティ・キャンプ2019起床記</title>
+      <link>https://blog.5ebec.dev/posts/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%972019%E8%B5%B7%E5%BA%8A%E8%A8%98/</link>
+      <pubDate>Sat, 17 Aug 2019 12:30:43 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/posts/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%972019%E8%B5%B7%E5%BA%8A%E8%A8%98/</guid>
+      <description>へいほぅ(@5ebec)です． セキュリティ・キャンプ2019，お疲れさまでした．人生を変える最高の経験になりました．
+以下は僕の睡眠及び起床の記録です．
+0日目 夜: 起床チャレンジに成功したい
+&amp;mdash; へいほぅ (@5ebec) August 12, 2019 
+1日目 朝: 起床チャレンジに成功した #seccamp
+&amp;mdash; へいほぅ (@5ebec) August 12, 2019 
+1日目 夜: 起床チャレンジに成功したい #seccamp
+&amp;mdash; へいほぅ (@5ebec) August 13, 2019 
+2日目 朝: 起床チャレンジに成功した #seccamp
+&amp;mdash; へいほぅ (@5ebec) August 13, 2019 
+2日目 夜: 終わったので寝ます
+起床チャレンジに成功したい #seccamp
+&amp;mdash; へいほぅ (@5ebec) August 14, 2019 
+SCHOOL OF LOCK! はいいぞ．LOCKのスペルはL・O・C・K．
+3日目 朝: 起床チャレンジに成功した #seccamp
+&amp;mdash; へいほぅ (@5ebec) August 14, 2019</description>
+    </item>
+    
+    <item>
+      <title>pyenv で Python 3.4.3 がインストールできない (Ubuntu 18.04)</title>
+      <link>https://blog.5ebec.dev/posts/pyenv-%E3%81%A7-python-3-4-3-%E3%81%8C%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84-ubuntu-18-04/</link>
+      <pubDate>Fri, 28 Jun 2019 23:25:12 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/posts/pyenv-%E3%81%A7-python-3-4-3-%E3%81%8C%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84-ubuntu-18-04/</guid>
+      <description>pyenvでPython 3.4.3をインストールしようとしたらこんなエラーが出た．
+Downloading Python-3.4.3.tar.xz... -&amp;gt; https://www.python.org/ftp/python/3.4.3/Python-3.4.3.tar.xz Installing Python-3.4.3... ERROR: The Python ssl extension was not compiled. Missing the OpenSSL lib? Please consult to the Wiki page to fix the problem. https://github.com/pyenv/pyenv/wiki/Common-build-problems BUILD FAILED (Ubuntu 18.04 using python-build 1.2.12-2-geb68ec94) Inspect or clean up the working tree at /tmp/python-build.20190629080825.2203 Results logged to /tmp/python-build.20190629080825.2203.log Last 10 log lines: (cd /home/5ebec/.anyenv/envs/pyenv/versions/3.4.3/share/man/man1; ln -s python3.4.1 python3.1) if test &amp;quot;xupgrade&amp;quot; != &amp;quot;xno&amp;quot; ; then \ case upgrade in \ upgrade) ensurepip=&amp;quot;--upgrade&amp;quot; ;; \ install|*) ensurepip=&amp;quot;&amp;quot; ;; \ esac; \ .</description>
+    </item>
+    
+    <item>
       <title>GitHub Pages &#43; Netlify DNS でカスタムドメイン</title>
-      <link>https://5ebec.netlify.com/posts/github-pages-netlify-managed-dns-%E3%81%A7%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/</link>
+      <link>https://blog.5ebec.dev/posts/github-pages-netlify-managed-dns-%E3%81%A7%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/</link>
       <pubDate>Sun, 09 Jun 2019 21:37:05 +0000</pubDate>
       
-      <guid>https://5ebec.netlify.com/posts/github-pages-netlify-managed-dns-%E3%81%A7%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/</guid>
+      <guid>https://blog.5ebec.dev/posts/github-pages-netlify-managed-dns-%E3%81%A7%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/</guid>
       <description>これの続き
 前回、カスタムネームサーバーを使用してDNSをNetlifyに移したのでGoogle DomainsのDNSからはカスタムリソースレコードの設定はできない
 NetlifyのDomainsタブを開く
@@ -31,10 +168,10 @@ GitHub Pagesのレポジトリのページから Setting &amp;gt; Options &amp;g
     
     <item>
       <title>Netlify でさくっとカスタムドメイン</title>
-      <link>https://5ebec.netlify.com/posts/netlify%E3%81%A7%E3%81%95%E3%81%8F%E3%81%A3%E3%81%A8%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/</link>
+      <link>https://blog.5ebec.dev/posts/netlify%E3%81%A7%E3%81%95%E3%81%8F%E3%81%A3%E3%81%A8%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/</link>
       <pubDate>Sun, 09 Jun 2019 20:15:54 +0000</pubDate>
       
-      <guid>https://5ebec.netlify.com/posts/netlify%E3%81%A7%E3%81%95%E3%81%8F%E3%81%A3%E3%81%A8%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/</guid>
+      <guid>https://blog.5ebec.dev/posts/netlify%E3%81%A7%E3%81%95%E3%81%8F%E3%81%A3%E3%81%A8%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/</guid>
       <description>カスタムドメインの購入 Google Domainsで流行りの.devドメインを購入
 日本語対応してるので簡単
  Google Domains のサービスは、現在お住まいの国で営利目的または商用で使用する場合にのみご利用いただけます。
@@ -53,10 +190,10 @@ Verify DNS configurationを押したらすぐ有効化された
     
     <item>
       <title>Ubuntu, Debianにzsh&#43;prezto導入&amp;テーマ変更で気分の上がるシェルライフ</title>
-      <link>https://5ebec.netlify.com/posts/ubuntu-debian%E3%81%ABzsh-prezto%E5%B0%8E%E5%85%A5-%E3%83%86%E3%83%BC%E3%83%9E%E5%A4%89%E6%9B%B4%E3%81%A7%E6%B0%97%E5%88%86%E3%81%AE%E4%B8%8A%E3%81%8C%E3%82%8B%E3%82%B7%E3%82%A7%E3%83%AB%E3%83%A9%E3%82%A4%E3%83%95/</link>
+      <link>https://blog.5ebec.dev/posts/ubuntu-debian%E3%81%ABzsh-prezto%E5%B0%8E%E5%85%A5-%E3%83%86%E3%83%BC%E3%83%9E%E5%A4%89%E6%9B%B4%E3%81%A7%E6%B0%97%E5%88%86%E3%81%AE%E4%B8%8A%E3%81%8C%E3%82%8B%E3%82%B7%E3%82%A7%E3%83%AB%E3%83%A9%E3%82%A4%E3%83%95/</link>
       <pubDate>Sat, 25 May 2019 20:20:08 +0000</pubDate>
       
-      <guid>https://5ebec.netlify.com/posts/ubuntu-debian%E3%81%ABzsh-prezto%E5%B0%8E%E5%85%A5-%E3%83%86%E3%83%BC%E3%83%9E%E5%A4%89%E6%9B%B4%E3%81%A7%E6%B0%97%E5%88%86%E3%81%AE%E4%B8%8A%E3%81%8C%E3%82%8B%E3%82%B7%E3%82%A7%E3%83%AB%E3%83%A9%E3%82%A4%E3%83%95/</guid>
+      <guid>https://blog.5ebec.dev/posts/ubuntu-debian%E3%81%ABzsh-prezto%E5%B0%8E%E5%85%A5-%E3%83%86%E3%83%BC%E3%83%9E%E5%A4%89%E6%9B%B4%E3%81%A7%E6%B0%97%E5%88%86%E3%81%AE%E4%B8%8A%E3%81%8C%E3%82%8B%E3%82%B7%E3%82%A7%E3%83%AB%E3%83%A9%E3%82%A4%E3%83%95/</guid>
       <description>bashはsudo apt install zshをする場所だと思っている
 &amp;mdash; へいほぅ (@5ebec) 2019年4月8日 
 zshインストール UbuntuやDebianをインストールしたらまずターミナルを開いてこれを脳死で打つ。
@@ -73,10 +210,10 @@ sudo reboot  これでターミナルを開いたときにzshが起動される�
     
     <item>
       <title>Ubuntu で解像度の異なる複数のディスプレイを同時にいい感じに使いたい</title>
-      <link>https://5ebec.netlify.com/posts/ubuntu-%E3%81%A7%E8%A7%A3%E5%83%8F%E5%BA%A6%E3%81%AE%E7%95%B0%E3%81%AA%E3%82%8B%E8%A4%87%E6%95%B0%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4%E3%82%92%E5%90%8C%E6%99%82%E3%81%AB%E3%81%84%E3%81%84%E6%84%9F%E3%81%98%E3%81%AB%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95/</link>
+      <link>https://blog.5ebec.dev/posts/ubuntu-%E3%81%A7%E8%A7%A3%E5%83%8F%E5%BA%A6%E3%81%AE%E7%95%B0%E3%81%AA%E3%82%8B%E8%A4%87%E6%95%B0%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4%E3%82%92%E5%90%8C%E6%99%82%E3%81%AB%E3%81%84%E3%81%84%E6%84%9F%E3%81%98%E3%81%AB%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95/</link>
       <pubDate>Mon, 20 May 2019 16:56:58 +0900</pubDate>
       
-      <guid>https://5ebec.netlify.com/posts/ubuntu-%E3%81%A7%E8%A7%A3%E5%83%8F%E5%BA%A6%E3%81%AE%E7%95%B0%E3%81%AA%E3%82%8B%E8%A4%87%E6%95%B0%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4%E3%82%92%E5%90%8C%E6%99%82%E3%81%AB%E3%81%84%E3%81%84%E6%84%9F%E3%81%98%E3%81%AB%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://blog.5ebec.dev/posts/ubuntu-%E3%81%A7%E8%A7%A3%E5%83%8F%E5%BA%A6%E3%81%AE%E7%95%B0%E3%81%AA%E3%82%8B%E8%A4%87%E6%95%B0%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4%E3%82%92%E5%90%8C%E6%99%82%E3%81%AB%E3%81%84%E3%81%84%E6%84%9F%E3%81%98%E3%81%AB%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95/</guid>
       <description>解像度とサイズの違う２つのディスプレイをどうにかしていい感じに使いたい
 環境 OS: Ubuntu 18.04 LTS
 display:
@@ -89,10 +226,10 @@ Screen 0: minimum 8 x 8, current 4480 x 1440, maximum 32767 x 32767 DVI-D-0 conn
     
     <item>
       <title>Windows 10 のための Terminal</title>
-      <link>https://5ebec.netlify.com/posts/windows-10-%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-terminal/</link>
+      <link>https://blog.5ebec.dev/posts/windows-10-%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-terminal/</link>
       <pubDate>Sun, 19 May 2019 17:22:12 +0000</pubDate>
       
-      <guid>https://5ebec.netlify.com/posts/windows-10-%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-terminal/</guid>
+      <guid>https://blog.5ebec.dev/posts/windows-10-%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-terminal/</guid>
       <description> 自分が使ってきたTerminalを順にまとめていく。
 1. Windows標準コンソール 論外。
 2. Alacritty https://github.com/jwilm/alacritty
@@ -104,31 +241,29 @@ pros  デザインよい プラグインでカスタマイズできる  cons  el
     
     <item>
       <title>[論文読み] Neural Inverse Rendering of an Indoor Scene From a Single Image</title>
-      <link>https://5ebec.netlify.com/posts/neural-inverse-rendering-of-an-indoor-scene-from-a-single-image/</link>
+      <link>https://blog.5ebec.dev/posts/neural-inverse-rendering-of-an-indoor-scene-from-a-single-image/</link>
       <pubDate>Fri, 17 May 2019 06:52:00 +0000</pubDate>
       
-      <guid>https://5ebec.netlify.com/posts/neural-inverse-rendering-of-an-indoor-scene-from-a-single-image/</guid>
+      <guid>https://blog.5ebec.dev/posts/neural-inverse-rendering-of-an-indoor-scene-from-a-single-image/</guid>
       <description>Neural Inverse Rendering of an Indoor Scene from a Single Image Soumyadip Sengupta, Jinwei Gu, Kihwan Kim, Guilin Liu, David W. Jacobs, Jan Kautz CVPR, 2019 arXiv, SemanticScholar  What it is about 単一画像からの屋内シーンのニューラルインバースレンダリング
 インバースレンダリングとは 画像からシーンの物理的属性
-- 物体形状(表面法線ベクトル) - 反射特性(アルベド) - 光源分布(照明マップ)
-を推定することを目的としている．
+ 物体形状(表面法線ベクトル) 反射特性(アルベド) 光源分布(照明マップ)  を推定することを目的としている．
 Why it is worthy researching 屋内シーンの単一画像を，Inverse Rendering Network (IRN)を用いて
-- アルベド - 表面法線ベクトル - 照明の環境マップ
-の3つの属性に分解する．
+ アルベド 表面法線ベクトル 照明の環境マップ  の3つの属性に分解する．
 今までの手法では，主に単一のオブジェクトに対して，またはシーン属性の１つのみを解決するものだった．
 本稿では，屋内シーンの単一画像に対してそれらのシーン属性を同時に解くことができる事ができる．
 また，SUNCG-PBRという名のデータセットを作成している．
 このデータセットは以前のデータセットを大幅に改善したもの
-* 鏡面反射を仮定したシーン * 拡散反射を仮定したシーン * ground truth depth * surface normals * albedo * Phong model parameters * semantic segmentation * glossiness segmentation</description>
+ 鏡面反射を仮定したシーン 拡散反射を仮定したシーン ground truth depth surface normals albedo Phong model parameters semantic segmentation glossiness segmentation  以前のデータセットと比べてより写実的でノイズが少ないのが特徴</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://5ebec.netlify.com/about/</link>
+      <link>https://blog.5ebec.dev/about/</link>
       <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://5ebec.netlify.com/about/</guid>
-      <description>京都大学電気電子工学科4回生.
+      <guid>https://blog.5ebec.dev/about/</guid>
+      <description>京都大学工学部電気電子工学科4回生.
  GitHub
  Twitter
  Instagram

@@ -1,130 +1,211 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on #a5ebec</title>
-    <link>https://5ebec.netlify.com/tags/</link>
+    <link>https://blog.5ebec.dev/tags/</link>
     <description>Recent content in Tags on #a5ebec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 09 Jun 2019 21:37:05 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Oct 2019 08:04:31 +0000</lastBuildDate>
     
-	<atom:link href="https://5ebec.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.5ebec.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>domain</title>
-      <link>https://5ebec.netlify.com/tags/domain/</link>
-      <pubDate>Sun, 09 Jun 2019 21:37:05 +0000</pubDate>
-      
-      <guid>https://5ebec.netlify.com/tags/domain/</guid>
-      <description></description>
-    </item>
     
     <item>
-      <title>githubpages</title>
-      <link>https://5ebec.netlify.com/tags/githubpages/</link>
-      <pubDate>Sun, 09 Jun 2019 21:37:05 +0000</pubDate>
+      <title>cv</title>
+      <link>https://blog.5ebec.dev/tags/cv/</link>
+      <pubDate>Thu, 24 Oct 2019 08:04:31 +0000</pubDate>
       
-      <guid>https://5ebec.netlify.com/tags/githubpages/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>netlify</title>
-      <link>https://5ebec.netlify.com/tags/netlify/</link>
-      <pubDate>Sun, 09 Jun 2019 21:37:05 +0000</pubDate>
-      
-      <guid>https://5ebec.netlify.com/tags/netlify/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Debian</title>
-      <link>https://5ebec.netlify.com/tags/debian/</link>
-      <pubDate>Sat, 25 May 2019 20:20:08 +0000</pubDate>
-      
-      <guid>https://5ebec.netlify.com/tags/debian/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>prezto</title>
-      <link>https://5ebec.netlify.com/tags/prezto/</link>
-      <pubDate>Sat, 25 May 2019 20:20:08 +0000</pubDate>
-      
-      <guid>https://5ebec.netlify.com/tags/prezto/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shell</title>
-      <link>https://5ebec.netlify.com/tags/shell/</link>
-      <pubDate>Sat, 25 May 2019 20:20:08 +0000</pubDate>
-      
-      <guid>https://5ebec.netlify.com/tags/shell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ubuntu</title>
-      <link>https://5ebec.netlify.com/tags/ubuntu/</link>
-      <pubDate>Sat, 25 May 2019 20:20:08 +0000</pubDate>
-      
-      <guid>https://5ebec.netlify.com/tags/ubuntu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>zsh</title>
-      <link>https://5ebec.netlify.com/tags/zsh/</link>
-      <pubDate>Sat, 25 May 2019 20:20:08 +0000</pubDate>
-      
-      <guid>https://5ebec.netlify.com/tags/zsh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>display</title>
-      <link>https://5ebec.netlify.com/tags/display/</link>
-      <pubDate>Mon, 20 May 2019 16:56:58 +0900</pubDate>
-      
-      <guid>https://5ebec.netlify.com/tags/display/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>terminal</title>
-      <link>https://5ebec.netlify.com/tags/terminal/</link>
-      <pubDate>Sun, 19 May 2019 17:22:12 +0000</pubDate>
-      
-      <guid>https://5ebec.netlify.com/tags/terminal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>windows</title>
-      <link>https://5ebec.netlify.com/tags/windows/</link>
-      <pubDate>Sun, 19 May 2019 17:22:12 +0000</pubDate>
-      
-      <guid>https://5ebec.netlify.com/tags/windows/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>inverserendering</title>
-      <link>https://5ebec.netlify.com/tags/inverserendering/</link>
-      <pubDate>Fri, 17 May 2019 06:52:00 +0000</pubDate>
-      
-      <guid>https://5ebec.netlify.com/tags/inverserendering/</guid>
+      <guid>https://blog.5ebec.dev/tags/cv/</guid>
       <description></description>
     </item>
     
     <item>
       <title>paper</title>
-      <link>https://5ebec.netlify.com/tags/paper/</link>
+      <link>https://blog.5ebec.dev/tags/paper/</link>
+      <pubDate>Thu, 24 Oct 2019 08:04:31 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/paper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>https://blog.5ebec.dev/tags/ssh/</link>
+      <pubDate>Tue, 08 Oct 2019 18:05:23 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>macos</title>
+      <link>https://blog.5ebec.dev/tags/macos/</link>
+      <pubDate>Thu, 26 Sep 2019 14:50:50 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>setup</title>
+      <link>https://blog.5ebec.dev/tags/setup/</link>
+      <pubDate>Thu, 26 Sep 2019 14:50:50 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/setup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>julia</title>
+      <link>https://blog.5ebec.dev/tags/julia/</link>
+      <pubDate>Sat, 24 Aug 2019 04:45:00 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/julia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>seccamp</title>
+      <link>https://blog.5ebec.dev/tags/seccamp/</link>
+      <pubDate>Sat, 24 Aug 2019 04:45:00 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/seccamp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wakeup</title>
+      <link>https://blog.5ebec.dev/tags/wakeup/</link>
+      <pubDate>Sat, 17 Aug 2019 12:30:43 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/wakeup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pyenv</title>
+      <link>https://blog.5ebec.dev/tags/pyenv/</link>
+      <pubDate>Fri, 28 Jun 2019 23:25:12 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/pyenv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://blog.5ebec.dev/tags/python/</link>
+      <pubDate>Fri, 28 Jun 2019 23:25:12 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu</title>
+      <link>https://blog.5ebec.dev/tags/ubuntu/</link>
+      <pubDate>Fri, 28 Jun 2019 23:25:12 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>domain</title>
+      <link>https://blog.5ebec.dev/tags/domain/</link>
+      <pubDate>Sun, 09 Jun 2019 21:37:05 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/domain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>githubpages</title>
+      <link>https://blog.5ebec.dev/tags/githubpages/</link>
+      <pubDate>Sun, 09 Jun 2019 21:37:05 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/githubpages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>netlify</title>
+      <link>https://blog.5ebec.dev/tags/netlify/</link>
+      <pubDate>Sun, 09 Jun 2019 21:37:05 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/netlify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>debian</title>
+      <link>https://blog.5ebec.dev/tags/debian/</link>
+      <pubDate>Sat, 25 May 2019 20:20:08 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>prezto</title>
+      <link>https://blog.5ebec.dev/tags/prezto/</link>
+      <pubDate>Sat, 25 May 2019 20:20:08 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/prezto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://blog.5ebec.dev/tags/shell/</link>
+      <pubDate>Sat, 25 May 2019 20:20:08 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zsh</title>
+      <link>https://blog.5ebec.dev/tags/zsh/</link>
+      <pubDate>Sat, 25 May 2019 20:20:08 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/zsh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>display</title>
+      <link>https://blog.5ebec.dev/tags/display/</link>
+      <pubDate>Mon, 20 May 2019 16:56:58 +0900</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/display/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>terminal</title>
+      <link>https://blog.5ebec.dev/tags/terminal/</link>
+      <pubDate>Sun, 19 May 2019 17:22:12 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/terminal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows</title>
+      <link>https://blog.5ebec.dev/tags/windows/</link>
+      <pubDate>Sun, 19 May 2019 17:22:12 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>inverserendering</title>
+      <link>https://blog.5ebec.dev/tags/inverserendering/</link>
       <pubDate>Fri, 17 May 2019 06:52:00 +0000</pubDate>
       
-      <guid>https://5ebec.netlify.com/tags/paper/</guid>
+      <guid>https://blog.5ebec.dev/tags/inverserendering/</guid>
       <description></description>
     </item>
     

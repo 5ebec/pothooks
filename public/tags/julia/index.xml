@@ -1,23 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>julia on #a5ebec</title>
-    <link>https://5ebec.netlify.com/tags/julia/</link>
+    <link>https://blog.5ebec.dev/tags/julia/</link>
     <description>Recent content in julia on #a5ebec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 16 May 2019 01:36:04 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 24 Aug 2019 04:45:00 +0000</lastBuildDate>
     
-	<atom:link href="https://5ebec.netlify.com/tags/julia/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.5ebec.dev/tags/julia/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hoge Hge</title>
-      <link>https://5ebec.netlify.com/posts/hoge-hge/</link>
-      <pubDate>Thu, 16 May 2019 01:36:04 +0900</pubDate>
+      <title>セキュリティ・キャンプ2019参加記</title>
+      <link>https://blog.5ebec.dev/posts/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%972019%E5%8F%82%E5%8A%A0%E8%A8%98/</link>
+      <pubDate>Sat, 24 Aug 2019 04:45:00 +0000</pubDate>
       
-      <guid>https://5ebec.netlify.com/posts/hoge-hge/</guid>
-      <description></description>
+      <guid>https://blog.5ebec.dev/posts/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%972019%E5%8F%82%E5%8A%A0%E8%A8%98/</guid>
+      <description>おはようございます，へいほぅ(@5ebec)です．
+セキュリティ・キャンプ全国大会2019に参加した話，本編です．
+学びをやっていく #seccamp pic.twitter.com/3GvmALVNCE
+&amp;mdash; へいほぅ (@5ebec) August 13, 2019 
+講義内容については他の修了生が無限に説明してくれていると信じているので，それ以外について書きたいと思います．
+セキュリティ・キャンプ全国大会とは セキュリティ・キャンプ全国大会2019　ホーム ↑これを見て
+何故参加したか 去年度修了生であり同じ研究室の先輩であるシバニャンさんに話を訊いて，面白そうだったので参加することにしました．
+セキュキャンのチラシを電気総合館に貼っておいたので興味ある人は是非
+僕は参加したことないんですが(参加したい) pic.twitter.com/Oxex1xJJbz
+&amp;mdash; へいほぅ (@5ebec) April 25, 2019 
+現在21歳で，最初で最後のチャンスだったので落ちたらどうしよう…と心配していましたが，無事通りました．
+セキュキャン2019、選考通過してました。
+対戦よろしくお願いします。
+&amp;mdash; へいほぅ (@5ebec) June 6, 2019 
+何故Cトラックを選んだか  初学に近いセキュリティについて広く学びたかったから 選択コースを選べば必修講義以外はどのトラックの講義でも選ぶことが出来るから 応募課題が自分にとって書きやすかったから  言語自作も興味があったのですが，院試勉強と被って事前課題が中途半端になるのを避けたかったので諦めました．また自分でやってみたいと思います．
+ちなみにCトラックの必修講義はこんな様子でした．
+腐っても電電徒なのでロボットアームで制御システムをやっている #seccamp pic.twitter.com/s4pI7RE6CN
+&amp;mdash; へいほぅ (@5ebec) August 14, 2019 
+実際に現場で使われている機器を使わせていただくなど写真に取れないものや口外できないものが多く，自分一人では出来ないであろう学びを行う事が出来ました．大変貴重な経験になりました．
+名刺バトル 去年作って余っていた分(50枚くらい)を持っていきましたが，案の定足りませんでした．
+無差別に交換したいなら100枚は必要です．(そもそもTwitterアカウントがあるならお互いにフォローすればいいだけなので，嵩張ってゴミになりかねない名刺を交換する意義は僕には分かりませんが．)
+名刺バトルで学んだこと:
+60×60正方形名刺はウケがいいが、名刺入れに入らないことがあるのでせめて55×55で作るべき。あとAR名刺はややウケる。 pic.twitter.com/1jb3OTe7hL
+&amp;mdash; へいほぅ (@5ebec) August 13, 2019</description>
     </item>
     
   </channel>
