@@ -15,7 +15,7 @@ markup: mmark
 ---
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="ja" dir="ltr">掃除出来ない人間はコマンド叩いた時の多少のエラーとかは動けば放置してしまうから、いっそ定期的にリストアするぞくらいの気持ちのほうが良い</p>&mdash; へいほぅ (@5ebec) <a href="https://twitter.com/5ebec/status/1049345182955528197?ref_src=twsrc%5Etfw">October 8, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-# バックアップ
+## バックアップ
 
 #### BetterTouchTool
 
@@ -54,11 +54,11 @@ $ brew bundle dump --global
 $ mackup backup
 ```
 
-# 起動直後
+## 起動直後
 
 流れに沿ってデスクトップが表示されるところまで行く
 
-# システム環境設定
+## システム環境設定
 
 #### 一般
 
@@ -136,7 +136,7 @@ $ mackup backup
 * ディスプレイ
   * 視差効果を減らす
 
-# Homebrew
+## Homebrew
 
 [Homebrew](https://brew.sh/) をインストールする  
 
@@ -167,10 +167,10 @@ $ mackup restore
 $ brew bundle --global
 ```
 
-# 各種App
+## 各種App
 Launchpad から起動する
 
-# ssh
+## ssh
 https://blog.5ebec.dev/posts/ssh-keys/
 
 

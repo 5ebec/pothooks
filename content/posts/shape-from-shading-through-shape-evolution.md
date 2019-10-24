@@ -13,17 +13,17 @@ markup: mmark
 * CVPR, 2018
 * [arXiv](https://arxiv.org/pdf/1712.02961.pdf), [SemanticScholar](https://www.semanticscholar.org/paper/Shape-from-Shading-Through-Shape-Evolution-Yang-Deng/d74a576cc311841c3ff8070262e928c090e41f59)
 
-# What it is about
+## What it is about
 実画像の Shape-from-Shading を DNN に学習させる際のデータとして，単純なプリミティブ (球，立方体，等) を用いて作成された 3D データを用いる手法を提案．
 
-# Why it is worthy researching
+## Why it is worthy researching
 
 既存手法では全て人手で作成されたデータを用いていた．
 
 提案手法ではシンプルなプリミティブを組み合わせて複雑な形状のデータセットを適宜作成して， DNN の学習を行うことでデータ不足を解決する．
 トレーニングに外部データセットを用いることなく，実画像に対する Shape-from-Shading において State-of-the-Art (SoTA) を達成．
 
-# Key idea
+## Key idea
 
 #### Shape Representation
 初期形状は球，円柱，立方体，円錐の４つの形状で構成されており，それらは以下の函数で表すことができる．  
@@ -48,7 +48,7 @@ Computation graph が大きくなりすぎないように（制約がなけれ�
 shape-from-shading ネットワークは [Stacked Hourglass Network](https://arxiv.org/pdf/1603.06937.pdf) を使用している．  
 ![Screenshot from 2019-08-30 07-20-29](https://user-images.githubusercontent.com/38322494/63980458-af1a1b00-caf6-11e9-9f67-906a8270f5e7.png)
 
-# How it is validated (experimental setup and results)
+## How it is validated (experimental setup and results)
 
 [MIT-Berkeley Intrinsic Image](http://www.cs.toronto.edu/~rgrosse/intrinsic/gallery.html) データセットを用いて
 SIRFS ([Shape, Illumination, and Reflectance from Shading](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2013/EECS-2013-117.pdf)) と比較  
@@ -58,13 +58,13 @@ SIRFS ([Shape, Illumination, and Reflectance from Shading](https://www2.eecs.ber
 他の手法(ランダム, SIRFS, [ShapeNet](https://arxiv.org/pdf/1512.03012.pdf)) との比較
 ![Screenshot from 2019-08-30 07-33-59](https://user-images.githubusercontent.com/38322494/63981084-a1fe2b80-caf8-11e9-8193-f9febb407a71.png)
 
-# Limitations
+## Limitations
 結局，トレーニングでも表面法線の ground truth を含むデータセットは必要?
 
-# What you thought
+## What you thought
 プリミティブから 3D データを構築するごとに DNN が fine-tuning されていくため，最適な結果を見つけるためにはいくつかの重みで検証する必要がある．
 
-# Papers to read before and after the work
+## Papers to read before and after the work
 
 [Stacked Hourglass Networks for Human Pose Estimation](https://arxiv.org/pdf/1603.06937.pdf)
 

@@ -16,18 +16,18 @@ markup: mmark
 * video  
 [![](https://img.youtube.com/vi/zMzprmtJ6Ck/0.jpg)](https://www.youtube.com/watch?v=zMzprmtJ6Ck)
 
-# What it is about
+## What it is about
 人間のスケッチのクラシフィケーション  
 ※ スケッチ = 熟練者が描いたものではない抽象的な絵(ピクトグラフ)
 
-# Why it is worthy researching
+## Why it is worthy researching
 
  - 人間が物体をどのようにスケッチし、そのようなスケッチを人間とコンピューターがどれだけうまく認識できるかについての正式な研究はこれまでなかった．人間のスケッチに対する最初の大規模な調査．  
  - Amazon Mechanical Turk というクラウドソーシングサービスを利用してデータセットを生成している．
  - 人間の認識精度も Amazon Mechanical Turk を用いて得ている．
  - 学習モデルとしてkNN法，SVMを使用
 
-# Key idea
+## Key idea
 データセット
 ![fig2](https://user-images.githubusercontent.com/38322494/67061239-b1b1fc00-f19a-11e9-8c71-0e01dcb36a78.png)
  - 250のカテゴリ:  
@@ -39,7 +39,7 @@ markup: mmark
  1カテゴリ毎に80個，合計20,000個のスケッチ
 
 
-# How it is validated (experimental setup and results)
+## How it is validated (experimental setup and results)
 ![fig10](https://user-images.githubusercontent.com/38322494/67063550-22a8e200-f1a2-11e9-8161-1bc80112fc35.png)
 56％の精度で未知のスケッチを識別することができている
 
@@ -51,9 +51,9 @@ markup: mmark
 ![fig12](https://user-images.githubusercontent.com/38322494/67061303-db6b2300-f19a-11e9-910c-78fec2eeb13a.png)
 
 
-# Limitation
+## Limitation
 人間は73.1%なので人間のほうが圧倒的に精度は高い
 
-# What you thought
+## What you thought
 2012年の論文なので人間のほうが認識精度が高いという結果になっているが，現在はどのくらい精度が上がっているのか，他の論文を読んでみたい
 

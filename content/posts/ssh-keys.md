@@ -6,12 +6,12 @@ tags:
 description: 何回やっても覚えられないので自分用に
 markup: mmark
 ---
-# クライアント側
+## クライアント側
 
 `~/.ssh/` で
 
 ```shell
 ssh-keygen -t rsa -b 4096 -N [pass] -f [file_name] -C [comment(file_nameなど)]
 ```
-# サーバー側
+## サーバー側
 `authorized_keys` に `[file_name].pub` をコピペ

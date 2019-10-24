@@ -15,7 +15,7 @@ markup: "mmark"
  - CVPR, 2019
  - [arXiv](https://arxiv.org/abs/1901.02453v2), [SemanticScholar](https://www.semanticscholar.org/paper/Neural-Inverse-Rendering-of-an-Indoor-Scene-from-a-Sengupta-Gu/f78e5da29363342ebf04d011c4f756ed021a1a11)
 
-# What it is about
+## What it is about
 単一画像からの屋内シーンのニューラルインバースレンダリング
 
 #### インバースレンダリングとは
@@ -26,7 +26,7 @@ markup: "mmark"
 
 を推定することを目的としている．
 
-# Why it is worthy researching
+## Why it is worthy researching
 
 屋内シーンの単一画像を，Inverse Rendering Network (IRN)を用いて  
  - アルベド
@@ -50,7 +50,7 @@ markup: "mmark"
 
 以前のデータセットと比べてより写実的でノイズが少ないのが特徴
 
-# Key idea
+## Key idea
 ラベル無しのデータから，self-supervised reconstruction loss という損失関数を使用して学習することが本稿のキーアイデア．  
 Self-supervised Learning の Residual Appearance Renderer (RAR)によって可能としている．  
 
@@ -79,7 +79,7 @@ $$
 L_u = ||I - (\hat{I_d}+\hat{I_r})||_{1}
 $$
 
-# How it is validated (experimental setup and results)
+## How it is validated (experimental setup and results)
 #### 他の論文との比較
 より正確な法線と陰影．  
 反射率の曖昧さを解消している．  
@@ -90,13 +90,13 @@ WHDR (Weighted Human Disagreement Rate) を評価して，優れていること�
 
 アルベド，法線ベクトル，環境マップ(合成データ，実データ)全てで以前の研究より勝っている．
 
-# Limitations
+## Limitations
 単一オブジェクトに対するものではないが，シーンは屋内シーンに限定されている．
 
-# What you thought
+## What you thought
 要するに，データセットを向上させて既知の学習方法を色々組み合わせたら今までより精度が上がった．というだけに聞こえるが，そういうものなのか?
 
-# Papers to read before and after the work
+## Papers to read before and after the work
 #### この論文を引用している論文
 * CVPR2019: [Putting Humans in a Scene: Learning Affordance in 3D Indoor Environments](https://arxiv.org/abs/1903.05690)
 
