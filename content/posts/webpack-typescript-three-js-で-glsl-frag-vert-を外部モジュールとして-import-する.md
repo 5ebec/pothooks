@@ -16,8 +16,8 @@ markup: mmark
 
 
 ## はじめに
-three.js で [ShaderMaterial](https://threejs.org/docs/#api/en/materials/ShaderMaterial) や [RawShaderMaterial](https://threejs.org/docs/#api/en/materials/RawShaderMaterial) を使うと，自作したGLSLを利用することが出来る．  
-公式ドキュメントで紹介されている方法や，「three.js glsl」とかで検索して出てくる大抵の記事にはhtmlに直書きしている例が見られる．
+three.js で [ShaderMaterial](https://threejs.org/docs/#api/en/materials/ShaderMaterial) や [RawShaderMaterial](https://threejs.org/docs/#api/en/materials/RawShaderMaterial) を使うと，自作した GLSL を利用することが出来る．  
+公式ドキュメントで紹介されている方法や，「[three.js glsl](https://lmgtfy.com/?q=three.js+glsl&s=g)」とかで検索して出てくる大抵の記事には html や js に直書きしている例が見られる．
 しかし，これではシンタックスハイライトは効かないし見栄えも良くない．
 
 
@@ -91,4 +91,4 @@ module: {
 ```
 
 完成．  
-よいシェーディングライフを．
+よいシェーダーライフを．
