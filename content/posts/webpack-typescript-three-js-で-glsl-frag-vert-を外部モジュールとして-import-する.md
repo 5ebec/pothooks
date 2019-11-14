@@ -61,11 +61,11 @@ import hoge_vert from "./glsl/hoge.vert";
 
 npmjs.com で ["shader loader webpack"](https://www.npmjs.com/search?q=shader%20loader%20webpack) と検索してみると，パッケージが10個ほど (2019/11/15 現在) 出てくる．  
 
-が，単に `.vert` と `.frag` をimport したいだけであれば，これらを使う必要はない．   
+が，単に `.vert` と `.frag` を import したいだけであれば，これらを使う必要はない．   
 テキストをそのまま `string` として読み込みたいので， [webpack-contrib/raw-loader](https://github.com/webpack-contrib/raw-loader) を用いる．
 
 ```shell
-$ yarn add --dev raw-loader
+yarn add --dev raw-loader
 ```
 
 `webpack.config.js` に以下のように記述する．
@@ -75,7 +75,7 @@ module: {
   rules: [
     {
       test: /.(ts|tsx|js)$/,
-      loader: 'ts-loader',
+      use: 'ts-loader',
       include: [path.resolve(__dirname, 'src')],
       exclude: /node_modules/
     },
