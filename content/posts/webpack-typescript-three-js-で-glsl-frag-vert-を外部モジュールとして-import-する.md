@@ -68,7 +68,7 @@ npmjs.com で ["shader loader webpack"](https://www.npmjs.com/search?q=shader%20
 yarn add --dev raw-loader
 ```
 
-`webpack.config.js` に以下のように記述する．
+`webpack.config.js` には以下のように記述する．
 ```js
 // (略)
 module: {
