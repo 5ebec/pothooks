@@ -11,8 +11,9 @@ markup: mmark
 ---
 ## TL;DR
 
- - `raw-loader` を使う
  - 型定義ファイルを用意
+ - `raw-loader` を使用
+
 
 ## はじめに
 three.js で [ShaderMaterial](https://threejs.org/docs/#api/en/materials/ShaderMaterial) や [RawShaderMaterial](https://threejs.org/docs/#api/en/materials/RawShaderMaterial) を使うと，自作したGLSLを利用することが出来る．  
