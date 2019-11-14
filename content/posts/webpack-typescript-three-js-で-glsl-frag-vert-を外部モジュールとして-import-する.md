@@ -65,7 +65,7 @@ npmjs.com で ["shader loader webpack"](https://www.npmjs.com/search?q=shader%20
 テキストをそのまま `string` として読み込みたいので， [webpack-contrib/raw-loader](https://github.com/webpack-contrib/raw-loader) を用いる．
 
 ```shell
-yarn add --dev raw-loader
+$ yarn add --dev raw-loader
 ```
 
 `webpack.config.js` に以下のように記述する．
@@ -75,7 +75,7 @@ module: {
   rules: [
     {
       test: /.(ts|tsx|js)$/,
-      use: 'ts-loader',
+      loader: 'ts-loader',
       include: [path.resolve(__dirname, 'src')],
       exclude: /node_modules/
     },
