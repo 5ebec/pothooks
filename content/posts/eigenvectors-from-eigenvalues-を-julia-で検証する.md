@@ -4,7 +4,7 @@ date: 2019-11-19T08:20:01.295Z
 tags:
   - julia
 description: |-
-  Twitter で話題になったり研究室の slack で話されたりしていたのでJuliaで書いてみた  
+  Twitter で話題になったり研究室の slack で話されたりしていたので Julia で書いてみた  
    - Eigenvectors from Eigenvalues  
    - Peter B. Denton, Stephen J. Parke, Terence Tao, Xining Zhang
 markup: mmark
