@@ -29,7 +29,7 @@ $$
 この関係式により，固有値(と主小行列固有値)から固有ベクトル(の成分の二乗ノルム)を計算する事が出来る．
 
 ## 実行環境
-```julia
+```python
 versioninfo()
 ```
 >```
@@ -45,7 +45,7 @@ Platform Info:
 
 ## 準備
 行列をシンプルに表示するため，`printarr` 関数を作成しておく．
-```julia
+```python
 using Test
 using LinearAlgebra
 using RandomMatrices
@@ -54,7 +54,7 @@ printarr(arr) = Base.print_array(IOContext(stdout, :compact => true), arr)
 
 ## エルミート行列 $A$ を生成
 [JuliaMath/RandomMatrices.jl](https://github.com/JuliaMath/RandomMatrices.jl) パッケージの `GaussianHermite` を用いてランダムなエルミート行列を生成する．
-```julia
+```python
 N = 3
 A = rand(GaussianHermite(2), N)
 printarr(A)
@@ -67,7 +67,7 @@ printarr(A)
 
 ## $A$ の固有値, 固有ベクトルを求める
 固有値及び固有ベクトルは Standard Library である [LinearAlgebra](https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/) の `eigvals` 関数 と `eigvecs` 関数 で求められる．また，`eigen` 関数でも取得することが出来る．
-```julia
+```python
 println("固有値(eigvals)")
 λ = eigvals(A)
 printarr(λ)
@@ -101,15 +101,15 @@ printarr(F.vectors)
 ```
 
 ## $A$ の主小行列 $M_j$
-```julia
+```python
 A[1:N .!= j, 1:N .!= j]
 ```
 または
-```julia
+```python
 A[setdiff(1:N, j), setdiff(1:N, j)]
 ```
 のように記述することで， $M_j$ を表現することができる．
-```julia
+```python
 M = zeros(Complex{Float64}, N-1, N-1, N)
 for j = 1:N
     M[:,:,j] = A[1:N .!= j, 1:N .!= j]
@@ -136,7 +136,7 @@ $$
 $$
 
 ### 左辺
-```julia
+```python
 lhs = abs2.(v) .* [prod(λ[i] - λ[k] for k = 1:N if k != i) for j = 1:N, i = 1:N]
 printarr(lhs)
 ```
@@ -147,7 +147,7 @@ printarr(lhs)
 ```
 
 ### 右辺
-```julia
+```python
 rhs = [prod(λ[i] - eigvals(M[:,:,j])[k] for k = 1:N-1) for j = 1:N, i = 1:N]
 printarr(rhs)
 ```
@@ -158,7 +158,7 @@ printarr(rhs)
 ```
 
 ## 両辺比較
-```julia
+```python
 @test lhs ≈ rhs
 ```
 >```
