@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  
+    <title>Netlify でさくっとカスタムドメイン :: #a5ebec</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="カスタムドメインの購入 Google Domainsで流行りの.devドメインを購入
+日本語対応してるので簡単
+ Google Domains のサービスは、現在お住まいの国で営利目的または商用で使用する場合にのみご利用いただけます。
+ って書かれてたんだけど、皆んな個人利用で使ってるし、そもそも.devって開発者向けのドメインだから別にいいよね（？）
+ちなみに Kyashで買えた　嬉しい
+Netlifyにカスタムドメインを設定 このページで設定する
+Add custom domain からお好きなカスタムドメインを追加
+画像のようにblog等のサブドメインも可能
+Check DNS configration という警告が出るのでそれをクリックして出てきたメッセージに従う
+(ググってよく出てくるのはカスタムリソースレコードのCNAMEの設定だが、そんなことをしなくてもカスタムネームサーバーを使用すればNetlifyのManaged DNSが勝手に設定してくれる)
+Netlifyに提示されたネームサーバーをGoogle DomainsのDNS &amp;gt; ネームサーバー に追加する
+HTTPS化 自動的に設定される
+Verify DNS configurationを押したらすぐ有効化された
+さくっとできた"/>
+<meta name="keywords" content="blog"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://blog.5ebec.dev/posts/netlify%E3%81%A7%E3%81%95%E3%81%8F%E3%81%A3%E3%81%A8%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/" />
+
+
+<link rel="stylesheet" href="https://blog.5ebec.dev/assets/style.css">
+
+  <link rel="stylesheet" href="https://blog.5ebec.dev/assets/a5ebec.css">
+
+
+
+<link rel="stylesheet" href="https://blog.5ebec.dev/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://blog.5ebec.dev/img/favicon/apple-touch-icon-180x180-precomposed.png">
+
+<link rel="shortcut icon" href="https://blog.5ebec.dev/img/favicon/favicon.ico">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Netlify でさくっとカスタムドメイン :: #a5ebec — " />
+<meta name="twitter:description" content="カスタムドメインの購入 Google Domainsで流行りの.devドメインを購入
+日本語対応してるので簡単
+ Google Domains のサービスは、現在お住まいの国で営利目的または商用で使用する場合にのみご利用いただけます。
+ って書かれてたんだけど、皆んな個人利用で使ってるし、そもそも.devって開発者向けのドメインだから別にいいよね（？）
+ちなみに Kyashで買えた　嬉しい
+Netlifyにカスタムドメインを設定 このページで設定する
+Add custom domain からお好きなカスタムドメインを追加
+画像のようにblog等のサブドメインも可能
+Check DNS configration という警告が出るのでそれをクリックして出てきたメッセージに従う
+(ググってよく出てくるのはカスタムリソースレコードのCNAMEの設定だが、そんなことをしなくてもカスタムネームサーバーを使用すればNetlifyのManaged DNSが勝手に設定してくれる)
+Netlifyに提示されたネームサーバーをGoogle DomainsのDNS &amp;gt; ネームサーバー に追加する
+HTTPS化 自動的に設定される
+Verify DNS configurationを押したらすぐ有効化された
+さくっとできた" />
+<meta name="twitter:site" content="https://blog.5ebec.dev/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="https://blog.5ebec.dev/img/uploads/google_domains.png">
+
+
+<meta property="og:locale" content="ja" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Netlify でさくっとカスタムドメイン :: #a5ebec — ">
+<meta property="og:description" content="カスタムドメインの購入 Google Domainsで流行りの.devドメインを購入
+日本語対応してるので簡単
+ Google Domains のサービスは、現在お住まいの国で営利目的または商用で使用する場合にのみご利用いただけます。
+ って書かれてたんだけど、皆んな個人利用で使ってるし、そもそも.devって開発者向けのドメインだから別にいいよね（？）
+ちなみに Kyashで買えた　嬉しい
+Netlifyにカスタムドメインを設定 このページで設定する
+Add custom domain からお好きなカスタムドメインを追加
+画像のようにblog等のサブドメインも可能
+Check DNS configration という警告が出るのでそれをクリックして出てきたメッセージに従う
+(ググってよく出てくるのはカスタムリソースレコードのCNAMEの設定だが、そんなことをしなくてもカスタムネームサーバーを使用すればNetlifyのManaged DNSが勝手に設定してくれる)
+Netlifyに提示されたネームサーバーをGoogle DomainsのDNS &amp;gt; ネームサーバー に追加する
+HTTPS化 自動的に設定される
+Verify DNS configurationを押したらすぐ有効化された
+さくっとできた" />
+<meta property="og:url" content="https://blog.5ebec.dev/posts/netlify%E3%81%A7%E3%81%95%E3%81%8F%E3%81%A3%E3%81%A8%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/" />
+<meta property="og:site_name" content="Netlify でさくっとカスタムドメイン" />
+<meta property="og:image" content="https://blog.5ebec.dev/img/uploads/google_domains.png">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2019-06-09 20:15:54.064 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    #a5ebec
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">Home</a></li>
+        
+      
+        
+          <li><a href="/tags">Tags</a></li>
+        
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">Home</a></li>
+      
+    
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://blog.5ebec.dev/posts/netlify%E3%81%A7%E3%81%95%E3%81%8F%E3%81%A3%E3%81%A8%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/">Netlify でさくっとカスタムドメイン</a></h1>
+  <div class="post-meta">
+    <span class="post-date">
+      2019-06-09
+    </span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://blog.5ebec.dev/tags/netlify/">netlify</a>&nbsp;
+    
+    #<a href="https://blog.5ebec.dev/tags/domain/">domain</a>&nbsp;
+    
+  </span>
+  
+
+  
+  <img src="https://blog.5ebec.dev/img/uploads/google_domains.png" class="post-cover" />
+  
+
+  <div class="post-content">
+    <h2 id="heading">カスタムドメインの購入</h2>
+<p><a href="https://domains.google.com">Google Domains</a>で流行りの.devドメインを購入<br>
+日本語対応してるので簡単</p>
+<blockquote>
+<p>Google Domains のサービスは、現在お住まいの国で営利目的または商用で使用する場合にのみご利用いただけます。</p>
+</blockquote>
+<p>って書かれてたんだけど、皆んな個人利用で使ってるし、そもそも<code>.dev</code>って開発者向けのドメインだから別にいいよね（？）</p>
+<p>ちなみに <a href="https://kyash.co/">Kyash</a>で買えた　嬉しい</p>
+<h2 id="netlify">Netlifyにカスタムドメインを設定</h2>
+<p><img src="/img/uploads/netlify_domains.png" alt="netlify_domain_management"></p>
+<p>このページで設定する</p>
+<p>Add custom domain からお好きなカスタムドメインを追加</p>
+<p>画像のように<code>blog</code>等のサブドメインも可能</p>
+<p>Check DNS configration という警告が出るのでそれをクリックして出てきたメッセージに従う</p>
+<p>(ググってよく出てくるのはカスタムリソースレコードのCNAMEの設定だが、そんなことをしなくてもカスタムネームサーバーを使用すればNetlifyのManaged DNSが勝手に設定してくれる)</p>
+<p>Netlifyに提示されたネームサーバーをGoogle DomainsのDNS &gt; ネームサーバー に追加する</p>
+<h2 id="https">HTTPS化</h2>
+<p><img src="/img/uploads/netlify_https.png" alt="netlify_https"></p>
+<p>自動的に設定される</p>
+<p>Verify DNS configurationを押したらすぐ有効化された</p>
+<p>さくっとできた</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="https://blog.5ebec.dev/posts/github-pages-netlify-managed-dns-%E3%81%A7%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3/">
+          <span class="button__icon">←</span>
+          <span class="button__text">GitHub Pages &#43; Netlify DNS でカスタムドメイン</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="https://blog.5ebec.dev/posts/ubuntu-debian%E3%81%ABzsh-prezto%E5%B0%8E%E5%85%A5-%E3%83%86%E3%83%BC%E3%83%9E%E5%A4%89%E6%9B%B4%E3%81%A7%E6%B0%97%E5%88%86%E3%81%AE%E4%B8%8A%E3%81%8C%E3%82%8B%E3%82%B7%E3%82%A7%E3%83%AB%E3%83%A9%E3%82%A4%E3%83%95/">
+          <span class="button__text">Ubuntu, Debianにzsh&#43;prezto導入&amp;テーマ変更で気分の上がるシェルライフ</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>&copy; 2019 <a href="https://github.com/5ebec">5ebec</a></span>
+        <span>:: Powered by <a href="https://gohugo.io">Hugo</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="https://blog.5ebec.dev/assets/main.js"></script>
+<script src="https://blog.5ebec.dev/assets/prism.js"></script>
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+</div>
+
+</body>
+</html>

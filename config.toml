@@ -27,7 +27,7 @@ paginate = 5
 
 [params.logo]
   logoText = "#a5ebec"
-  logoHomeLink = "/"
+  logoHomeLink = "/posts"
 
 [taxonomies]
   tag = "tags"
@@ -35,7 +35,7 @@ paginate = 5
 [menu]
 [[menu.main]]
   name = "Home"
-  url = "/"
+  url = "/posts"
   weight = 1
 
 [[menu.main]]
