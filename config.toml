@@ -29,7 +29,7 @@ paginate = 5
 
 [params.logo]
   logoText = "#a5ebec"
-  logoHomeLink = "/posts"
+  logoHomeLink = "/"
 
 [social]
   twitter = "5ebec"
@@ -39,7 +39,7 @@ paginate = 5
 
 [menu]
 [[menu.main]]
-  name = "Home"
+  name = "Posts"
   url = "/posts"
   weight = 1
 
