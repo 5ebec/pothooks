@@ -1,6 +1,6 @@
 ---
 title: "メインアカウントにbot機能を搭載して運用してるけど意外と上手くやってる"
-date: 2019-12-07T00:00:00+09:00
+date: 2019-12-08T00:00:00+09:00
 tags: ["kuac2019", "adventcalendar", "twitter", "bot"]
 cover: "img/2019-12-08/nohito.png"
 description: "僕のTwitterアカウント [@5ebec](https://twitter.com/5ebec) に付属している単位取得率botと降水量を教えてくれるbotについて"
