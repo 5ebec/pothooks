@@ -19,7 +19,7 @@ paginate = 5
   # set a custom favicon (default is a `themeColor` square)
   favicon = "img/favicon/favicon.ico"
 
-  subtitle = ""
+  subtitle = "my scribbled blog"
   keywords = "blog"
   menuMore = "Show more"
   readMore = "Read more"
@@ -28,6 +28,9 @@ paginate = 5
 [params.logo]
   logoText = "#a5ebec"
   logoHomeLink = "/posts"
+
+[social]
+  twitter = "5ebec"
 
 [taxonomies]
   tag = "tags"
