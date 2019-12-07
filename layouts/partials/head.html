@@ -32,17 +32,16 @@
 {{ range .Params.categories }}<meta property="article:section" content="{{ . }}" />{{ end }}
 {{ if isset .Params "date" }}<meta property="article:published_time" content="{{ time .Date }}" />{{ end }}
 
+<!-- OG image -->
 {{ with .Params.Cover }}
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="og:image" content="{{ . | absURL }}">
 {{ else }}
 <meta name="twitter:card" content="summary" />
-<meta property="og:image" content="">
+<meta property="og:image" content="{{ "img/favicon/favicon.ico" | absURL }}">
 {{ end }}
 
 <!-- Twitter Card -->
-
-
 <meta name="twitter:site" content="{{ $.Site.BaseURL }}" />
 <meta name="twitter:creator" content="@{{ .Params.Author }}" />
 
