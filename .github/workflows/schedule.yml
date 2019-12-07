@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Post netlify build hooks
+    - name: Post build hooks
       run: curl -X POST -d {} ${{ secrets.BUILD_HOOKS_URL }}
