@@ -19,7 +19,7 @@ paginate = 5
   # set a custom favicon (default is a `themeColor` square)
   favicon = "img/favicon/favicon.ico"
 
-  subtitle = "my scribbled blog"
+  subtitle = "5ebec's scribbled blog"
   author = "5ebec"
   keywords = "blog"
   menuMore = "Show more"
