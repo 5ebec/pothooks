@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   
-    <title>webpack &#43; typescript &#43; three.js で GLSL (.frag|.vert) を外部モジュールとして import する :: #a5ebec</title>
+    <title>webpack &#43; typescript &#43; three.js で GLSL (.frag|.vert) を外部モジュールとして import する :: #a5ebec — my scribbled blog</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -32,22 +32,9 @@ declare module &amp;#39;*.vert&amp;#39; { const src: string; export default src;
 
 
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="webpack &#43; typescript &#43; three.js で GLSL (.frag|.vert) を外部モジュールとして import する :: #a5ebec — " />
-<meta name="twitter:description" content="TL;DR  型定義ファイルを用意 raw-loader を使用  はじめに three.js で ShaderMaterial や RawShaderMaterial を使うと，自作した GLSL を利用することが出来る．
-公式ドキュメントで紹介されている方法や，「three.js glsl」とかで検索して出てくる大抵の記事には html や js に直書きしている例が見られる． しかし，これではシンタックスハイライトは効かないし見栄えも良くない．
-.d.ts 型定義ファイル (.d.ts) を .(frag|vert) ファイルと同じ場所に用意．
-: ├── src │ ├── glsl │ │ ├── glsl.d.ts │ │ ├── hoge.frag │ │ └── hoge.vert │ └── index.ts : ファイル名は適当で良いが，自分は glsl.d.ts とした．
-内容は以下の通り．
-declare module &amp;#39;*.vert&amp;#39; { const src: string; export default src; } declare module &amp;#39;*.frag&amp;#39; { const src: string; export default src; }  ." />
-<meta name="twitter:site" content="https://blog.5ebec.dev/" />
-<meta name="twitter:creator" content="" />
-<meta name="twitter:image" content="">
-
-
 <meta property="og:locale" content="ja" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="webpack &#43; typescript &#43; three.js で GLSL (.frag|.vert) を外部モジュールとして import する :: #a5ebec — ">
+<meta property="og:title" content="webpack &#43; typescript &#43; three.js で GLSL (.frag|.vert) を外部モジュールとして import する :: #a5ebec">
 <meta property="og:description" content="TL;DR  型定義ファイルを用意 raw-loader を使用  はじめに three.js で ShaderMaterial や RawShaderMaterial を使うと，自作した GLSL を利用することが出来る．
 公式ドキュメントで紹介されている方法や，「three.js glsl」とかで検索して出てくる大抵の記事には html や js に直書きしている例が見られる． しかし，これではシンタックスハイライトは効かないし見栄えも良くない．
 .d.ts 型定義ファイル (.d.ts) を .(frag|vert) ファイルと同じ場所に用意．
@@ -56,11 +43,18 @@ declare module &amp;#39;*.vert&amp;#39; { const src: string; export default src;
 declare module &amp;#39;*.vert&amp;#39; { const src: string; export default src; } declare module &amp;#39;*.frag&amp;#39; { const src: string; export default src; }  ." />
 <meta property="og:url" content="https://blog.5ebec.dev/posts/webpack-typescript-three-js-%E3%81%A7-glsl-frag-vert-%E3%82%92%E5%A4%96%E9%83%A8%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%81%A8%E3%81%97%E3%81%A6-import-%E3%81%99%E3%82%8B/" />
 <meta property="og:site_name" content="webpack &#43; typescript &#43; three.js で GLSL (.frag|.vert) を外部モジュールとして import する" />
+
+<meta property="article:published_time" content="2019-11-14 18:50:08.13 &#43;0000 UTC" />
+
 <meta property="og:image" content="">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2019-11-14 18:50:08.13 &#43;0000 UTC" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="">
+<meta name="twitter:site" content="https://blog.5ebec.dev/" />
+<meta name="twitter:creator" content="@" />
 
 
 

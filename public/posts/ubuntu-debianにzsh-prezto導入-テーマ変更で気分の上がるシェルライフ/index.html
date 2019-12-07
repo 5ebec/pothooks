@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   
-    <title>Ubuntu, Debianにzsh&#43;prezto導入&amp;テーマ変更で気分の上がるシェルライフ :: #a5ebec</title>
+    <title>Ubuntu, Debianにzsh&#43;prezto導入&amp;テーマ変更で気分の上がるシェルライフ :: #a5ebec — my scribbled blog</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -40,30 +40,9 @@ zstyle &amp;#39;:prezto:module:prompt&amp;#39; theme &amp;#39;pure&amp;#39;vim�
 
 
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Ubuntu, Debianにzsh&#43;prezto導入&amp;テーマ変更で気分の上がるシェルライフ :: #a5ebec — " />
-<meta name="twitter:description" content="zshインストール UbuntuやDebianをインストールしたらまずターミナルを開いてこれを脳死で打つ。
-$ sudo apt update $ sudo apt upgrade $ sudo apt install zsh prezto導入 以下でzshを起動
-$ zsh 設定画面が開く場合がありますが、preztoを導入する場合はこの設定は必要ないのでqで抜ける。 bashはここまで、以下はzsh内で
-git clone --recursive https://github.com/sorin-ionescu/prezto.git &amp;#34;${ZDOTDIR:-$HOME}/.zprezto&amp;#34; chsh -s /usr/bin/zsh 以下を実行
-$ setopt EXTENDED_GLOB for rcfile in &amp;#34;${ZDOTDIR:-$HOME}&amp;#34;/.zprezto/runcoms/^README.md(.N); do ln -s &amp;#34;$rcfile&amp;#34; &amp;#34;${ZDOTDIR:-$HOME}/.${rcfile:t}&amp;#34; done 再起動
-sudo reboot これでターミナルを開いたときにzshが起動されるはず。
-テーマ変更 このまま使用してもよいが、preztoでは沢山のテーマが利用できるので好きなものに変える。
-ちなみにデフォルトはsorinというテーマ。
-以下ですべてのテーマをプレビューできる。
-~ ❯❯❯ prompt -p みんな大好きpowerlineもある。 みんなpowerline使ってるけどあれ何がいいの？フォント限られるし無駄にカラフルだし横に長くて邪魔じゃね？
-テーマの設定は.zpreztorcファイルの116行目に書かれている。
-自分はpureが好きなので、sorinからpureに変更しました。
-zstyle &amp;#39;:prezto:module:prompt&amp;#39; theme &amp;#39;pure&amp;#39;vimで変更する場合は
-~ ❯❯❯ vim .zpreztorc // vimコマンド :%s/&#39;sorin/&#39;pure/ :wq こうやると楽。" />
-<meta name="twitter:site" content="https://blog.5ebec.dev/" />
-<meta name="twitter:creator" content="" />
-<meta name="twitter:image" content="">
-
-
 <meta property="og:locale" content="ja" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Ubuntu, Debianにzsh&#43;prezto導入&amp;テーマ変更で気分の上がるシェルライフ :: #a5ebec — ">
+<meta property="og:title" content="Ubuntu, Debianにzsh&#43;prezto導入&amp;テーマ変更で気分の上がるシェルライフ :: #a5ebec">
 <meta property="og:description" content="zshインストール UbuntuやDebianをインストールしたらまずターミナルを開いてこれを脳死で打つ。
 $ sudo apt update $ sudo apt upgrade $ sudo apt install zsh prezto導入 以下でzshを起動
 $ zsh 設定画面が開く場合がありますが、preztoを導入する場合はこの設定は必要ないのでqで抜ける。 bashはここまで、以下はzsh内で
@@ -80,11 +59,18 @@ zstyle &amp;#39;:prezto:module:prompt&amp;#39; theme &amp;#39;pure&amp;#39;vim�
 ~ ❯❯❯ vim .zpreztorc // vimコマンド :%s/&#39;sorin/&#39;pure/ :wq こうやると楽。" />
 <meta property="og:url" content="https://blog.5ebec.dev/posts/ubuntu-debian%E3%81%ABzsh-prezto%E5%B0%8E%E5%85%A5-%E3%83%86%E3%83%BC%E3%83%9E%E5%A4%89%E6%9B%B4%E3%81%A7%E6%B0%97%E5%88%86%E3%81%AE%E4%B8%8A%E3%81%8C%E3%82%8B%E3%82%B7%E3%82%A7%E3%83%AB%E3%83%A9%E3%82%A4%E3%83%95/" />
 <meta property="og:site_name" content="Ubuntu, Debianにzsh&#43;prezto導入&amp;テーマ変更で気分の上がるシェルライフ" />
+
+<meta property="article:published_time" content="2019-05-25 20:20:08.659 &#43;0000 UTC" />
+
 <meta property="og:image" content="">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2019-05-25 20:20:08.659 &#43;0000 UTC" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="">
+<meta name="twitter:site" content="https://blog.5ebec.dev/" />
+<meta name="twitter:creator" content="@" />
 
 
 
