@@ -23,35 +23,12 @@
 {{ end }}
 
 <!-- Twitter Card -->
-<<<<<<< HEAD
-{{ with $.Params.Cover }}
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="{{ with .Params.Cover }}{{ . | absURL }}{{ end }}">
-{{ else }}
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="{{ "img/favicon/favicon.ico" | absURL }}">
-{{ end }}
 <meta name="twitter:title" content="{{ if .IsHome }}{{ $.Site.Title }}{{ else }}{{ .Title }} :: {{ $.Site.Title }}{{ end }}" />
 <meta name="twitter:description" content="{{ if .IsHome }}{{ $.Site.Params.tagline }}{{ else }}{{ .Summary | plainify }}{{ end }}" />
-{{ if isset $.Site.Social "twitter" }}
-<meta name="twitter:site" content="@{{.}}" />
-<meta name="twitter:creator" content="@{{.}}" />
-{{ end }}
-=======
-{{- with $.Params.Cover -}}
-<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="{{ $.Site.BaseURL }}" />
+<meta name="twitter:creator" content="{{ .Params.Author }}" />
 <meta name="twitter:image" content="{{ with .Params.Cover }}{{ . | absURL }}{{ end }}">
-{{ else -}}
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="{{ "img/favicon/favicon.ico" | absURL }}">
-{{- end }}
-<meta name="twitter:title" content="{{ if .IsHome }}{{ $.Site.Title }}{{ else }}{{ .Title }} :: {{ $.Site.Title }}{{ end }}" />
-<meta name="twitter:description" content="{{ if .IsHome }}{{ $.Site.Params.tagline }}{{ else }}{{ .Summary | plainify }}{{ end }}" />
-{{ with .Site.Social.twitter -}}
-<meta name="twitter:site" content="@{{.}}" />
-<meta name="twitter:creator" content="@{{.}}" />
-{{ end -}}
->>>>>>> c148b4287e500c336d443abc8a22335ba32af651
 
 <!-- OG data -->
 <meta property="og:locale" content="{{ $.Site.Language.Lang }}" />
