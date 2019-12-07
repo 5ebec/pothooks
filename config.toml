@@ -20,10 +20,12 @@ paginate = 5
   favicon = "img/favicon/favicon.ico"
 
   subtitle = "my scribbled blog"
+  author = "5ebec"
   keywords = "blog"
   menuMore = "Show more"
   readMore = "Read more"
   readOtherPosts = "Read other posts"
+
 
 [params.logo]
   logoText = "#a5ebec"
