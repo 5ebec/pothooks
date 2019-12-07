@@ -6,12 +6,12 @@ tags:
   - netlify
   - githubactions
   - ci
-description: NetlifyでホスティングしているHugo製ブログで予約投稿したいなと思ってGitHub Actions使ったらめちゃ簡単だった
+description: NetlifyでホスティングしているHugo製ブログで予約投稿したいなと思ってGitHub Actions使ったらめちゃ簡単だった．
 markup: mmark
 ---
 ## モチベーション
 
-Hugoは静的サイトジェネレータであり，予約投稿というものが無い．これでは「アドベントカレンダーで0:00に公開したい」などという時に困るので，どうにかして予約投稿を実現したい．
+Hugoは静的サイトジェネレータであり，予約投稿というものが無い．これでは「アドベントカレンダーで0時に公開したい」などという時に困るので，どうにかして予約投稿を実現したい．
 
 ## tl;dr
 
@@ -40,7 +40,8 @@ curl -X POST -d '{}' https://api.netlify.com/build_hooks/XXXXXXXXXXXXXXX
 GitHub Actionsではリポジトリの`~/.github/workflows`以下にYAML構文でワークフローを定義する．\
 ワークフローの書き方は [Workflow syntax for GitHub Actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions) を参考にされたい．
 
-今回は「毎時0分にbuild & deployを実行」させてみる．
+今回は「毎時0分にbuild & deployを実行」させてみる．  
+
 `schedule.yaml`
 
 ```yaml
