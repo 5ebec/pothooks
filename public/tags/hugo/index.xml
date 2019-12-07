@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on #a5ebec</title>
+    <link>https://blog.5ebec.dev/tags/hugo/</link>
+    <description>Recent content in hugo on #a5ebec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 07 Dec 2019 09:48:32 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.5ebec.dev/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Netlify &#43;  GitHub Actions で Hugo 製ブログの予約投稿</title>
+      <link>https://blog.5ebec.dev/posts/netlify-github-actions-%E3%81%A7-hugo-%E8%A3%BD%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AE%E4%BA%88%E7%B4%84%E6%8A%95%E7%A8%BF/</link>
+      <pubDate>Sat, 07 Dec 2019 09:48:32 +0000</pubDate>
+      
+      <guid>https://blog.5ebec.dev/posts/netlify-github-actions-%E3%81%A7-hugo-%E8%A3%BD%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AE%E4%BA%88%E7%B4%84%E6%8A%95%E7%A8%BF/</guid>
+      <description>モチベーション Hugoは静的サイトジェネレータであり，予約投稿というものが無い．これでは「アドベントカレンダーで0:00に公開したい」などという時に困るので，どうにかして予約投稿を実現したい．
+tl;dr Hugo製ブログをNetlifyでホスティングしている前提．
+NetlifyのBuild hooksとGitHub Actionsのscheduleを用いる．
+NetlifyのBuild hooks buildとdeployをトリガーする為のURL．
+ダッシュボードの Settings &amp;gt; Build &amp;amp; deploy &amp;gt; Continuous Deployment &amp;gt; Build hooks にある． Add build hookからBuild Hooks URLを作成する．nameは参照用で，Build hooksのリストとdeploy時のメッセージに表示される．
+branchはmasterにする．   生成されたURLを用いて，端末で以下のようなcurlコマンドを叩くと，Netlifyでbuildとdeployが実行される．
+curl -X POST -d &amp;#39;{}&amp;#39; https://api.netlify.com/build_hooks/XXXXXXXXXXXXXXX GitHub Actionsのschedule 別に他のCIサービスを用いても良いのだが，自分はTravis CIしか使ったことがなかったのと，Travis CIのCron Jobsではdailyが最短なので却下．
+そういえばGitHub Actionsなんてものがあったなぁと思って触ってみた．
+GitHub Actionsではリポジトリの~/.github/workflows以下にYAML構文でワークフローを定義する．
+ワークフローの書き方は Workflow syntax for GitHub Actions を参考にされたい．
+今回は「毎時0分にbuild &amp;amp; deployを実行」させてみる． schedule.yaml
+name: scheduler on: schedule: - cron: &amp;#39;0 * * * *&amp;#39; jobs: build: runs-on: ubuntu-latest steps: - name: Post build hooks run: curl -X POST -d {} ${{ secrets.</description>
+    </item>
+    
+  </channel>
+</rss>

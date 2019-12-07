@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  
+    <title>Netlify &#43;  GitHub Actions で Hugo 製ブログの予約投稿 :: #a5ebec — 5ebec&#39;s scribbled blog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="モチベーション Hugoは静的サイトジェネレータであり，予約投稿というものが無い．これでは「アドベントカレンダーで0:00に公開したい」などという時に困るので，どうにかして予約投稿を実現したい．
+tl;dr Hugo製ブログをNetlifyでホスティングしている前提．
+NetlifyのBuild hooksとGitHub Actionsのscheduleを用いる．
+NetlifyのBuild hooks buildとdeployをトリガーする為のURL．
+ダッシュボードの Settings &amp;gt; Build &amp;amp; deploy &amp;gt; Continuous Deployment &amp;gt; Build hooks にある． Add build hookからBuild Hooks URLを作成する．nameは参照用で，Build hooksのリストとdeploy時のメッセージに表示される．
+branchはmasterにする．   生成されたURLを用いて，端末で以下のようなcurlコマンドを叩くと，Netlifyでbuildとdeployが実行される．
+curl -X POST -d &amp;#39;{}&amp;#39; https://api.netlify.com/build_hooks/XXXXXXXXXXXXXXX GitHub Actionsのschedule 別に他のCIサービスを用いても良いのだが，自分はTravis CIしか使ったことがなかったのと，Travis CIのCron Jobsではdailyが最短なので却下．
+そういえばGitHub Actionsなんてものがあったなぁと思って触ってみた．
+GitHub Actionsではリポジトリの~/.github/workflows以下にYAML構文でワークフローを定義する．
+ワークフローの書き方は Workflow syntax for GitHub Actions を参考にされたい．
+今回は「毎時0分にbuild &amp;amp; deployを実行」させてみる． schedule.yaml
+name: scheduler on: schedule: - cron: &amp;#39;0 * * * *&amp;#39; jobs: build: runs-on: ubuntu-latest steps: - name: Post build hooks run: curl -X POST -d {} ${{ secrets."/>
+<meta name="keywords" content="blog"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://blog.5ebec.dev/posts/netlify-github-actions-%E3%81%A7-hugo-%E8%A3%BD%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AE%E4%BA%88%E7%B4%84%E6%8A%95%E7%A8%BF/" />
+
+
+<link rel="stylesheet" href="https://blog.5ebec.dev/assets/style.css">
+
+  <link rel="stylesheet" href="https://blog.5ebec.dev/assets/a5ebec.css">
+
+
+
+<link rel="stylesheet" href="https://blog.5ebec.dev/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://blog.5ebec.dev/img/favicon/apple-touch-icon-180x180-precomposed.png">
+
+<link rel="shortcut icon" href="https://blog.5ebec.dev/img/favicon/favicon.ico">
+
+
+
+<meta property="og:locale" content="ja" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Netlify &#43;  GitHub Actions で Hugo 製ブログの予約投稿 :: #a5ebec">
+<meta property="og:description" content="モチベーション Hugoは静的サイトジェネレータであり，予約投稿というものが無い．これでは「アドベントカレンダーで0:00に公開したい」などという時に困るので，どうにかして予約投稿を実現したい．
+tl;dr Hugo製ブログをNetlifyでホスティングしている前提．
+NetlifyのBuild hooksとGitHub Actionsのscheduleを用いる．
+NetlifyのBuild hooks buildとdeployをトリガーする為のURL．
+ダッシュボードの Settings &amp;gt; Build &amp;amp; deploy &amp;gt; Continuous Deployment &amp;gt; Build hooks にある． Add build hookからBuild Hooks URLを作成する．nameは参照用で，Build hooksのリストとdeploy時のメッセージに表示される．
+branchはmasterにする．   生成されたURLを用いて，端末で以下のようなcurlコマンドを叩くと，Netlifyでbuildとdeployが実行される．
+curl -X POST -d &amp;#39;{}&amp;#39; https://api.netlify.com/build_hooks/XXXXXXXXXXXXXXX GitHub Actionsのschedule 別に他のCIサービスを用いても良いのだが，自分はTravis CIしか使ったことがなかったのと，Travis CIのCron Jobsではdailyが最短なので却下．
+そういえばGitHub Actionsなんてものがあったなぁと思って触ってみた．
+GitHub Actionsではリポジトリの~/.github/workflows以下にYAML構文でワークフローを定義する．
+ワークフローの書き方は Workflow syntax for GitHub Actions を参考にされたい．
+今回は「毎時0分にbuild &amp;amp; deployを実行」させてみる． schedule.yaml
+name: scheduler on: schedule: - cron: &amp;#39;0 * * * *&amp;#39; jobs: build: runs-on: ubuntu-latest steps: - name: Post build hooks run: curl -X POST -d {} ${{ secrets." />
+<meta property="og:url" content="https://blog.5ebec.dev/posts/netlify-github-actions-%E3%81%A7-hugo-%E8%A3%BD%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AE%E4%BA%88%E7%B4%84%E6%8A%95%E7%A8%BF/" />
+<meta property="og:site_name" content="Netlify &#43;  GitHub Actions で Hugo 製ブログの予約投稿" />
+
+<meta property="article:published_time" content="2019-12-07 09:48:32.25 &#43;0000 UTC" />
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta property="og:image" content="https://blog.5ebec.dev/img/favicon/icon-144x144.png">
+
+
+
+<meta name="twitter:site" content="https://blog.5ebec.dev/" />
+<meta name="twitter:creator" content="@" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    #a5ebec
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/tags">Tags</a></li>
+        
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://blog.5ebec.dev/posts/netlify-github-actions-%E3%81%A7-hugo-%E8%A3%BD%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AE%E4%BA%88%E7%B4%84%E6%8A%95%E7%A8%BF/">Netlify +  GitHub Actions で Hugo 製ブログの予約投稿</a></h1>
+  <div class="post-meta">
+    <span class="post-date">
+      2019-12-07
+    </span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://blog.5ebec.dev/tags/hugo/">hugo</a>&nbsp;
+    
+    #<a href="https://blog.5ebec.dev/tags/netlify/">netlify</a>&nbsp;
+    
+    #<a href="https://blog.5ebec.dev/tags/githubactions/">githubactions</a>&nbsp;
+    
+    #<a href="https://blog.5ebec.dev/tags/ci/">ci</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <h2 id="モチベーション">モチベーション</h2>
+
+<p>Hugoは静的サイトジェネレータであり，予約投稿というものが無い．これでは「アドベントカレンダーで0:00に公開したい」などという時に困るので，どうにかして予約投稿を実現したい．</p>
+
+<h2 id="tldr">tl;dr</h2>
+
+<p>Hugo製ブログをNetlifyでホスティングしている前提．<br>
+<a href="https://docs.netlify.com/configure-builds/build-hooks/#parameters">NetlifyのBuild hooks</a>と<a href="https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows#scheduled-events-schedule">GitHub Actionsの<code>schedule</code></a>を用いる．</p>
+
+<h2 id="netlifyのbuild-hooks">NetlifyのBuild hooks</h2>
+
+<p>buildとdeployをトリガーする為のURL．<br>
+ダッシュボードの <code>Settings &gt; Build &amp; deploy &gt; Continuous Deployment &gt; Build hooks</code> にある．
+Add build hookからBuild Hooks URLを作成する．nameは参照用で，Build hooksのリストとdeploy時のメッセージに表示される．<br>
+branchはmasterにする．
+<figure><img src="/img/uploads/addbuildhook.png" alt="Add Build Hook"></figure>
+<figure><img src="/img/uploads/build_hooks_url.png" alt="Build Hooks URL"></figure>
+生成されたURLを用いて，端末で以下のような<code>curl</code>コマンドを叩くと，Netlifyでbuildとdeployが実行される．</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">curl -X POST -d <span style="color:#e6db74">&#39;{}&#39;</span> https://api.netlify.com/build_hooks/XXXXXXXXXXXXXXX</code></pre></div>
+<h2 id="github-actionsのschedule">GitHub Actionsの<code>schedule</code></h2>
+
+<p>別に他のCIサービスを用いても良いのだが，自分はTravis CIしか使ったことがなかったのと，<a href="https://docs.travis-ci.com/user/cron-jobs/">Travis CIのCron Jobs</a>では<code>daily</code>が最短なので却下．<br>
+そういえばGitHub Actionsなんてものがあったなぁと思って触ってみた．</p>
+
+<p>GitHub Actionsではリポジトリの<code>~/.github/workflows</code>以下にYAML構文でワークフローを定義する．<br>
+ワークフローの書き方は <a href="https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions">Workflow syntax for GitHub Actions</a> を参考にされたい．</p>
+
+<p>今回は「毎時0分にbuild &amp; deployを実行」させてみる．
+<code>schedule.yaml</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">name: scheduler
+
+on:
+  schedule:
+    - cron: <span style="color:#e6db74">&#39;0 * * * *&#39;</span>
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Post build hooks
+      run: curl -X POST -d {} ${{ secrets.BUILD_HOOKS_URL }}</code></pre></div>
+<p>最終行の<code>${{ secrets.BUILD_HOOKS_URL }}</code>はGitHubの<code>Settings &gt; Secrets</code>に設定した変数を呼び出している．ここに先程Netlifyで生成したBuild Hooks URLを追加すればよい．
+<figure><img src="/img/uploads/secrets_buildhooksurl.png" alt="Secrets"></figure></p>
+
+<p>これで完成．ちょうど1時間毎に実行されていることが確認できる．
+<figure><img src="/img/uploads/scheduler_workflows.png" alt="Scheduler"></figure></p>
+
+<h2 id="利点">利点</h2>
+
+<ul>
+<li><strong>gitが汚染されない</strong><br>
+空commitをmasterにpushすればNetlifyが自動buildしてくれるが，これだとlogが汚れるので<code>curl</code>を叩いたほうが綺麗．</li>
+<li><strong>build頻度が分単位で決定できる</strong><br>
+<code>schedule</code>を使って <a href="https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07">POSIX cron 構文</a> で記述できる．</li>
+<li><strong>(ほぼ)無料</strong><br>
+Publicレポジトリなら無料，Privateでもこの程度の使用なら無料．(Freeで2,000分/月)<br>
+<a href="https://github.com/features/actions">https://github.com/features/actions</a></li>
+<li><strong>簡単</strong><br>
+学習コスト低い．</li>
+</ul>
+
+<h2 id="まとめ">まとめ</h2>
+
+<p>意外と簡単にできた．これ書いてるのがアドベントカレンダー前日．上手くいくと良いな〜</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      
+      <span class="button next">
+        <a href="https://blog.5ebec.dev/posts/eigenvectors-from-eigenvalues-%E3%82%92-julia-%E3%81%A7%E6%A4%9C%E8%A8%BC%E3%81%99%E3%82%8B/">
+          <span class="button__text">Eigenvectors from Eigenvalues を Julia で検証する</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>&copy; 2019 <a href="https://github.com/5ebec">5ebec</a></span>
+        <span>:: Powered by <a href="https://gohugo.io">Hugo</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="https://blog.5ebec.dev/assets/main.js"></script>
+<script src="https://blog.5ebec.dev/assets/prism.js"></script>
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+</div>
+
+</body>
+</html>

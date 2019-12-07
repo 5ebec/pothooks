@@ -4,7 +4,42 @@
   
   <url>
     <loc>https://blog.5ebec.dev/</loc>
-    <lastmod>2019-11-19T08:20:01+00:00</lastmod>
+    <lastmod>2019-12-07T09:48:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.5ebec.dev/tags/ci/</loc>
+    <lastmod>2019-12-07T09:48:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.5ebec.dev/tags/githubactions/</loc>
+    <lastmod>2019-12-07T09:48:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.5ebec.dev/tags/hugo/</loc>
+    <lastmod>2019-12-07T09:48:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.5ebec.dev/tags/netlify/</loc>
+    <lastmod>2019-12-07T09:48:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.5ebec.dev/posts/netlify-github-actions-%E3%81%A7-hugo-%E8%A3%BD%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AE%E4%BA%88%E7%B4%84%E6%8A%95%E7%A8%BF/</loc>
+    <lastmod>2019-12-07T09:48:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.5ebec.dev/posts/</loc>
+    <lastmod>2019-12-07T09:48:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.5ebec.dev/tags/</loc>
+    <lastmod>2019-12-07T09:48:32+00:00</lastmod>
   </url>
   
   <url>
@@ -14,16 +49,6 @@
   
   <url>
     <loc>https://blog.5ebec.dev/tags/julia/</loc>
-    <lastmod>2019-11-19T08:20:01+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.5ebec.dev/posts/</loc>
-    <lastmod>2019-11-19T08:20:01+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.5ebec.dev/tags/</loc>
     <lastmod>2019-11-19T08:20:01+00:00</lastmod>
   </url>
   
@@ -159,11 +184,6 @@
   
   <url>
     <loc>https://blog.5ebec.dev/tags/githubpages/</loc>
-    <lastmod>2019-06-09T21:37:05+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.5ebec.dev/tags/netlify/</loc>
     <lastmod>2019-06-09T21:37:05+00:00</lastmod>
   </url>
   
