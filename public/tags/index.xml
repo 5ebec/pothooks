@@ -6,10 +6,46 @@
     <description>Recent content in Tags on #a5ebec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 07 Dec 2019 09:48:32 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Dec 2019 00:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://blog.5ebec.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>adventcalendar</title>
+      <link>https://blog.5ebec.dev/tags/adventcalendar/</link>
+      <pubDate>Sun, 08 Dec 2019 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/adventcalendar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bot</title>
+      <link>https://blog.5ebec.dev/tags/bot/</link>
+      <pubDate>Sun, 08 Dec 2019 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/bot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kuac2019</title>
+      <link>https://blog.5ebec.dev/tags/kuac2019/</link>
+      <pubDate>Sun, 08 Dec 2019 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/kuac2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>twitter</title>
+      <link>https://blog.5ebec.dev/tags/twitter/</link>
+      <pubDate>Sun, 08 Dec 2019 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.5ebec.dev/tags/twitter/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ci</title>

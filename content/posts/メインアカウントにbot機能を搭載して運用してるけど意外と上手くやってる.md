@@ -120,6 +120,7 @@ Twitterを再開するにあたり，単純にやるだけでは面白さが無�
 - **大喜利**  
 たまにリプ欄が大喜利になるのが好きです．遊んでくれてありがとうございます．
 <blockquote class="twitter-tweet" data-theme="dark" data-link-color="#a5ebec"><p lang="ja" dir="ltr">大学生の恋愛入門 †国際高等教育院† の単位取得率は43.2%だよ。がんばれ。</p>&mdash; ヒトデマン (@waitsushi) <a href="https://twitter.com/waitsushi/status/1122145600361730049?ref_src=twsrc%5Etfw">April 27, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-theme="dark" data-link-color="#a5ebec"><p lang="ja" dir="ltr">コミさんの彼女論の単位取得率は20.0%だよ。やめとけ。</p>&mdash; こたなか (@KU_kotanaka) <a href="https://twitter.com/KU_kotanaka/status/1150285706645737472?ref_src=twsrc%5Etfw">July 14, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 コミさん...😢
 
 - **教員に認知される**  

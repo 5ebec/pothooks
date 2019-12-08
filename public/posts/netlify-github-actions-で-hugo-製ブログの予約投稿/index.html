@@ -6,7 +6,7 @@
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="モチベーション Hugoは静的サイトジェネレータであり，予約投稿というものが無い．これでは「アドベントカレンダーで0:00に公開したい」などという時に困るので，どうにかして予約投稿を実現したい．
+<meta name="description" content="モチベーション Hugoは静的サイトジェネレータであり，予約投稿というものが無い．これでは「アドベントカレンダーで0時に公開したい」などという時に困るので，どうにかして予約投稿を実現したい．
 tl;dr Hugo製ブログをNetlifyでホスティングしている前提．
 NetlifyのBuild hooksとGitHub Actionsのscheduleを用いる．
 NetlifyのBuild hooks buildとdeployをトリガーする為のURL．
@@ -16,7 +16,8 @@ curl -X POST -d &amp;#39;{}&amp;#39; https://api.netlify.com/build_hooks/XXXXXXX
 そういえばGitHub Actionsなんてものがあったなぁと思って触ってみた．
 GitHub Actionsではリポジトリの~/.github/workflows以下にYAML構文でワークフローを定義する．
 ワークフローの書き方は Workflow syntax for GitHub Actions を参考にされたい．
-今回は「毎時0分にbuild &amp;amp; deployを実行」させてみる． schedule.yaml
+今回は「毎時0分にbuild &amp;amp; deployを実行」させてみる．
+schedule.yaml
 name: scheduler on: schedule: - cron: &amp;#39;0 * * * *&amp;#39; jobs: build: runs-on: ubuntu-latest steps: - name: Post build hooks run: curl -X POST -d {} ${{ secrets."/>
 <meta name="keywords" content="blog"/>
 <meta name="robots" content="noodp"/>
@@ -41,7 +42,7 @@ name: scheduler on: schedule: - cron: &amp;#39;0 * * * *&amp;#39; jobs: build: r
 <meta property="og:locale" content="ja" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Netlify &#43;  GitHub Actions で Hugo 製ブログの予約投稿 :: #a5ebec">
-<meta property="og:description" content="モチベーション Hugoは静的サイトジェネレータであり，予約投稿というものが無い．これでは「アドベントカレンダーで0:00に公開したい」などという時に困るので，どうにかして予約投稿を実現したい．
+<meta property="og:description" content="モチベーション Hugoは静的サイトジェネレータであり，予約投稿というものが無い．これでは「アドベントカレンダーで0時に公開したい」などという時に困るので，どうにかして予約投稿を実現したい．
 tl;dr Hugo製ブログをNetlifyでホスティングしている前提．
 NetlifyのBuild hooksとGitHub Actionsのscheduleを用いる．
 NetlifyのBuild hooks buildとdeployをトリガーする為のURL．
@@ -51,7 +52,8 @@ curl -X POST -d &amp;#39;{}&amp;#39; https://api.netlify.com/build_hooks/XXXXXXX
 そういえばGitHub Actionsなんてものがあったなぁと思って触ってみた．
 GitHub Actionsではリポジトリの~/.github/workflows以下にYAML構文でワークフローを定義する．
 ワークフローの書き方は Workflow syntax for GitHub Actions を参考にされたい．
-今回は「毎時0分にbuild &amp;amp; deployを実行」させてみる． schedule.yaml
+今回は「毎時0分にbuild &amp;amp; deployを実行」させてみる．
+schedule.yaml
 name: scheduler on: schedule: - cron: &amp;#39;0 * * * *&amp;#39; jobs: build: runs-on: ubuntu-latest steps: - name: Post build hooks run: curl -X POST -d {} ${{ secrets." />
 <meta property="og:url" content="https://blog.5ebec.dev/posts/netlify-github-actions-%E3%81%A7-hugo-%E8%A3%BD%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AE%E4%BA%88%E7%B4%84%E6%8A%95%E7%A8%BF/" />
 <meta property="og:site_name" content="Netlify &#43;  GitHub Actions で Hugo 製ブログの予約投稿" />
@@ -169,7 +171,7 @@ name: scheduler on: schedule: - cron: &amp;#39;0 * * * *&amp;#39; jobs: build: r
   <div class="post-content">
     <h2 id="モチベーション">モチベーション</h2>
 
-<p>Hugoは静的サイトジェネレータであり，予約投稿というものが無い．これでは「アドベントカレンダーで0:00に公開したい」などという時に困るので，どうにかして予約投稿を実現したい．</p>
+<p>Hugoは静的サイトジェネレータであり，予約投稿というものが無い．これでは「アドベントカレンダーで0時に公開したい」などという時に困るので，どうにかして予約投稿を実現したい．</p>
 
 <h2 id="tldr">tl;dr</h2>
 
@@ -194,8 +196,9 @@ branchはmasterにする．
 <p>GitHub Actionsではリポジトリの<code>~/.github/workflows</code>以下にYAML構文でワークフローを定義する．<br>
 ワークフローの書き方は <a href="https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions">Workflow syntax for GitHub Actions</a> を参考にされたい．</p>
 
-<p>今回は「毎時0分にbuild &amp; deployを実行」させてみる．
-<code>schedule.yaml</code></p>
+<p>今回は「毎時0分にbuild &amp; deployを実行」させてみる．</p>
+
+<p><code>schedule.yaml</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">name: scheduler
 
 on:
@@ -242,6 +245,13 @@ Publicレポジトリなら無料，Privateでもこの程度の使用なら無�
       <hr />
     </div>
     <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="https://blog.5ebec.dev/posts/%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%ABbot%E6%A9%9F%E8%83%BD%E3%82%92%E6%90%AD%E8%BC%89%E3%81%97%E3%81%A6%E9%81%8B%E7%94%A8%E3%81%97%E3%81%A6%E3%82%8B%E3%81%91%E3%81%A9%E6%84%8F%E5%A4%96%E3%81%A8%E4%B8%8A%E6%89%8B%E3%81%8F%E3%82%84%E3%81%A3%E3%81%A6%E3%82%8B/">
+          <span class="button__icon">←</span>
+          <span class="button__text">メインアカウントにbot機能を搭載して運用してるけど意外と上手くやってる</span>
+        </a>
+      </span>
       
       
       <span class="button next">
