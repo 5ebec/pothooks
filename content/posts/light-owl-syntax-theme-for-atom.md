@@ -2,7 +2,7 @@
 title: "誰得なAtomのSyntax themeを作った"
 date: 2019-12-23T00:00:00+09:00
 tags: ["adventcalender", "atom", "vscode", "julia"]
-cover: "/img/2019-12-23/js-screenshot.png"
+cover: "/img/2019-12-23/js-screenshot.jpg"
 description: "Atomは好きですか？ライトテーマは好きですか？Juliaは好きですか？え，使ってない？そうですか..."
 markup: "blackfriday"
 ---
@@ -14,7 +14,7 @@ markup: "blackfriday"
 
 今回は最近研究の合間にぼちぼち作っているAtomのSyntax themeの話をします．
 
-[![Light Owl Syntax](/img/2019-12-23/light-owl-syntax.png)](https://atom.io/themes/light-owl-syntax)
+[![Light Owl Syntax](/img/2019-12-23/light-owl-syntax.jpg)](https://atom.io/themes/light-owl-syntax)
 
 ## 経緯
 #### Atomとの出会い，そして別れ
@@ -39,7 +39,7 @@ VSCodeで一目惚れしてからずっと使っているテーマに[Light Owl]
 
 この記事も勿論VSCode + Light Owlで書いています😉
 
-![VSCode Light Owl](/img/2019-12-23/vscode-light-owl.png)
+![VSCode Light Owl](/img/2019-12-23/vscode-light-owl.jpg)
 
 #### Atomを再び使い始めた
 皆さん，Julia使っていますか．  
@@ -89,7 +89,8 @@ Syntax themeの開発は，
 3. コマンドパレットから"Window: Toggle Dev Tools"を選択し，Developer Toolsを開く．
 4. フロントエンド開発を行うようにStylesを確認しながら色を決めていく．
 
-![dev mode](/img/2019-12-23/dev-mode.png)
+![dev mode](/img/2019-12-23/dev-mode.jpg)
+
 というのが基本の流れになると思います．
 
 #### 色可視化
@@ -99,7 +100,7 @@ Syntax themeの開発は，
 
 Lessの変数にも対応していてかなり使いやすいです．
 
-![pigments](/img/2019-12-23/pigments.png)
+![pigments](/img/2019-12-23/pigments.jpg)
 
 しかし，Atomが重くなるという問題があるのでSyntax themeの作成が一段落したら消したいです...
 
@@ -110,12 +111,12 @@ Lessの変数にも対応していてかなり使いやすいです．
 
 JavaScriptだとこんな感じ．
 
-![atom screenshot](/img/2019-12-23/atom-screenshot.png)
+![atom screenshot](/img/2019-12-23/atom-screenshot.jpg)
 
 比較としてVSCodeのLight Owlも載せておきます．  
 AtomとVSCodeではシンタックスハイライトの規則が異なる為，完全な移植は出来ませんが可能な限り忠実に移植出来ていると思います．
 
-![vscode screenshot](/img/2019-12-23/vscode-screenshot.png)
+![vscode screenshot](/img/2019-12-23/vscode-screenshot.jpg)
 
 この記事を書いている時点でサポートしている言語は，
 
@@ -129,17 +130,17 @@ AtomとVSCodeではシンタックスハイライトの規則が異なる為，�
 
 です．勿論，他の言語も汎用的なルールによって着色はされます．
 
-![screenshot2](/img/2019-12-23/gfm-less-python-js-screenshot.png)
+![screenshot2](/img/2019-12-23/gfm-less-python-js-screenshot.jpg)
 
 ## まとめ
 自分が利用している道具が自分の手によって改善されるという体験は気持ちがいいですね．  
 まだ移植作業は終了していませんが，Atomを使っていて且つライトテーマが好きだという人は是非使ってみて下さい😊
 
-[![Light Owl Syntax](/img/2019-12-23/light-owl-syntax.png)](https://atom.io/themes/light-owl-syntax)
+[![Light Owl Syntax](/img/2019-12-23/light-owl-syntax.jpg)](https://atom.io/themes/light-owl-syntax)
 
 \
 \
 \
 ### あとがき
-macOSでJunoを使うとブレークポイントの赤丸が切れてしまう現象が気になっていたので，Light Owl Syntaxにその修正コードを入れようかと考えていたのですが，aviatesk氏に[atom-ink](https://github.com/JunoLab/atom-ink)にPR送ったら？と提案されたので初めてのOSSコミットをしました．mergeありがとうございます🙏
-![atom ink](/img/2019-12-23/atom-ink.png)
+macOSでJunoを使うとブレークポイントの赤丸が切れてしまう現象が気になっていたので，Light Owl Syntaxにその修正コードを入れようかと考えていたのですが，aviatesk氏に[atom-ink](https://github.com/JunoLab/atom-ink)にPR送ったら？と提案されたので初めてのOSSコミットをしました．ありがとうございます🙏
+![atom ink](/img/2019-12-23/atom-ink.jpg)
