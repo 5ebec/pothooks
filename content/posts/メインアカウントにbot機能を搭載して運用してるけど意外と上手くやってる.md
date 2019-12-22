@@ -2,7 +2,7 @@
 title: "メインアカウントにbot機能を搭載して運用してるけど意外と上手くやってる"
 date: 2019-12-08T00:00:00+09:00
 tags: ["kuac2019", "adventcalendar", "twitter", "bot"]
-cover: "img/2019-12-08/nohito.png"
+cover: "img/2019-12-08/nohito.jpg"
 description: "僕のTwitterアカウント [@5ebec](https://twitter.com/5ebec) に付属している単位取得率botと降水量を教えてくれるbotについて"
 markup: "blackfriday"
 ---
@@ -35,7 +35,7 @@ Twitterを再開するにあたり，単純にやるだけでは面白さが無�
 これは完全に俺得な機能ですが，1時間先までの京大吉田キャンパス上空の予想降水量によって僕の名前の横にアイコンが付きます．  
 全く根拠のない数式によって，時間と雨量の二次元データを 🌂, 🌦, ☂️, 🌧, ☔, ⛈, 🌀 の7段階のアイコンに変換しています(適当に決めた割には意外と体験と合致している印象です)．
 
-![例:Ameyadar](/img/2019-12-08/ameyadar-example.png)
+![例:Ameyadar](/img/2019-12-08/ameyadar-example.jpg)
 
 こんな感じ．
 
@@ -100,7 +100,7 @@ Twitterを再開するにあたり，単純にやるだけでは面白さが無�
   `from:5ebec -filter:replies include:nativeretweets`  
   の検索結果をTweetDeckのカラムにすることで確認できるようにしています．  
   <figure>
-    <img src="/img/2019-12-08/user.png"/>
+    <img src="/img/2019-12-08/user.jpg"/>
     <figcaption>左が検索結果，右がユーザーのツイート欄．</figcaption>
   </figure>
 
