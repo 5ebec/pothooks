@@ -42,7 +42,7 @@ Twitterを再開するにあたり，単純にやるだけでは面白さが無�
 **松屋行きたいけど傘持ってくべきかな？**ってときにめちゃくちゃ役立ってます．  
 ソースコードは公開しておりますので，自分のアカウントにも導入したいという人は使ってみてください．勿論 [@5ebec](https://twitter.com/5ebec) を見ていただいても良いです．
 
-<a href="https://github.com/5ebec/Ameyadar"><img src="/img/2019-12-08/Ameyadar.png" width="320px"></a>
+{{< blogcard "https://github.com/5ebec/Ameyadar">}}
 
 ## 2. 単位取得率bot
 さて，本日の主役です．

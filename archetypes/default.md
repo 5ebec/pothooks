@@ -4,7 +4,7 @@ date: {{ .Date }}
 tags: ["julia", "paper"]
 cover: ""
 description: ""
-markup: "mmark"
+markup: "blackfriday"
 draft: true
 ---
 

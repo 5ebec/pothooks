@@ -9,7 +9,7 @@ tags:
 description: typescript + three.js で GLSL をいい感じに編集したい
 markup: mmark
 ---
-## TL;DR
+## まとめ
 
  - 型定義ファイルを用意
  - `raw-loader` を使用
