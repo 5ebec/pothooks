@@ -1,5 +1,5 @@
 ---
-title: "誰得なAtom Syntax themeを作った"
+title: "誰得なAtomのSyntax themeを作った"
 date: 2019-12-23T00:00:00+09:00
 tags: ["adventcalender", "atom", "vscode", "julia"]
 cover: "/img/2019-12-23/js-screenshot.png"
