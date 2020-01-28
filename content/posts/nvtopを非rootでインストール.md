@@ -6,7 +6,9 @@ tags:
 description: nvtopを研究室のGPUサーバーにインストールした
 markup: mmark
 ---
-メモ
+htopのnvidia-smi版的なやつ [nvtop](https://github.com/Syllo/nvtop)   
+いい感じになるのでオススメ
+
 ```bash
 $ git clone https://github.com/Syllo/nvtop.git
 $ cd nvtop
