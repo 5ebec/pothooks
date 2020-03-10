@@ -7,16 +7,37 @@ media_folder: "static/img/uploads"
 public_folder: "/img/uploads"
 
 collections:
-  - name: "posts" # Used in routes, e.g., /admin/collections/blog
-    label: "Posts" # Used in the UI
-    folder: "content/posts" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "cover", widget: "image", required: false}
-      - {label: "Tags", name: "tags", widget: "list", default: ["julia", "paper"]}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Markup", name: "markup", widget: "hidden", default: "mmark"}
-      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "posts"
+    label: "Posts"
+    identifier_field: title
+    folder: "content/posts"
+    create: true
+    slug: "{{fields.slug}}"
+    fields: 
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+      - label: "Featured Image"
+        name: "cover"
+        widget: "image"
+        required: false
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        default: ["julia", "paper"]
+      - label: "Description"
+        name: "description"
+        widget: "text"
+      - label: "Markup"
+        name: "markup"
+        widget: "hidden"
+        default: "mmark"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
