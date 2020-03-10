@@ -6,7 +6,7 @@ tags:
   - paper
   - cv
 description: 人間はどのように物体をスケッチするか
-markup: mmark
+markup: blackfriday
 ---
 * How Do Humans Sketch Objects? 
 * Mathias Eitz, James Hays, Marc Alexa

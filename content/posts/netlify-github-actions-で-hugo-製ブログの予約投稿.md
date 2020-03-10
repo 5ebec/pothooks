@@ -7,7 +7,7 @@ tags:
   - githubactions
   - ci
 description: NetlifyでホスティングしているHugo製ブログで予約投稿したいなと思ってGitHub Actions使ったらめちゃ簡単だった．
-markup: mmark
+markup: blackfriday
 ---
 ## モチベーション
 

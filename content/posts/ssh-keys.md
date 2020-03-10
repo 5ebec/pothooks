@@ -4,7 +4,7 @@ date: 2019-10-08T18:05:23.939Z
 tags:
   - ssh
 description: 何回やっても覚えられないので自分用に
-markup: mmark
+markup: blackfriday
 ---
 ## クライアント側
 

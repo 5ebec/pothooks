@@ -6,7 +6,7 @@ tags:
   - paper
   - cv
 description: '論文読み : 形状進化による 3D データを用いた Shape-from-Shading'
-markup: mmark
+markup: blackfriday
 ---
 * Shape from Shading through Shape Evolution
 * Dawei Yang, Jia Deng

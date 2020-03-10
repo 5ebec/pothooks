@@ -7,7 +7,7 @@ description: |-
   Twitter で話題になったり研究室の slack で話されたりしていたので Julia で書いてみた  
    - Eigenvectors from Eigenvalues  
    - Peter B. Denton, Stephen J. Parke, Terence Tao, Xining Zhang
-markup: mmark
+markup: blackfriday
 ---
  - [Eigenvectors from Eigenvalues](https://arxiv.org/pdf/1908.03795.pdf)
  - Peter B. Denton, Stephen J. Parke, Terence Tao, Xining Zhang

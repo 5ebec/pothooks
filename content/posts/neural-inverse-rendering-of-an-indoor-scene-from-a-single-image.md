@@ -7,7 +7,7 @@ tags:
   - cv
   - inverserendering
 description: 論文読み：単一画像からの屋内シーンのニューラルインバースレンダリング
-markup: "mmark"
+markup: "blackfriday"
 ---
 
  - Neural Inverse Rendering of an Indoor Scene from a Single Image

@@ -4,7 +4,7 @@ date: 2020-01-28T07:46:25.753Z
 tags:
   - memo
 description: nvtopを研究室のGPUサーバーにインストールした
-markup: mmark
+markup: blackfriday
 ---
 htopのnvidia-smi版的なやつ [nvtop](https://github.com/Syllo/nvtop)   
 いい感じになるのでオススメ

@@ -37,7 +37,7 @@ collections:
       - label: "Markup"
         name: "markup"
         widget: "hidden"
-        default: "mmark"
+        default: "blackfriday"
       - label: "Body"
         name: "body"
         widget: "markdown"

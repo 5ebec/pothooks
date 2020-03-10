@@ -4,7 +4,7 @@ date: 2019-05-20T16:56:58+09:00
 tags: ["ubuntu", "display"]
 cover: ""
 description: "研究室で与えられたディスプレイの解像度が異なっていて気持ち悪かったので修正した(?)ときのメモ。"
-markup: "mmark"
+markup: "blackfriday"
 ---
 
 解像度とサイズの違う２つのディスプレイをどうにかしていい感じに使いたい

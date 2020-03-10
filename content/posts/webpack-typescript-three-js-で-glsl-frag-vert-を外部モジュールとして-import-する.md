@@ -7,7 +7,7 @@ tags:
   - threejs
   - glsl
 description: typescript + three.js で GLSL をいい感じに編集したい
-markup: mmark
+markup: blackfriday
 ---
 ## まとめ
 
