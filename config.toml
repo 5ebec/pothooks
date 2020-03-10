@@ -26,7 +26,6 @@ paginate = 5
   readMore = "Read more"
   readOtherPosts = "Read other posts"
 
-
 [params.logo]
   logoText = "#a5ebec"
   logoHomeLink = "/"
