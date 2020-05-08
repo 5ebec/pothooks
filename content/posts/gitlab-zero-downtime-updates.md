@@ -1,10 +1,11 @@
 ---
-title: "GitLab "
+title: GitLabのアップデート & Zero downtime updates & Slack通知
 slug: gitlab-zero-downtime-updates
 date: 2020-05-08T12:44:50.822Z
 cover: /img/uploads/gitlab-up-to-date.png
 tags:
   - gitlab
+  - slack
 description: |-
   重い腰を上げてGitLabをアップデートした．  
   そのついでにZero downtime updatesに対応させた．
