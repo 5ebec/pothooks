@@ -37,7 +37,7 @@ $ sudo apt-get autoremove
 ## Zero downtime updates
 以下のシェルスクリプトを`gitlab-update.sh`に書いた．
 
-と言っても殆どこれを参考にしています🙇↓  
+と言っても殆どこれを参考にしている↓  
 [【2019年版】GitLab CE/EEのゼロダウンタイムアップグレード](https://qiita.com/ynott/items/7e3d730d12a09e7fdd8b)
 
 ```bash:gitlab-update.sh
