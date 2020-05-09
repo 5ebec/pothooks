@@ -18,29 +18,29 @@ markup: blackfriday
 ## 新しいGPG Keyの入手
 
 とりあえずLinuxインスタンスにSSH接続して以下を実行
-```sh
+```bash
 $ sudo apt-get update && sudo apt-get install gitlab-ee
 ```
 したがうまくいかなかった．
 
 [2020/04/06にGitLab OmnibusのGPG Keyが更新されていた](https://docs.gitlab.com/omnibus/update/package_signatures.html#fetching-new-keys-after-2020-04-06)ようなので新しい鍵を取得．
-```sh
+```bash
 $ curl https://packages.gitlab.com/gpg.key -o /tmp/omnibus_gitlab_gpg.key
 $ sudo apt-key add /tmp/omnibus_gitlab_gpg.key
 ```
 再び`$ sudo apt-get install gitlab-ee`を実行したが`No space left on device`と言われたので
-```sh
+```bash
 $ sudo apt-get autoremove
 ```
 を実行．
 
 ## Zero downtime updates
-以下のシェルスクリプトを書いた．
+以下のシェルスクリプトを`gitlab-update.sh`に書いた．
 
-と言っても殆どこれを参考にしています🙇↓  
+と言っても殆どこれを参考にしている↓  
 [【2019年版】GitLab CE/EEのゼロダウンタイムアップグレード](https://qiita.com/ynott/items/7e3d730d12a09e7fdd8b)
 
-```sh:gitlab-update.sh
+```bash:gitlab-update.sh
 #!/bin/bash
 
 export LANG=en_US.UTF-8
@@ -96,12 +96,12 @@ sudo apt-mark hold gitlab-ee
 更新通知はSlackに飛ぶようにした．
 
 以下のコマンドを実行して完了
-```sh
+```bash
 $ chmod +x gitlab-update.sh
 ```
 
 次回以降のアップデートは
-```sh
+```bash
 $ ./gitlab-update.sh
 ```
 で完了する．
